@@ -69,85 +69,93 @@
 \begin{document}
 	\maketitle
 	
-	La programación dinámica es una metodología utilizada para reducir la compejidad computacional a un
-	algoritmo, es usada principalmente para resolver problemas de optimización,
-	se basa en la estrategia \textit{divide y venceras}, consiste en tomar un problema complejo y dividirlo 
-	sucesivamente en sub-problemas mas pequeños hasta llegar a un caso base, y partir de ahí empezar a construir la
-	solucion de cada sub-problema, hasta llegar a una solución global. Durante la busqueda de soluciones
-	se utiliza tablas de memorización, en la cuales se iran guardando la solucion óptima de cada sub-problema.
-	Como abrebiatrura a programnación dinámica vamos a usar dp, pues son sus siglas en ingles.
+	\section{Introducción a la programación dinámica}
 	
-	Un problema se puede resolver usando programación dinámica si cumple con tres condiciones basicas:
+	La programación dinámica es una metodología utilizada para reducir la complejidad computacional a un
+	algoritmo, es usada principalmente para resolver problemas de optimización,
+	se basa en la estrategia \textit{divide y vencerás}, consiste en tomar un problema complejo y dividirlo 
+	sucesivamente en sub-problemas mas pequeños hasta llegar a un caso base, y partir de ahí empezar a construir la
+	solución de cada sub-problema, hasta llegar a una solución global. Durante la búsqueda de soluciones
+	se utiliza tablas de memorización, en la cuales se irá guardando la solución óptima de cada sub-problema.
+	Como abreviatura a programación dinámica vamos a usar dp, pues son sus siglas en ingles.
+	
+	Los problemas que pueden ser resueltos utilizando programación dinámica presentan tres condiciones básicas:
 	\begin{enumerate}[1.]
 		\item El problema se puede dividir en sub-problemas, y estos a su vez en más sub-problemas, y así hasta llegar
-				a un caso base.
+				a uno o múltiples casos base.
 		\item La solución óptima de cada sub-problema depende de la solución óptima de cada uno de sus
 				propios sub-problemas, entonces cumple con el principio de optimalidad de Bellman.
-		\item Se presenta superposición de problemas, osea que hay sub-problemas que aparecen multiples veces
-		 		a lo largo de la busqueda de la solución general. Aunque como tal no es obligatorio, es la razón 
+		\item Se presenta superposición de problemas, es decir, existen sub-problemas que aparecen múltiples veces
+		 		a lo largo de la búsqueda de la solución general. Aunque como tal no es obligatorio, es la razón 
 		 		principal que le permite tener menor complejidad computacional.
 	\end{enumerate}
 	
 	\subtitulo{Ejemplo inicial.}
 	
-	El ejemplo basico más usado es con la sucesión de fibonacci, esta comienza con los números 0 y 1 y a partir
-	de estos dos el siguiente número es la suma de los dos anteriores y así hasta infinito, los primeros
-	numeros son los siguientes:
+	El ejemplo básico más usado es con la sucesión de Fibonacci, esta comienza con los números 0 y 1, y a partir
+	de estos dos números iniciales los siguientes son la suma de los dos anteriores, entonces los primeros
+	números de Fibonacci son:
 	\begin{center} $0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ..... $ \end{center}
 	
-	Ahora vamos a buscar la manera de calcular y guardar los primeros n numeros de la serie eficientemente, 
-	guardaremos en un vector los elementos de la sucesión, de tal forma que la posición i-esima del vector
-	corresponda al número i-esimo de la serie.
-	
-	 Para solucionar el problema con dp primero debemos identificar
-	los subproblemas, esto siempre resulta en una formula recursiva, en este caso es la siguiente:\\
-	$f(n) = 	
-		\begin{cases}
-			n & \text{if $n\le 1$}\\
-			f(n-1) + f(n-2) & \text{if $n\ge 2$}
-	\end{cases}	$\\
+	Ahora se buscará la manera de calcular y guardar en un vector los primeros $n$ números de la sucesión 
+	eficientemente, de tal forma que la posición i-esima del vector corresponda al número i-esimo de la sucesión.
+	Para solucionar el problema con dp primero debemos identificar los sub-problemas, en este caso obtenemos la 
+	siguiente formula recursiva:\\
+	\begin{center}
+		$fibo(n) = 	
+			\begin{cases}
+				n & \text{if $n\le 1$}\\
+				fibo(n-1) + fibo(n-2) & \text{if $n\ge 2$}
+		\end{cases}	$\\
+	\end{center}
 	
 	Para implementar dp surgen dos enfoques: Top-Down y Buttom-Up, vamos a resolver este ejemplo usando los dos.\\
 	
 	\textbf{Buttom-Up}\\
 	En este enfoque vamos a ir recorriendo la tabla de memorización mientras la llenamos, comenzando desde los
-	casos base de la formula recursiva y apartir de ahí ir calculando y guardando los demas resultados de la
-	tabla. Para este ejercicio comenzamos llenando en un vector \textit{v} los casos
+	casos base de la formula recursiva y a partir de ahí ir calculando y guardando los demás resultados en la
+	tabla. En este enfoque primero se calcula el resultado de todos los subproblemas antes de dar alguna solución 
+	global. Para este ejercicio comenzamos llenando en un vector \textit{v} los casos
 	base: \textit{v[0] = 0; v[1] = 1;} y luego llenamos el resto del vector según nos indica la formula
 	recursiva: \textit{v[i] = v[i-1] + v[i-2]}, de tal forma que \textit{v[i-1]} y \textit{v[i-2]} son valores
-	que hemos calculado antes y ademas $v[x] = f(x)$. A continuación se muestra un ejemplo en c++:
+	que se han calculado antes y ademas $v[x] = fibo(x)$. A continuación se muestra el ejemplo en C++ calculando
+	los primero 45 números de la sucesión:
 	\cppfile[5-12]{codigos/fibo.cpp}
-	Aunque en este enfoque no utilizamos llamados recursivos, puede resultar mas dificil de implementar,
+	Aunque en este enfoque no utilizamos llamados recursivos, puede resultar mas difícil de implementar,
 	pues por lo general es menos intuitivo.\\
 	
 	\textbf{Top-Down}\\
-	A diferencia del anterior enfoque, en este vamos a utilizar llamados recursivos, los cuales mientras se
-	realizan se iran guardando sus resultados en la tabla de memorización, y así evitar calcular dos veces el
-	mismo llamado recursivo. En este enfoque se hace mas notorio la importacia de la tabla de memorización, 
-	veamos la eficiencia del algoritmo si dejamos unicamente la formula recursiva, el codigo seria el siguiente:
+	A diferencia del anterior enfoque en este vamos a utilizar llamados recursivos, en los cuales se irá guardando
+	los resultados en la tabla de memorización mientras se calculan, y así evitar que se realice dos veces el
+	mismo llamado recursivo. Es decir se calcula el resultado solo de los subproblemas que sean necesarios para 
+	dar alguna solución global, a diferencia del Buttom-Up donde se calculaban primero todos los
+	subproblemas antes de poder dar alguna solución. En este enfoque se hace mas notorio la importancia de la tabla 
+	de memorización, veamos la eficiencia del algoritmo si dejamos únicamente la formula recursiva, el código seria 
+	el siguiente:
 	\cppfile[14-20]{codigos/fibo.cpp}
-	Si ejecutamos este codigo para $fibo(6)$ obtenemos el siguiente arbol de recursión:\\
+	Si ejecutamos este código para $fibo(6)$ obtenemos el siguiente arbol de recursión:\\
 	\begin{center}
 		\includegraphics[scale=0.92]{imagenes/arbol_recursion}
 	\end{center}
 	
-	Se puede observar que se realizan multiples llamados repetidos, $fibo(4)$ se repite 2 veces, $fibo(3)$
-	3 veces, $fibo(2)$ 4 veces, $fibo(1)$ 8 veces y $fibo(0)$ 5 veces, resultan bastantes llamados recursivos
-	solamente para encontrar $fibo(6)$, esta solución tiene ¡una complejidad exponencial!, en numeros pequeños
+	Se puede observar que se realizan múltiples llamados repetidos, $fibo(4)$ se repite 2 veces, $fibo(3)$
+	3 veces, $fibo(2)$ 5 veces, $fibo(1)$ 8 veces y $fibo(0)$ 5 veces, resultan bastantes llamados recursivos
+	solamente para encontrar $fibo(6)$, esta solución tiene ¡una complejidad exponencial!, en números pequeños
 	no es muy notorio pero cuando intentamos encontrar $fibo(42)$ o $fibo(45)$ el tiempo de ejecución se hace
-	muy alto, entonces para mejorar tiempos se debe implementar una tabla de memorización en la cual guardaremos
-	el resultado de cada llamado recursivo y agregamos un condicional al inicio del metodo preguntando si la
-	solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado sino se calcula y se
-	guarda, la tabla comenzara llena con -1, de tal forma que si una casilla es -1 entonces se debe calcular.
+	muy alto, entonces para mejorar el tiempo se debe implementar una tabla de memorización, en la cual se guardara
+	el resultado de cada llamado recursivo, ademas se debe agregar un condicional al inicio del método preguntando
+	si la solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado sino se calcula
+	y se guarda, en este ejemplo la tabla comienza llena con -1 (un valor que nunca es usado en la solución), de 
+	tal forma que si una posición tiene como valor -1 entonces se debe calcular.
 	\cppfile[22-31]{codigos/fibo.cpp}
 	Este ejercicio resulta muy trivial, se puede resolver facilmente sin pensar en dp, ahora se mostraran
-	multiples problemas en los cuales se hace necesario utilizar dp para dar una solución eficiente.
+	problemas en los cuales se hace necesario utilizar dp para dar una solución eficiente.
 	
 	\subtitulo{Recorrido óptimo en una matriz.}
 	
-	Teniendo una matriz de n x m con números enteros, se quiere conocer la suma maxima que se puede obtener
-	recorriendo la matriz, comenzando desde la esquina superior-izquierda y terminando en la esquina inferior-derecha
-	únicamente haciendo pasos hacia la derecha y abajo, por ejemplo:\\
+	Teniendo una matriz de $n$ x $m$ con números enteros, se quiere conocer la suma maxima que se puede obtener
+	recorriendo la matriz, comenzando desde la esquina superior-izquierda y terminando en la esquina inferior-derecha,
+	realizando únicamente pasos hacia la derecha y abajo, por ejemplo:\\
 	\begin{center}
 		\begin{tabular}{|l|l|l|}
 			\hline
@@ -159,8 +167,8 @@
 	\end{center}
 	El camino óptimo es 5-6-8-11-15-17 y la suma es 62.\\
 	
-	Este es un problema de optimización, a simple vista una posible solución seria siempre ir a la casilla adyacente
-	con mayor valor, pero no siempre es la mejor, por ejemplo teniendo la siguiente matriz:
+	Este es un problema de optimización, a simple vista la solución consistiría de siempre ir a la casilla adyacente
+	con mayor valor, pero no siempre es el mejor camino, por ejemplo con la siguiente matriz:
 	\begin{center}
 		\begin{tabular}{|l|l|l|l|}
 		 	\hline
@@ -170,29 +178,31 @@
 			12 & 2  & 4  & 15 \\ \hline
 		\end{tabular}
 	\end{center}
-	No es una solución óptima ir a la siguiente casilla con mayor valor, pues haciendo esto se tendria el siguiente
+	No es una solución óptima ir a la siguiente casilla con mayor valor, pues haciendo esto se tendría el siguiente
 	camino 1-12-5-21-15-10-15 con un acumulado de 79, en cambio el camino 1-6-35-18-8-10-15 tiene un acumulado de 93,
-	necesitamos encontrar la suma del camino óptimo.\\
+	entonces con la anterior estrategia no siempre se obtiene el camino óptimo.\\
 	
-	Este problema se puede resolver con programación dinámica, pues podemos encontrar la solución general a
-	partir de la solución de sub-problemas más pequeños, supongamos	que tenemos una matriz T de tamaño n x m
-	a la cual vamos a calcular la suma de su recorrido óptimo, para facilidad vamos a indexar desde 1 tomando
+	Este problema se puede resolver con programación dinámica, pues se puede encontrar la solución general a
+	partir de la solución de sub-problemas más pequeños, supongamos	que tenemos una matriz $T$ de tamaño $n$ x $m$
+	a la cual se va a calcular la suma de su recorrido óptimo, para facilidad se indexara desde 1 tomando
 	la esquina superior-izquierda como T[1][1], para encontrar el camino óptimo hasta T[n][m](ultima casilla)
 	es necesario primero encontrar el óptimo de T[n-1][m] y T[n][m-1], pues para llegar a T[n][m] hay dos opciones,
-	llegar por arriba (equivalente a tomar la desición ir-abajo desde T[n-1][m]) o llegar por la izquierda 
-	(equivalente a tomar la desición ir-derecha desde T[n][m-1]), entonces la solucion general sera 
-	\textit{T[n][m] + maximo entre(camino óptimo hasta T[n-1][m], camino óptimo hasta T[n][m-1])}, y a su vez
+	llegar por arriba (equivalente a tomar la decisión ir-abajo desde T[n-1][m]) o llegar por la izquierda 
+	(equivalente a tomar la decisión ir-derecha desde T[n][m-1]), entonces la solución general sera 
+	\textit{T[n][m] + máximo entre(camino óptimo hasta T[n-1][m], camino óptimo hasta T[n][m-1])}, y a su vez
 	el óptimo para ellos se calcula de manera similar, el optimo para llegar hasta T[n-1][m] es 
-	\textit{T[n-1][m] + maximo entre(camino óptimo hasta T[n-2][m], camino óptimo hasta T[n-1][m-1]).} y 
-	así tambien para T[n][m-1], de esta forma podemos dividir el problema en sub-problemas.\\
+	\textit{T[n-1][m] + máximo entre(camino óptimo hasta T[n-2][m], camino óptimo hasta T[n-1][m-1])} y 
+	de manera similar para T[n][m-1], de esta forma se puede dividir el problema en sub-problemas.\\
 	
-	Ahora ya podemos ir construyendo una formula recursiva, pero nos faltan los casos base, entonces llamaremos
-	$i$ a la posicion en fila y $j$ a la posición en columna, ahora si $i$ y $j$ son iguales a 1 entonces
-	el resultado es T[1][1], si solo $i$ es 1 entonces el resultado es \textit{T[1][j] + camino óptimo hasta T[1][j-1]},
-	solo podemos llegar desde la izquierda pues por arriba nos estariamos saliendo de la matriz, si solo $j$
-	es 1 entonces de manera similar tenemos \textit{T[i][1] + camino óptimo hasta T[i-1][j]}, ahora ya tenemos
-	los casos base y podemos construir la formula recursiva:\\
-	$f(i, j) = 	
+	Ahora ya se puede empezar a construir una formula recursiva, llamaremos $i$ a la posición en fila y $j$ a la 
+	posición en columna, entonces $f(i,j)$ devolverá el valor del recorrido optimo desde T[1][1] hasta T[i][j], 
+	ahora se deben establecer los casos base, entonces si $i$ y $j$ son iguales a 1 entonces el resultado es 
+	T[1][1](se encuentra en el punto inicial), si solo $i$ es 1 entonces el resultado es \textit{T[1][j] + f(1,j-1)},
+	solo se puede llegar a T[1][j] desde su izquierda, pues desde arriba estaría afuera de la matriz, si solo $j$ 
+	es 1 entonces de manera similar se tiene como resultado \textit{T[i][1] + f(i-1,1)}, ahora ya se tienen los 
+	casos base y se puede construir la formula recursiva:
+	\begin{center}
+		$f(i, j) = 	
 		\begin{cases}
 			T[1][1] & \text{if $i,j = 1$}\\
 			T[1][j] + f(1, j-1) & \text{if $i = 1$}\\
@@ -200,28 +210,44 @@
 			T[i][j] + mayor(f(i-1, j), f(i, j-1)) & \text{if $i,j \neq 1$}
 		\end{cases}
 	$\\
-	Como tabla de memorización vamos a tomar otra matriz de igual tamaño, a esta la llamaremos memo, en ella iremos
-	guardando el acumulado óptimo, o sea que en memo[i][j] se guardara el acumulado óptimo para ir desde
-	T[1][1] hasta T[i][j], ahora podemos solucionar el problema usando cualquiera de los dos enfoques de dp,
-	para usar Top-Down solamente le agregamos la tabla de memorización a la formula recursiva y se tendria
-	solucionado el problema.
-	\cppfile[8-19]{codigos/matriz.cpp}
+	\end{center}
+	Para terminar el dp es necesario agregar la tabla de memorización, pues aplicar la formula directamente resultaría
+	en un algoritmo de complejidad exponencial, como tabla de memorización se usara otra matriz de igual tamaño,
+	esta se llamara memo y guardara las soluciones, es decir, que en memo[i][j] se guardara el acumulado óptimo para 
+	ir desde T[1][1] hasta T[i][j], en otras palabra memo[i][j] = $f(i,j)$, ahora se puede solucionar el problema 
+	usando cualquiera de los dos enfoques de dp, para usar Top-Down solamente se agrega la tabla de memorización 
+	a la formula recursiva, resultando en la siguiente función(recordar que en C++ se indexa desde 0):
+	\cppfile[9-20]{codigos/matriz.cpp}
 	
-	para conocer el resultado solo imprimimos $f(n-1, m-1)$  pues en c++ indexamos desde cero. Una solución con
-	Buttom-Up es recorrer la matriz y llenarala segun la formula recursiva, se debe comenzar llenando los casos
-	base antes de calcular lo demas, para conocer la respuesta solo se llama el metodo y se imprime 
-	$memo[n-1][m-1]$.
+	para conocer el resultado solo se debe imprimir $f(n-1, m-1)$. para la solución con Buttom-Up se debe recorrer 
+	la matriz y llenarla según la formula recursiva, se debe comenzar con los casos base antes de calcular lo demás, 
+	esto resultaría en la siguiente función:
 	\cppfile[22-35]{codigos/matriz.cpp}
-	y ya tenemos solucionado el problema.\\
+	De esta forma para conocer la solución se debe imprimir memo[n-1][m-1]. La complejidad algorítmica resultante
+	es O($n*m$), resultando mejor que un algoritmo exponencial de fuerza bruta.\\
 	
 	\subtitulo{Suma de subconjuntos:}
 	
-	Tambien conocido como \textit{Sub-SetSum} el problema consiste en que teniendo un conjunto de números enteros
-	$V$, encontrar si es posible que uno o multiples números $n$ sean el resultado de la suma de los elementos
-	de un subconjunto del conjunto $V$, por ejemplo con el conjunto {1, 2, 5} es posible formar los numeros
-	{1, 2, 3, 5, 6, 7, 8}.\\
+	También conocido como \textit{Sub-SetSum} el problema consiste en que a partir de un conjunto de números enteros
+	$V$, encontrar si es posible que otro número $n$ sea el resultado de la suma de los elementos de algún
+	subconjunto de $V$, por ejemplo con el conjunto {1, 2, 5} es posible formar los números
+	{1, 2, 3, 5, 6, 7, 8} sumando todos los elementos de cada subconjunto.\\
 	
-	Con dp buscaremos todas las posibles sumas que se pueden formar con los números de un vector $v$ de tamaño $n$,
+	Utilizando un algoritmo de BackTraking para probar todos los posibles subconjuntos se obtendría una complejidad
+	O($2^{n}$), siendo bastante alta. Este problema puede ser resuelto usando dp, se puede reescribir el numero $n$
+	como: $n=V[k_{1}]+x_{1}$, con $V[k_{1}]$ como algún numero en $V$, de manera similar se puede reescribir $x_{1}$
+	como $x_{1}=v[k_{2}]+x_{2}$ y así sucesivamente hasta encontrar $x_{n}=v[k_{n}]+0$, de esta manera si se toma 
+	cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto: $n=v[k_{1}]+v[k_{2}]+...+v[k_{n}]$.
+	
+	En este problema el resultado deberá ser 'verdadero' o 'falso', mostrando si es posible sumar $n$ con algún 
+	subconjunto de $V$, con los subproblemas establecidos se puede ahora definir los casos base, si en algún momento 
+	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero', pero si en algún momento usamos todos los
+	elementos en $V$ o encontramos $x_{n}<0$ entonces la solución en ese subproblema sera 'falso',
+	
+	
+	
+	Con un enfoque Buttom-Up se debe buscar todas las posibles sumas que se pueden formar con los números de un vector 
+	$v$ de tamaño $n$,
 	por facilidad para este ejemplo vamos a indexar desde 1, para dar solución primero vamos a identificar los
 	sub-problemas, la solución general incluye sumar el elemento $v[n]$ a todos los números encontrados
 	hasta $v[n-1]$, y este a su vez depende de encontrar $v[n-2]$ y así sucesivamente hasta llegar a $v[1]$
@@ -265,11 +291,12 @@
 	llenar un tablero de tamaño 2*N con fichas de domino de tamaño 2X1, el tablero se debe llenar completamente sin
 	tener espacios vacíos.
 	
-	\subtitulo{Bibliografia}
-http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\
-http://programacioncompetitivaufps.github.io/\\
-https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/\\
-libro: competitive programming 3.\\
+	\section{Problema de la mochila(Knapsack problem)}
+	
+	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\
+	http://programacioncompetitivaufps.github.io/\\
+	https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/\\
+	libro: competitive programming 3.\\
 
 
 
