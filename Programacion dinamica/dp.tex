@@ -224,58 +224,64 @@
 	esto resultaría en la siguiente función:
 	\cppfile[22-35]{codigos/matriz.cpp}
 	De esta forma para conocer la solución se debe imprimir memo[n-1][m-1]. La complejidad algorítmica resultante
-	es O($n*m$), resultando mejor que un algoritmo exponencial de fuerza bruta.\\
+	es O($n*m$), resultando mejor que un algoritmo de complejidad exponencial utilizando fuerza bruta.\\
 	
 	\subtitulo{Suma de subconjuntos:}
 	
 	También conocido como \textit{Sub-SetSum} el problema consiste en que a partir de un conjunto de números enteros
 	$V$, encontrar si es posible que otro número $n$ sea el resultado de la suma de los elementos de algún
-	subconjunto de $V$, por ejemplo con el conjunto {1, 2, 5} es posible formar los números
-	{1, 2, 3, 5, 6, 7, 8} sumando todos los elementos de cada subconjunto.\\
+	subconjunto de $V$, por ejemplo con el conjunto $V$={1, 2, 5} es posible sumar 7 usando el subconjunto \{2, 5\},
+	con este conjunto $V$ seria posible sumar \{1, 2, 3, 5, 6, 7, 8\}.\\
 	
 	Utilizando un algoritmo de BackTraking para probar todos los posibles subconjuntos se obtendría una complejidad
 	O($2^{n}$), siendo bastante alta. Este problema puede ser resuelto usando dp, se puede reescribir el numero $n$
 	como: $n=V[k_{1}]+x_{1}$, con $V[k_{1}]$ como algún numero en $V$, de manera similar se puede reescribir $x_{1}$
 	como $x_{1}=v[k_{2}]+x_{2}$ y así sucesivamente hasta encontrar $x_{n}=v[k_{n}]+0$, de esta manera si se toma 
-	cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto: $n=v[k_{1}]+v[k_{2}]+...+v[k_{n}]$.
+	cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto: $n=v[k_{1}]+v[k_{2}]+...+v[k_{n}]$,
+	en general se deberá probar cada elemento en $V$ si pertenece o no a la solución.\\
 	
 	En este problema el resultado deberá ser 'verdadero' o 'falso', mostrando si es posible sumar $n$ con algún 
 	subconjunto de $V$, con los subproblemas establecidos se puede ahora definir los casos base, si en algún momento 
-	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero', pero si en algún momento usamos todos los
-	elementos en $V$ o encontramos $x_{n}<0$ entonces la solución en ese subproblema sera 'falso',
+	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero'(solo con encontrar una solución ya se puede 
+	afirmar que es posible sumar $n$), pero si en algún momento usamos todos los elementos en $V$ y aun $x_{n}>0$, o 
+	en algún momento se llega a $x_{n}<0$ entonces la solución en ese subproblema sera 'falso', entonces se tiene la
+	siguiente función recursiva(siendo 1 verdadero, y 0 falso):
+	\begin{center}
+		$f(n, k) = 	
+		\begin{cases}
+			1 & \text{if n = 0}\\
+			0 & \text{if n $<$ 0, k$>longitud( $V$)$}\\
+			1 & \text{if f(n-V[k],k+1)=1}\\
+			0 & \text{if $otro$}
+		\end{cases}
+	$\\
+	\end{center}
+	Ahora con la formula recursiva la solución se puede programar agregando la tabla de memorización, para su tamaño 
+	se debe considerar que la cantidad de columnas debe ser por lo menos igual a la longitud del vector, y la cantidad 
+	de filas por lo menos igual al resultado más grande que se puede obtener. Igualmente se llenara inicialmente con -1.
+	\cppfile[24-33]{codigos/SubSetSum.cpp}
 	
+	Este problema también puede ser resuelto usando el enfoque Buttom-Up, donde se buscaría todas las posibles 
+	sumas que se pueden formar con los números en $V$, se tomara $m$ como el tamaño de $V$ y por facilidad se usara 1 
+	como indice inicial. Los subproblemas se podrían ver de la siguiente manera: la solución general incluye sumar el
+	elemento $V[m]$ a todas las soluciones encontradas hasta $V[m-1]$, y este a su vez depende de encontrar $V[m-1]$
+	y así sucesivamente hasta llegar a $V[1]$ que sera nuestro caso base, mas detalladamente la solución hasta $V[1]$ 
+	es solamente él mismo, las soluciones hasta $V[2]$ es él mismo, $V[1]$ y la suma $V[1]+V[2]$, el conjunto de
+	soluciones hasta ahora es \{$V[1]$, $V[2]$, $V[1]+V[2]$\}, ahora la solución hasta $V[3]$ sera 
+	\{$V[1]$, $V[2]$, $V[1]+V[2]$, $V[1]+V[3]$, $V[2]+V[3]$, $V[1]+V[2]+V[3]$\}, y así sucesivamente hasta $V[n]$,
+	descartando números repetidos.\\
 	
+	Por ejemplo sea $V$=\{3, 5 y 8\}, la solución hasta 3 es él mismo, el conjunto de soluciones hasta ahora es \{3\},
+	la solución hasta 5 es él mismo y su suma con las soluciones anteriores, el conjunto de soluciones cambia a 
+	\{3, 5, 8\}, y por ultimo incluyendo el 8 el conjunto resultante es: \{3, 5, 8, 11, 13, 16\}. Una posible
+	implementación seria:\\
+	\cppfile[8-21]{codigos/SubSetSum.cpp}
 	
-	Con un enfoque Buttom-Up se debe buscar todas las posibles sumas que se pueden formar con los números de un vector 
-	$v$ de tamaño $n$,
-	por facilidad para este ejemplo vamos a indexar desde 1, para dar solución primero vamos a identificar los
-	sub-problemas, la solución general incluye sumar el elemento $v[n]$ a todos los números encontrados
-	hasta $v[n-1]$, y este a su vez depende de encontrar $v[n-2]$ y así sucesivamente hasta llegar a $v[1]$
-	que sera nuestro caso base, mas detalladamente la solución hasta $v[1]$ es solamente él mismo, las soluciones
-	hasta $v[2]$ es él mismo, $v[1]$ y la suma $v[1]+v[2]$, el cojunto de soluciones hasta ahora es
-	\{$v[1]$, $v[2]$, $v[1]+v[2]$\}, ahora la solución hasta $v[3]$ sera
-	\{$v[1]$, $v[2]$, $v[1]+v[2]$, $v[1]+v[3]$, $v[2]+v[3]$, $v[1]+v[2]+v[3]$\}, y así sucesivamente hasta $v[n]$,
-	en este conjunto los numeros repetidos seran descartados.\\
-	
-	Por ejemplo supongamos que tenemos \{3, 5 y 8\}, la solución hasta 3 es él mismo, nuestro conjunto de soluciones hasta
-	ahora es \{3\}, las soluciones hasta 5 es él mismo y su suma a las soluciones anteriores, nuestro conjunto de
-	soluciones ahora es \{3, 5, 8\} y por ultimo incluyendo el 8, nuestro conjunto de soluciones queda de la siguiente
-	forma: \{3, 5, 8, 11, 13, 16\}.\\
-	
-	Esto se puede resolver recursivamente con Top-Down pero quedara como tarea para el lector, áca se usara una solución
-	iterativa usando Buttom-Up, para tabla de memorización usaremos una matriz con una cantidad de filas igual o mayor
-	a la longitud del vector y de columnas igual al resultado más grande que se puede obtener, sera de tipo \textit{bool}
-	pues el problema solo requiere decir si un numero se puede formar o no, cada fila i representara las soluciones
-	encontradas hasta el $v[i]$.
-	\cppfile[8-24]{codigos/SubSetSum.cpp}
-	En el anterior codigo tomamos el vector $num$ como el conjunto de números $v$, tenemos dos ciclos el primero
-	recorrera el vector $num$ y el segundo buscara las soluciones anteriores y le sumara a esa solución $num[i]$,
-	como el caso base es cuando $i=0$ entonces debemos saltarnos el segundo ciclo, pues resulta innecesario
-	porque no hay soluciones anteriores, para eso ponemos un condicional que ejecute el segundo ciclo si
-	$i$ es mayor a 0, y por último si queremos saber si un número $m$ se puede formar entonces cosultamos en
-	la última fila de la tabla de memorización, si $memo[num.size()-1][m]$ es verdadero entonce si existe un 
-	sub-conjunto que sume $m$,
-	en caso contrario no es posible formar esa suma.
+	En el anterior código se tienen dos ciclos, el primero recorriendo el vector $V$ y el segundo buscando las 
+	soluciones anteriores para sumarles $V[i]$, como el caso base es cuando $i=0$ entonces se debe omitir el segundo
+	ciclo cuando $i$ tiene este valor, ejecutando este código se obtendría todas las soluciones en la última columna,
+	entonces si $memo[n][V.size()-1]$ es verdadero entonce si existe un sub-conjunto que sume $n$, en caso contrario
+	no es posible.
 
 	
 	\subtitulo{Otros problemas clásicos:}
