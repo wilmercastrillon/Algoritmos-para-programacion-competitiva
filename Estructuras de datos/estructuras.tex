@@ -1,0 +1,119 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{titling}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage{listings}%-para agregar codigo-
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{color}%------------------------
+
+%---------------------importar codigo desde archivos cpp----------------------------
+\lstloadlanguages{C++}
+\lstnewenvironment{code}
+	{%\lstset{	numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
+	 \csname lst@SetFirstLabel\endcsname}
+	{\csname lst@SaveFirstLabel\endcsname}
+\lstset{% general command to set parameter(s)
+	language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+	emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
+	morekeywords={tint,forn,forsn},
+	basewidth={0.47em,0.40em},
+	columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+	flexiblecolumns=false, tabsize=2, breaklines,	breakatwhitespace=false, extendedchars=true,
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+	frame=l, framesep=3pt,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#}
+}
+
+\lstdefinestyle{C++}{
+	language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+	emph=[1]{tipo,usa,tipo2}, emphstyle={[1]\sffamily\bfseries},
+	morekeywords={tint,forn,forsn},
+	basewidth={0.47em,0.40em},
+	columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+	flexiblecolumns=false, tabsize=2, breaklines,	breakatwhitespace=false, extendedchars=true,
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+	frame=l, framesep=3pt,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#}
+}
+
+\def\nbtitle#1{\begin{Large}\begin{center}\textbf{#1}\end{center}\end{Large}}
+\def\nbsection#1{\section{#1}}
+\def\nbsubsection#1{\subsection{#1}}
+\def\nbcoment#1{\begin{small}\textbf{#1}\end{small}}
+\newcommand{\comb}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+\def\complexity#1{\texorpdfstring{$\mathcal{O}(#1)$}{O(#1)}}
+ \newcommand\cppfile[2][]{
+\lstinputlisting[style=C++,linerange={#1}]{#2}
+}
+%%------------------------------------------------------------------------------
+
+\newcommand{\subtitulo}[1]{\begin{center}\textbf{#1}\end{center}}
+
+\title{\textbf{Estructuras de datos}}
+\author{Wilmer Emiro Castrillón Calderón}
+
+\begin{document}
+	\maketitle
+	
+	\section{Tablas aditivas}
+	Son estructuras de datos utilizadas para realizar operaciones acumuladas sobre un conjunto de datos estáticos
+	en un rango específico, es decir, ejecutar una misma operación(como por ejemplo la suma) sobre un intervalo
+	de datos, se asume que los datos en la estructura no van a cambiar. Estas estructuras también son conocidas como
+	\textit{Cumulative Frequency Table} o de manera mas informal \textit{Tablas aditivas}, aunque no necesariamente 
+	son exclusivas para operaciones de suma, pues la idea general es aplicable a otras operaciones.
+	
+	Durante el cálculo de una misma operación sobre diferentes rangos se presenta superposición de problemas, las 
+	tablas aditivas son utilizadas para reducir la complejidad computacional aprovechando estas superposiciones
+	utilizando tablas de memorización.	
+	
+	\subtitulo{Ejemplo inicial.}
+	
+	Dado un vector V = \{5,2,8,2,4,3,1\} encontrar para múltiples consultas la suma de todos los elementos en un rango
+	[i,j], indexando desde 1, por ejemplo con el rango [1, 3] la suma es [5+2+8] = 15.
+	
+	La solución trivial es hacer un ciclo recorriendo el vector entre el intervalo [i,j], en el peor de los casos se
+	debe recorrer todo el vector, esto tiene una complejidad $O(n)$ puede que para una consulta sea aceptable, pero
+	en casos grandes como por ejemplo un vector de tamaño $10^{5}$ y una cantidad igualmente de consultas el tiempo 
+	de ejecución se hace muy alto, por lo tanto se hace necesario encontrar una mejor solución.	
+	
+	Como un aspecto clave se puede observar que la solución para la consulta [1,4] y la consulta [2,5] ambas tienen 
+	un intervalo en común, es decir, existe una superposición de problemas en el rango [2,4], otro aspecto clave es 
+	que el problema se puede reescribir de la siguiente manera: sea $suma(x)$ = $\sum_{k=1}^{x} V_{k}$ entonces:
+	$\sum_{k=i}^{j} V_{k} = suma(j) - suma(i-1)$ cuando $i \neq 1$. Ahora pre-calculando $suma(x)$ se puede dar 
+	una solución inmediata a cada consulta, esto se puede resolver utilizando un enfoque básico de programación 
+	dinámica
+	
+	Para encontrar $suma(x)$ se puede reescribir como: $suma(x) = V_{x} + suma(x-1)$ con caso base 
+	$suma(1)=V_{1}$, de esta manera se tendría la siguiente solución en C++
+	\cppfile[6-14]{codigos/tablas_aditivas.cpp}
+
+	\subtitulo{Suma de subconjuntos:}
+	Ejemplo de subtitulo
+	
+	\section{Bibliografia}
+	
+	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\
+	http://programacioncompetitivaufps.github.io/\\
+	https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/\\
+	libro: competitive programming 3.\\
+
+
+
+\end{document}
+
+
+
