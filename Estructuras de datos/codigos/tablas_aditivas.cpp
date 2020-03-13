@@ -3,17 +3,17 @@
 
 using namespace std;
 /*
-int V[] = {5,2,8,2,4,3,1}, memo[7];
+int V[] = {5,2,8,2,4,3,1}, memo[8];
 
 void precalcular(){
     memo[0] = 0;
     for(int i = 0; i < 7; i++)
-        memo[i] = V[i] + memo[i-1];
+        memo[i+1] = V[i] + memo[i];
 }
 
-int query(int i, int j){ return memo[j] - memo[i-1]; }
+int consulta(int i, int j){ return memo[j] - memo[i-1]; }
 */
-int tab[20][20], memo[20][20], fila, col;
+int M[20][20], memo[20][20], fila, col;
 
 /*
 1 9 6 3 7
@@ -23,31 +23,30 @@ int tab[20][20], memo[20][20], fila, col;
 9 5 3 7 8
 */
 
-void build(){
+void precalcular(){
     memset(memo, 0, sizeof(memo));
-    memo[1][1] = tab[0][0];
+    memo[1][1] = M[0][0];
     for (int i = 2; i <= fila; i++)
-        memo[i][1] = memo[i-1][1] + tab[i - 1][0];
+        memo[i][1] = memo[i-1][1] + M[i - 1][0];
     for (int j = 2; j <= col; j++)
-        memo[1][j] = memo[1][j-1] + tab[0][j - 1];
+        memo[1][j] = memo[1][j-1] + M[0][j - 1];
 
     for (int i = 2; i <= fila; i++)
-		for (int j = 2; j <= col; j++)
-            memo[i][j] = memo[i][j - 1] + memo[i - 1][j] +
-                    tab[i - 1][j - 1] - memo[i - 1][j - 1];
+    for (int j = 2; j <= col; j++)
+        memo[i][j] = memo[i][j - 1] + memo[i - 1][j] +
+                        M[i - 1][j - 1] - memo[i - 1][j - 1];
 }
-//indexando desde 1
-int query(int f1, int c1, int f2, int c2){
-    return memo[f2][c2] - memo[f1-1][c2] -
-                memo[f2][c1-1] + memo[f1-1][c1-1];
+
+int consulta(int f1, int c1, int f2, int c2){
+    return memo[f2][c2] - memo[f1-1][c2] -  memo[f2][c1-1] + memo[f1-1][c1-1];
 }
 
 int main(){
     fila = col = 5;
     for (int i = 0; i < 5; i++)
 		for (int j = 0; j < 5; j++)
-			cin >> tab[i][j];
-    build();
+			cin >> M[i][j];
+    precalcular();
 
     cout << "tabla aditiva:" << endl;
     for (int i = 0; i < 6; i++){
@@ -56,7 +55,7 @@ int main(){
         cout << endl;
     }
 
-    cout << query(2, 2, 5, 5) << endl;
+    cout << consulta(2, 2, 3, 4) << endl;
     return 0;
 }
 

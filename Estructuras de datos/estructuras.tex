@@ -7,6 +7,7 @@
 \usepackage{enumerate}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{caption}
 
 \usepackage{listings}%-para agregar codigo-
 \usepackage[usenames,dvipsnames]{color}
@@ -90,19 +91,106 @@
 	en casos grandes como por ejemplo un vector de tamaño $10^{5}$ y una cantidad igualmente de consultas el tiempo 
 	de ejecución se hace muy alto, por lo tanto se hace necesario encontrar una mejor solución.	
 	
-	Como un aspecto clave se puede observar que la solución para la consulta [1,4] y la consulta [2,5] ambas tienen 
-	un intervalo en común, es decir, existe una superposición de problemas en el rango [2,4], otro aspecto clave es 
-	que el problema se puede reescribir de la siguiente manera: sea $suma(x)$ = $\sum_{k=1}^{x} V_{k}$ entonces:
-	$\sum_{k=i}^{j} V_{k} = suma(j) - suma(i-1)$ cuando $i \neq 1$. Ahora pre-calculando $suma(x)$ se puede dar 
-	una solución inmediata a cada consulta, esto se puede resolver utilizando un enfoque básico de programación 
-	dinámica
+	La operación suma tiene propiedades que nos pueden ayudar a resolver este problema de una forma mas eficiente:
+	\begin{enumerate}[1.]
+		\item La suma es asociativa es decir, se cumple: $a+(b+c)=(a+b)+c$, esto indica que sin importar 
+			la agrupación que se realice el resultado sera igual.
+		\item La suma posee elemento neutro, es decir existe un $\beta$ tal que $a + \beta = a$, en la suma 
+			$\beta = 0$.
+		\item La suma tiene operación inversa, es decir existe una operación que puede revertir la suma, la cual 
+			es la resta: si $a+b=c$ entonces $c-a=b$.
+	\end{enumerate}
 	
-	Para encontrar $suma(x)$ se puede reescribir como: $suma(x) = V_{x} + suma(x-1)$ con caso base 
-	$suma(1)=V_{1}$, de esta manera se tendría la siguiente solución en C++
+	Considerando las anteriores propiedades el problema se puede trabajar desde otro enfoque, primero se puede
+	definir $suma(x)$ = $\sum_{k=1}^{x} V_{k}$, ahora tomando como ejemplo una consulta en el rango [3,5] 
+	del vector $V$, se tiene que: $suma(2) = V_{1}+V_{2}$ y $suma(5) = V_{1}+V_{2}+V_{3}+V_{4}+V_{5}$,
+	pero se necesita encontrar $V_{3}+V_{4}+V_{5}$, usando la propiedad asociativa se obtiene: 
+	$(V_{1}+V_{2})+(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})$ y usando la propiedad inversa se llega a:
+	$(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})-(V_{1}+V_{2})$ por lo tanto 
+	$(V_{3}+V_{4}+V_{5})=suma(5)-suma(2)$. De esta manera el problema se puede generalizar como 
+	$\sum_{k=i}^{j} V_{k} = suma(j) - suma(i-1)$ cuando $i \neq 1$ y suma(j) cuando $i=1$.
+	
+	Ahora pre-calculando $suma(x)$ se puede dar una solución inmediata a cada consulta, esto se puede resolver 
+	utilizando un enfoque básico de programación dinámica. Para encontrar $suma(x)$ se puede reescribir como: 
+	$suma(x) = V_{x} + suma(x-1)$ con caso base $suma(1)=V_{1}$ y por definición tendremos que la operación acumulada
+	sobre un conjunto vacío es igual al elemento neutro, a partir de esto se puede obtener la siguiente solución en 
+	C++ con consultas indexando desde 1.
 	\cppfile[6-14]{codigos/tablas_aditivas.cpp}
+	
+	De manera general las tablas aditivas son aplicables a cualquier operación que posea las tres propiedades 
+	descritas anteriormente: ser asociativa, tener elemento neutro y operación inversa, por ejemplo la suma,
+	multiplicación o el operador de bits XOR.
 
-	\subtitulo{Suma de subconjuntos:}
-	Ejemplo de subtitulo
+	\subtitulo{Tablas aditivas en 2D}
+	Las operaciones acumuladas no solo se pueden usar sobre una dimension, sino también sobre n-dimensiones, en estos
+	casos se debe trabajar con el principio de inclusión-exclusión pues se debe considerar mejor las operaciones entre
+	intervalos, si no tiene en cuenta este principio las soluciones contendrían elementos duplicados o faltantes, lo 
+	que produciría soluciones incorrectas.
+	
+	\textbf{Ejemplo:} dada la matriz $M$ encontrar para múltiples consultas la suma de todos los elemento en una
+	submatriz $Q_{(i1,j1),(i2,j2)}$:
+	\begin{center}
+		$M = $
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			1  &9  &6 &3 &7\\ \hline
+			7  &5  &3 &0 &5\\ \hline
+			0  &7  &6 &5 &3\\ \hline
+			7  &8  &9 &5 &0\\ \hline
+			9  &5  &3 &7 &8\\ \hline
+		\end{tabular}
+	\end{center}
+	En el intervalo $Q_{(2,2),(3,4)}$ el resultado es $5+3+0+7+6+5=26$.
+
+	En el caso de 1D se definió $suma(x)$ = $\sum_{k=1}^{x} V_{k}$, ahora esta debe tener dos dimensiones, es decir, 
+	$suma(i,j)$ debe contener la suma de los elementos en la submatriz $Q_{(1,1),(i,j)}$, entonces ahora se definirá:
+	$suma(i,j)$ = $\sum_{k=1}^{i} \sum_{w=1}^{j} V_{k,w}$, mas sin embargo precalcular $suma(i,j)$ de forma eficiente
+	requiere de usar el principio de inclusión-exclusión, de manera trivial se puede calcular la primera fila como
+	$suma(1,j)$ = $\sum_{w=1}^{j} V_{1,w}$ y la primera columna como $suma(i,1)$ = $\sum_{k=1}^{i} V_{k,1}$, estos
+	servirán como casos base, ahora para pre-calcular el resto de la matriz se puede hacer a partir de resultados
+	anteriores pero se debe tener algo de cuidado, por ejemplo si se toma $suma(2,2) = suma(1,2) + suma(2,1) + M_{2,2}$
+	se obtendría un resultado incorrecto pues se estaría realizando la siguiente operación: 
+	$(M_{1,1}+M_{1,2}) + (M_{1,1},M_{2,1}) + M_{2,2}$, se puede observar que el elemento $M_{1,1}$ se esta sumando dos
+	veces, acá se aplica el principio de inclusión-exclusión: $|A| \cup |B| = |A| + |B| - |A \cap B|$ lo que significa
+	que hace falta quitar la intersección, esta es $suma(1,1)$ entonce se puede generalizar como: 
+	$suma(i,j)$ = $M_{i,j} + suma(i-1,j) + suma(i,j-1) - suma(i-1,j-1)$.
+	
+	Una vez construido el pre-calculo es necesario realizar las consultas, de igual manera se debe tener cuidado de
+	no sumar un mismo intervalo mas de una vez, entonces para encontrar la suma en el intervalo $Q_{(i1,j1),(i2,j2)}$
+	se tomaría $suma(i2,j2)$ esta contendría $\sum_{k=1}^{i2} \sum_{w=1}^{j2} V_{k,w}$, esta tiene elemento adicionales
+	como lo muestra la figura 1, al restarle $suma(i1-1,j2)$ se quitan algunos elementos (figura 2), al restarle
+	$suma(i2,j1-1)$ pasaríamos a restar dos veces el intervalo $M_{(1,1),(i1-1,j1-1)}$ (figura 3), por lo tanto es
+	necesario reponer lo restante agregando $suma(i1-1,j1-1)$ (figura 4), de esta manera se puede generalizar la 
+	formula: $\sum_{k=i1}^{i2} \sum_{w=j1}^{j2} V_{k,w}$ = $suma(i2,j2)-suma(i1-1,j2)-suma(i2,j1-1)+suma(i1-1,j1-1)$.
+	
+	
+	\begin{figure}[!htb]
+		\minipage{0.25\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/img1}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.25\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/img2}
+			\caption{}
+		\endminipage
+		\minipage{0.25\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/img3}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.25\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/img4}
+			\caption{}
+		\endminipage
+	\end{figure}
+	
+	Para la solución en C++ la primera fila y columna de la tabla donde se guardara el pre-calculo se deberá llenar
+	con el elemento neutro, el cero, luego los casos base (la primera fila y columna) y por ultimo se llenaría el
+	resto de la tabla siguiendo las formulas antes establecidas.
+	\cppfile[26-42]{codigos/tablas_aditivas.cpp}
 	
 	\section{Bibliografia}
 	

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  10 MAR 2020 21:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  12 MAR 2020 22:42
 entering extended mode
 **./estructuras.tex
 (estructuras.tex
@@ -206,26 +206,46 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count106
+\c@continuedfloat=\count107
+)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
 ngs.sty"
-\lst@mode=\count106
+\lst@mode=\count108
 \lst@gtempboxa=\box29
 \lst@token=\toks25
-\lst@length=\count107
-\lst@currlwidth=\dimen123
-\lst@column=\count108
-\lst@pos=\count109
-\lst@lostspace=\dimen124
-\lst@width=\dimen125
-\lst@newlines=\count110
-\lst@lineno=\count111
-\lst@maxwidth=\dimen126
+\lst@length=\count109
+\lst@currlwidth=\dimen130
+\lst@column=\count110
+\lst@pos=\count111
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count112
+\lst@lineno=\count113
+\lst@maxwidth=\dimen133
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count112
-\lst@skipnumbers=\count113
+\c@lstnumber=\count114
+\lst@skipnumbers=\count115
 \lst@framebox=\box30
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
@@ -265,20 +285,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `estructuras.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -318,16 +338,16 @@ LaTeX Info: Redefining \% on input line 69.
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen127
+\scratchcounter=\count116
+\scratchdimen=\dimen134
 \scratchbox=\box31
-\nofMPsegments=\count115
-\nofMParguments=\count116
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen128
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen135
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
@@ -383,34 +403,60 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count120
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 85.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count122
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 86.
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
 "
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 85.
- (codigos/tablas_aditivas.cpp) [1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
+ [1
 
 {C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 109--113
+(codigos/tablas_aditivas.cpp) [2]
+<imagenes/img1.png, id=18, 240.9pt x 240.9pt>
+File: imagenes/img1.png Graphic file (type png)
+<use imagenes/img1.png>
+Package pdftex.def Info: imagenes/img1.png  used on input line 170.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<imagenes/img2.png, id=19, 240.9pt x 240.9pt>
+File: imagenes/img2.png Graphic file (type png)
+<use imagenes/img2.png>
+Package pdftex.def Info: imagenes/img2.png  used on input line 175.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<imagenes/img3.png, id=20, 240.9pt x 240.9pt>
+File: imagenes/img3.png Graphic file (type png)
+<use imagenes/img3.png>
+Package pdftex.def Info: imagenes/img3.png  used on input line 180.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<imagenes/img4.png, id=21, 240.9pt x 240.9pt>
+File: imagenes/img4.png Graphic file (type png)
+<use imagenes/img4.png>
+Package pdftex.def Info: imagenes/img4.png  used on input line 185.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+ (codigos/tablas_aditivas.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 197--201
 
  []
 
-[2] (estructuras.aux
+[3 <./imagenes/img1.png> <./imagenes/img2.png> <./imagenes/img3.png> <./imagene
+s/img4.png>] (estructuras.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5569 strings out of 492946
- 77996 string characters out of 3124490
- 369907 words of memory out of 3000000
- 9379 multiletter control sequences out of 15000+200000
+ 6712 strings out of 492946
+ 98789 string characters out of 3124490
+ 440893 words of memory out of 3000000
+ 10508 multiletter control sequences out of 15000+200000
  10449 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,58p,280b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,58p,280b,1329s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
@@ -421,12 +467,13 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
 /amsfonts/cm/cmr6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
-s/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb>
-Output written on estructuras.pdf (2 pages, 107516 bytes).
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users
+/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb>
+Output written on estructuras.pdf (3 pages, 136017 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
