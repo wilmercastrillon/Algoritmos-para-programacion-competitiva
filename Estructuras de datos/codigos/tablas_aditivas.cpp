@@ -25,14 +25,8 @@ int M[20][20], memo[20][20], fila, col;
 
 void precalcular(){
     memset(memo, 0, sizeof(memo));
-    memo[1][1] = M[0][0];
-    for (int i = 2; i <= fila; i++)
-        memo[i][1] = memo[i-1][1] + M[i - 1][0];
-    for (int j = 2; j <= col; j++)
-        memo[1][j] = memo[1][j-1] + M[0][j - 1];
-
-    for (int i = 2; i <= fila; i++)
-    for (int j = 2; j <= col; j++)
+    for (int i = 1; i <= fila; i++)
+    for (int j = 1; j <= col; j++)
         memo[i][j] = memo[i][j - 1] + memo[i - 1][j] +
                         M[i - 1][j - 1] - memo[i - 1][j - 1];
 }

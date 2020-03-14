@@ -74,12 +74,12 @@
 	Son estructuras de datos utilizadas para realizar operaciones acumuladas sobre un conjunto de datos estáticos
 	en un rango específico, es decir, ejecutar una misma operación(como por ejemplo la suma) sobre un intervalo
 	de datos, se asume que los datos en la estructura no van a cambiar. Estas estructuras también son conocidas como
-	\textit{Cumulative Frequency Table} o de manera mas informal \textit{Tablas aditivas}, aunque no necesariamente 
-	son exclusivas para operaciones de suma, pues la idea general es aplicable a otras operaciones.
+	\textit{Summed-area table} para el procesamiento de imágenes, a pesar de su nombre no necesariamente son 
+	exclusivas para operaciones de suma, pues la idea general es aplicable a otras operaciones.
 	
 	Durante el cálculo de una misma operación sobre diferentes rangos se presenta superposición de problemas, las 
 	tablas aditivas son utilizadas para reducir la complejidad computacional aprovechando estas superposiciones
-	utilizando tablas de memorización.	
+	utilizando programación dinámica.
 	
 	\subtitulo{Ejemplo inicial.}
 	
@@ -88,13 +88,13 @@
 	
 	La solución trivial es hacer un ciclo recorriendo el vector entre el intervalo [i,j], en el peor de los casos se
 	debe recorrer todo el vector, esto tiene una complejidad $O(n)$ puede que para una consulta sea aceptable, pero
-	en casos grandes como por ejemplo un vector de tamaño $10^{5}$ y una cantidad igualmente de consultas el tiempo 
-	de ejecución se hace muy alto, por lo tanto se hace necesario encontrar una mejor solución.	
+	en casos grandes como por ejemplo un vector de tamaño $10^{5}$ y una cantidad igualmente grande de consultas el
+	tiempo de ejecución se hace muy alto, por lo tanto se hace necesario encontrar una mejor solución.	
 	
 	La operación suma tiene propiedades que nos pueden ayudar a resolver este problema de una forma mas eficiente:
 	\begin{enumerate}[1.]
 		\item La suma es asociativa es decir, se cumple: $a+(b+c)=(a+b)+c$, esto indica que sin importar 
-			la agrupación que se realice el resultado sera igual.
+			la agrupación que se realice el resultado sera igual (no confundir con propiedad conmutativa).
 		\item La suma posee elemento neutro, es decir existe un $\beta$ tal que $a + \beta = a$, en la suma 
 			$\beta = 0$.
 		\item La suma tiene operación inversa, es decir existe una operación que puede revertir la suma, la cual 
@@ -103,17 +103,17 @@
 	
 	Considerando las anteriores propiedades el problema se puede trabajar desde otro enfoque, primero se puede
 	definir $suma(x)$ = $\sum_{k=1}^{x} V_{k}$, ahora tomando como ejemplo una consulta en el rango [3,5] 
-	del vector $V$, se tiene que: $suma(2) = V_{1}+V_{2}$ y $suma(5) = V_{1}+V_{2}+V_{3}+V_{4}+V_{5}$,
+	del vector $V$, se tomara convenientemente: $suma(2) = V_{1}+V_{2}$ y $suma(5) = V_{1}+V_{2}+V_{3}+V_{4}+V_{5}$,
 	pero se necesita encontrar $V_{3}+V_{4}+V_{5}$, usando la propiedad asociativa se obtiene: 
 	$(V_{1}+V_{2})+(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})$ y usando la propiedad inversa se llega a:
 	$(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})-(V_{1}+V_{2})$ por lo tanto 
 	$(V_{3}+V_{4}+V_{5})=suma(5)-suma(2)$. De esta manera el problema se puede generalizar como 
-	$\sum_{k=i}^{j} V_{k} = suma(j) - suma(i-1)$ cuando $i \neq 1$ y suma(j) cuando $i=1$.
+	$\sum_{k=i}^{j} V_{k} = suma(j) - suma(i-1)$ cuando $i \neq 1$ y $suma(j)$ cuando $i=1$.
 	
 	Ahora pre-calculando $suma(x)$ se puede dar una solución inmediata a cada consulta, esto se puede resolver 
 	utilizando un enfoque básico de programación dinámica. Para encontrar $suma(x)$ se puede reescribir como: 
-	$suma(x) = V_{x} + suma(x-1)$ con caso base $suma(1)=V_{1}$ y por definición tendremos que la operación acumulada
-	sobre un conjunto vacío es igual al elemento neutro, a partir de esto se puede obtener la siguiente solución en 
+	$suma(x) = V_{x} + suma(x-1)$ con caso base $suma(1)=V_{1}$ y por definición la operación acumulada sobre un 
+	conjunto vacío es igual al elemento neutro, a partir de esto se puede obtener la siguiente solución en 
 	C++ con consultas indexando desde 1.
 	\cppfile[6-14]{codigos/tablas_aditivas.cpp}
 	
@@ -122,6 +122,7 @@
 	multiplicación o el operador de bits XOR.
 
 	\subtitulo{Tablas aditivas en 2D}
+	
 	Las operaciones acumuladas no solo se pueden usar sobre una dimension, sino también sobre n-dimensiones, en estos
 	casos se debe trabajar con el principio de inclusión-exclusión pues se debe considerar mejor las operaciones entre
 	intervalos, si no tiene en cuenta este principio las soluciones contendrían elementos duplicados o faltantes, lo 
@@ -144,25 +145,25 @@
 
 	En el caso de 1D se definió $suma(x)$ = $\sum_{k=1}^{x} V_{k}$, ahora esta debe tener dos dimensiones, es decir, 
 	$suma(i,j)$ debe contener la suma de los elementos en la submatriz $Q_{(1,1),(i,j)}$, entonces ahora se definirá:
-	$suma(i,j)$ = $\sum_{k=1}^{i} \sum_{w=1}^{j} V_{k,w}$, mas sin embargo precalcular $suma(i,j)$ de forma eficiente
+	$suma(i,j)$ = $\sum_{k=1}^{i} \sum_{w=1}^{j} M_{k,w}$, mas sin embargo pre-calcular $suma(i,j)$ de forma eficiente
 	requiere de usar el principio de inclusión-exclusión, de manera trivial se puede calcular la primera fila como
-	$suma(1,j)$ = $\sum_{w=1}^{j} V_{1,w}$ y la primera columna como $suma(i,1)$ = $\sum_{k=1}^{i} V_{k,1}$, estos
-	servirán como casos base, ahora para pre-calcular el resto de la matriz se puede hacer a partir de resultados
-	anteriores pero se debe tener algo de cuidado, por ejemplo si se toma $suma(2,2) = suma(1,2) + suma(2,1) + M_{2,2}$
-	se obtendría un resultado incorrecto pues se estaría realizando la siguiente operación: 
-	$(M_{1,1}+M_{1,2}) + (M_{1,1},M_{2,1}) + M_{2,2}$, se puede observar que el elemento $M_{1,1}$ se esta sumando dos
-	veces, acá se aplica el principio de inclusión-exclusión: $|A| \cup |B| = |A| + |B| - |A \cap B|$ lo que significa
-	que hace falta quitar la intersección, esta es $suma(1,1)$ entonce se puede generalizar como: 
-	$suma(i,j)$ = $M_{i,j} + suma(i-1,j) + suma(i,j-1) - suma(i-1,j-1)$.
+	$suma(1,j)$ = $\sum_{w=1}^{j} M_{1,w}$ y la primera columna como $suma(i,1)$ = $\sum_{k=1}^{i} M_{k,1}$, en base
+	a esto se puede calcular el resto de la matriz pero se debe tener algo de cuidado, por ejemplo si se toma 
+	$suma(2,2) = suma(1,2) + suma(2,1) + M_{2,2}$ se obtendría un resultado incorrecto pues se estaría realizando la
+	siguiente operación: $(M_{1,1}+M_{1,2}) + (M_{1,1},M_{2,1}) + M_{2,2}$, se puede observar que el elemento 
+	$M_{1,1}$ se esta sumando dos veces, acá se aplica el principio de inclusión-exclusión: 
+	$|A| \cup |B| = |A| + |B| - |A \cap B|$ lo que significa que hace falta quitar la intersección, esta es 
+	$suma(1,1)$ entonce se puede generalizar como: $suma(i,j)$ = $M_{i,j} + suma(i-1,j) + suma(i,j-1) - suma(i-1,j-1)$
+	cuando $i,j \neq 1$.
 	
-	Una vez construido el pre-calculo es necesario realizar las consultas, de igual manera se debe tener cuidado de
-	no sumar un mismo intervalo mas de una vez, entonces para encontrar la suma en el intervalo $Q_{(i1,j1),(i2,j2)}$
-	se tomaría $suma(i2,j2)$ esta contendría $\sum_{k=1}^{i2} \sum_{w=1}^{j2} V_{k,w}$, esta tiene elemento adicionales
+	Una vez construido el pre-calculo es necesario realizar las consultas, se utilizara como ejemplo la consulta en
+	el rango $Q_{(2,2),(3,4)}$, de igual manera se debe tener cuidado de no sumar un mismo intervalo mas de una vez,
+	entonces para encontrar la suma en este intervalo se tomaría $suma(i2,j2)$ esta contendría 
+	$\sum_{k=1}^{i2} \sum_{w=1}^{j2} M_{k,w}$, esta tiene elemento adicionales
 	como lo muestra la figura 1, al restarle $suma(i1-1,j2)$ se quitan algunos elementos (figura 2), al restarle
 	$suma(i2,j1-1)$ pasaríamos a restar dos veces el intervalo $M_{(1,1),(i1-1,j1-1)}$ (figura 3), por lo tanto es
-	necesario reponer lo restante agregando $suma(i1-1,j1-1)$ (figura 4), de esta manera se puede generalizar la 
-	formula: $\sum_{k=i1}^{i2} \sum_{w=j1}^{j2} V_{k,w}$ = $suma(i2,j2)-suma(i1-1,j2)-suma(i2,j1-1)+suma(i1-1,j1-1)$.
-	
+	necesario reponer lo faltante agregando $suma(i1-1,j1-1)$ (figura 4), de esta manera se puede generalizar la 
+	formula: $\sum_{k=i1}^{i2} \sum_{w=j1}^{j2} M_{k,w}$ = $suma(i2,j2)-suma(i1-1,j2)-suma(i2,j1-1)+suma(i1-1,j1-1)$.
 	
 	\begin{figure}[!htb]
 		\minipage{0.25\textwidth}
@@ -187,17 +188,33 @@
 		\endminipage
 	\end{figure}
 	
-	Para la solución en C++ la primera fila y columna de la tabla donde se guardara el pre-calculo se deberá llenar
-	con el elemento neutro, el cero, luego los casos base (la primera fila y columna) y por ultimo se llenaría el
-	resto de la tabla siguiendo las formulas antes establecidas.
-	\cppfile[26-42]{codigos/tablas_aditivas.cpp}
+	Para la solución en C++ la fila y columna cero de la tabla donde se guardara el pre-calculo se deberá llenar
+	con el elemento neutro, el cero, luego se debe llenar el resto de la tabla siguiendo las formulas antes 
+	establecidas, este ejemplo es para consultas indexando desde 1.
+	\cppfile[26-36]{codigos/tablas_aditivas.cpp}
+	
+	\subtitulo{Tablas aditivas en 3D}
+	
+	Las tablas aditivas se pueden generalizar para trabajar en n-dimensiones, mas sin embargo la dificultad de hacer 
+	los pre-cálculos y las consultas aumenta bastante, pues crece considerablemente la cantidad de operaciones a
+	realizar. En el caso 3D igualmente se debe tener cuidado con el principio de inclusión-exclusión, el 
+	pre-calculo se realizaría de la siguiente manera: sea 
+	$suma(i,j,k)$ = $\sum_{x=1}^{i} \sum_{y=1}^{j} \sum_{z=1}^{k} V_{x,y,z}$, entonces  
+	$suma(i,j,k) = V_{i,j,k} + suma(i,j,k-1)+suma(i-1,j,k)+suma(i,j-1,k)-suma(i-1,j-1,k)-suma(i-1,j,k-1)
+	-suma(i,j-1,k-1)+suma(i-1,j-1,k-1)$, y para las consultas: $\sum_{x=i1}^{i2} \sum_{y=j1}^{j2} \sum_{z=k1}^{k2}
+	V_{x,y,z} = suma(i2,j2,k2)-suma(i2,j2,k1-1)-suma(i1-1,j2,k2)+suma(i1-1,j2,k1-1)-suma(i2,j1-1,k2)
+	+suma(i2,j1-1,k1-1)+suma(i1-1,j1-1,k2)-suma(i1-1,j1-1,k1-1)$.
+	
+	Esta estructura de datos puede ser aplicada para otras operaciones que cumplan con las tres propiedades descritas
+	anteriormente, la complejidad computacional de hacer el pre-calculo es lineal a la cantidad de
+	elementos en la estructura, y las consultas se realizan en complejidad constante al realizar solamente operaciones
+	directas sobre elementos en la tabla del pre-calculo.
 	
 	\section{Bibliografia}
 	
-	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\
-	http://programacioncompetitivaufps.github.io/\\
-	https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/\\
-	libro: competitive programming 3.\\
+	%https://en.wikipedia.org/wiki/Summed-area_table.\\ 
+	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\ 
+	libro: competitive programming 3.\\ 
 
 
 
