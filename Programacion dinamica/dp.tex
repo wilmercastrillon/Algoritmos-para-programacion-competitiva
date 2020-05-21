@@ -99,8 +99,8 @@
 	
 	Ahora se buscará la manera de calcular y guardar en un vector los primeros $n$ números de la sucesión 
 	eficientemente, de tal forma que la posición i-esima del vector corresponda al número i-esimo de la sucesión.
-	Para solucionar el problema con dp primero debemos identificar los sub-problemas, en este caso obtenemos la 
-	siguiente formula recursiva:\\
+	Para solucionar el problema con dp primero debemos identificar los sub-problemas, es decir dividir el problema en
+	partes mas pequeñas, en este caso obtenemos la siguiente formula recursiva:\\
 	\begin{center}
 		$fibo(n) = 	
 			\begin{cases}
@@ -144,9 +144,9 @@
 	no es muy notorio pero cuando intentamos encontrar $fibo(42)$ o $fibo(45)$ el tiempo de ejecución se hace
 	muy alto, entonces para mejorar el tiempo se debe implementar una tabla de memorización, en la cual se guardara
 	el resultado de cada llamado recursivo, ademas se debe agregar un condicional al inicio del método preguntando
-	si la solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado sino se calcula
-	y se guarda, en este ejemplo la tabla comienza llena con -1 (un valor que nunca es usado en la solución), de 
-	tal forma que si una posición tiene como valor -1 entonces se debe calcular.
+	si la solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado, sino se calcula
+	y se guarda, en este ejemplo la tabla comienza llena con -1, un valor que nunca es usado en la solución, de 
+	tal forma que si una posición es igual a -1 entonces se debe calcular.
 	\cppfile[22-31]{codigos/fibo.cpp}
 	Este ejercicio resulta muy trivial, se puede resolver facilmente sin pensar en dp, ahora se mostraran
 	problemas en los cuales se hace necesario utilizar dp para dar una solución eficiente.
@@ -180,19 +180,22 @@
 	\end{center}
 	No es una solución óptima ir a la siguiente casilla con mayor valor, pues haciendo esto se tendría el siguiente
 	camino 1-12-5-21-15-10-15 con un acumulado de 79, en cambio el camino 1-6-35-18-8-10-15 tiene un acumulado de 93,
-	entonces con la anterior estrategia no siempre se obtiene el camino óptimo.\\
+	entonces con la anterior estrategia no siempre se obtiene el camino óptimo. En este problema es necesario realizar
+	una toma de decisiones, pues existen múltiples opciones de caminos, y se necesita encontrar el conjunto de
+	decisiones que permita llegar a un resultado optimo, una solución inicial puede ser con BackTraking pero esta 
+	tendría complejidad exponencial O($2^{n}$), por lo tanto se necesita utilizar otro enfoque.\\
 	
-	Este problema se puede resolver con programación dinámica, pues se puede encontrar la solución general a
-	partir de la solución de sub-problemas más pequeños, supongamos	que tenemos una matriz $T$ de tamaño $n$ x $m$
-	a la cual se va a calcular la suma de su recorrido óptimo, para facilidad se indexara desde 1 tomando
-	la esquina superior-izquierda como T[1][1], para encontrar el camino óptimo hasta T[n][m](ultima casilla)
-	es necesario primero encontrar el óptimo de T[n-1][m] y T[n][m-1], pues para llegar a T[n][m] hay dos opciones,
-	llegar por arriba (equivalente a tomar la decisión ir-abajo desde T[n-1][m]) o llegar por la izquierda 
-	(equivalente a tomar la decisión ir-derecha desde T[n][m-1]), entonces la solución general sera 
-	\textit{T[n][m] + máximo entre(camino óptimo hasta T[n-1][m], camino óptimo hasta T[n][m-1])}, y a su vez
-	el óptimo para ellos se calcula de manera similar, el optimo para llegar hasta T[n-1][m] es 
-	\textit{T[n-1][m] + máximo entre(camino óptimo hasta T[n-2][m], camino óptimo hasta T[n-1][m-1])} y 
-	de manera similar para T[n][m-1], de esta forma se puede dividir el problema en sub-problemas.\\
+	Este problema se puede resolver con programación dinámica, pues se puede encontrar la solución general a partir de 
+	la solución de sub-problemas más pequeños, supongamos que tenemos una matriz $T$ de tamaño $n$ x $m$ a la cual se 
+	va a calcular la suma de su recorrido óptimo, para facilidad se indexara desde 1 tomando la esquina superior
+	izquierda como T[1][1], para encontrar el camino óptimo hasta T[n][m](ultima casilla) es necesario primero 
+	encontrar el óptimo de T[n-1][m] y T[n][m-1], pues para llegar a T[n][m] hay dos opciones, llegar por arriba
+	(equivalente a tomar la decisión ir-abajo desde T[n-1][m]) o llegar por la izquierda (equivalente a tomar la 
+	decisión ir-derecha desde T[n][m-1]), entonces la solución general sera \textit{T[n][m] + máximo entre(camino 
+	óptimo hasta T[n-1][m], camino óptimo hasta T[n][m-1])}, y a su vez el óptimo para ellos se calcula de manera
+	similar, el  optimo para llegar hasta T[n-1][m] es \textit{T[n-1][m] + máximo entre(camino óptimo hasta T[n-2][m],
+	camino óptimo hasta T[n-1][m-1])} y  de manera similar para T[n][m-1], de esta forma se puede dividir el problema 
+	en sub-problemas.\\
 	
 	Ahora ya se puede empezar a construir una formula recursiva, llamaremos $i$ a la posición en fila y $j$ a la 
 	posición en columna, entonces $f(i,j)$ devolverá el valor del recorrido optimo desde T[1][1] hasta T[i][j], 
@@ -211,6 +214,31 @@
 		\end{cases}
 	$\\
 	\end{center}
+	Realzando manualmente la función recursiva se puede tener mas claridad. El caso $f(1,1)$ indica que la solución
+	es el elemento en la primera casilla, la solución para la primera fila sera la sumatoria de los elementos desde 
+	la primera casilla hasta la columna correspondiente, ese es el único camino posible, de similar manera ocurre
+	con la primera columna (figura 1), para los demás casos se abren dos opciones, llegar desde arriba o llegar desde
+	la izquierda (figura 2), la formula indica tomar el de mayor valor, de esta manera mientras se avanza se ira 
+	seleccionando el mejor camino hasta llegar a la ultima casilla.\\
+	
+	\begin{figure}[!htb]
+		\minipage{0.33\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/matriz1}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.33\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/matriz2}
+			\caption{}
+		\endminipage
+		\minipage{0.33\textwidth}
+			\centering
+			\includegraphics[scale=0.4]{imagenes/matriz3}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+	\end{figure}
+	
 	Para terminar el dp es necesario agregar la tabla de memorización, pues aplicar la formula directamente resultaría
 	en un algoritmo de complejidad exponencial, como tabla de memorización se usara otra matriz de igual tamaño,
 	esta se llamara memo y guardara las soluciones, es decir, que en memo[i][j] se guardara el acumulado óptimo para 
@@ -234,17 +262,18 @@
 	con este conjunto $V$ seria posible sumar \{1, 2, 3, 5, 6, 7, 8\}.\\
 	
 	Utilizando un algoritmo de BackTraking para probar todos los posibles subconjuntos se obtendría una complejidad
-	O($2^{n}$), siendo bastante alta. Este problema puede ser resuelto usando dp, se puede reescribir el numero $n$
-	como: $n=V[k_{1}]+x_{1}$, con $V[k_{1}]$ como algún numero en $V$, de manera similar se puede reescribir $x_{1}$
-	como $x_{1}=v[k_{2}]+x_{2}$ y así sucesivamente hasta encontrar $x_{n}=v[k_{n}]+0$, de esta manera si se toma 
-	cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto: $n=v[k_{1}]+v[k_{2}]+...+v[k_{n}]$,
-	en general se deberá probar cada elemento en $V$ si pertenece o no a la solución.\\
+	O($2^{n}$), siendo bastante alta aun para rango pequeños. Este problema puede ser resuelto usando dp, se puede
+	reescribir el numero $n$ como: $n=V[k_{1}]+x_{1}$, con $V[k_{1}]$ como algún numero en $V$, de manera similar se
+	puede reescribir $x_{1}$ como $x_{1}=v[k_{2}]+x_{2}$ y así sucesivamente hasta encontrar $x_{n}=v[k_{n}]+0$, de 
+	esta manera si se toma cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto:
+	${v[k_{1}],v[k_{2}],...,v[k_{n}]}$ el cual sumando todos sus elementos obtenemos $n$, en general se deberá probar
+	para cada elemento en $V$ si puede pertenecer a algún subconjunto que sume $n$.
 	
 	En este problema el resultado deberá ser 'verdadero' o 'falso', mostrando si es posible sumar $n$ con algún 
-	subconjunto de $V$, con los subproblemas establecidos se puede ahora definir los casos base, si en algún momento 
+	subconjunto, con los sub-problemas establecidos se puede ahora definir los casos base, si en algún momento 
 	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero'(solo con encontrar una solución ya se puede 
 	afirmar que es posible sumar $n$), pero si en algún momento usamos todos los elementos en $V$ y aun $x_{n}>0$, o 
-	en algún momento se llega a $x_{n}<0$ entonces la solución en ese subproblema sera 'falso', entonces se tiene la
+	en algún momento se llega a $x_{n}<0$ entonces la solución en ese sub-problema sera 'falso', entonces se tiene la
 	siguiente función recursiva(siendo 1 verdadero, y 0 falso):
 	\begin{center}
 		$f(n, k) = 	
@@ -268,8 +297,8 @@
 	y así sucesivamente hasta llegar a $V[1]$ que sera nuestro caso base, mas detalladamente la solución hasta $V[1]$ 
 	es solamente él mismo, las soluciones hasta $V[2]$ es él mismo, $V[1]$ y la suma $V[1]+V[2]$, el conjunto de
 	soluciones hasta ahora es \{$V[1]$, $V[2]$, $V[1]+V[2]$\}, ahora la solución hasta $V[3]$ sera 
-	\{$V[1]$, $V[2]$, $V[1]+V[2]$, $V[1]+V[3]$, $V[2]+V[3]$, $V[1]+V[2]+V[3]$\}, y así sucesivamente hasta $V[n]$,
-	descartando números repetidos.\\
+	\{$V[1]$, $V[2]$, $V[3]$, $V[1]+V[2]$, $V[1]+V[3]$, $V[2]+V[3]$, $V[1]+V[2]+V[3]$\}, y así sucesivamente hasta 
+	$V[m]$, descartando números repetidos.\\
 	
 	Por ejemplo sea $V$=\{3, 5 y 8\}, la solución hasta 3 es él mismo, el conjunto de soluciones hasta ahora es \{3\},
 	la solución hasta 5 es él mismo y su suma con las soluciones anteriores, el conjunto de soluciones cambia a 

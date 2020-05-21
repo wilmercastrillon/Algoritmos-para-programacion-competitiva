@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  13 MAY 2020 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  20 MAY 2020 22:36
 entering extended mode
-**./dp.tex
-(dp.tex
+**./grafos.tex
+(grafos.tex
 LaTeX2e <2018-12-01>
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.c
@@ -206,26 +206,46 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n.sty"
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\captio
+n3.sty"
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count106
+\c@continuedfloat=\count107
+)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
 ngs.sty"
-\lst@mode=\count106
+\lst@mode=\count108
 \lst@gtempboxa=\box29
 \lst@token=\toks25
-\lst@length=\count107
-\lst@currlwidth=\dimen123
-\lst@column=\count108
-\lst@pos=\count109
-\lst@lostspace=\dimen124
-\lst@width=\dimen125
-\lst@newlines=\count110
-\lst@lineno=\count111
-\lst@maxwidth=\dimen126
+\lst@length=\count109
+\lst@currlwidth=\dimen130
+\lst@column=\count110
+\lst@pos=\count111
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count112
+\lst@lineno=\count113
+\lst@maxwidth=\dimen133
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count112
-\lst@skipnumbers=\count113
+\c@lstnumber=\count114
+\lst@skipnumbers=\count115
 \lst@framebox=\box30
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
@@ -259,26 +279,26 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-) (dp.aux
+) (grafos.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
-\openout1 = `dp.aux'.
+\openout1 = `grafos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Info: Redefining \. on input line 70.
+LaTeX Info: Redefining \% on input line 70.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -318,16 +338,16 @@ LaTeX Info: Redefining \% on input line 69.
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen127
+\scratchcounter=\count116
+\scratchdimen=\dimen134
 \scratchbox=\box31
-\nofMPsegments=\count115
-\nofMParguments=\count116
+\nofMPsegments=\count117
+\nofMParguments=\count118
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen128
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
+\MPscratchCnt=\count119
+\MPscratchDim=\dimen135
+\MPnumerator=\count120
+\makeMPintoPDFobject=\count121
 \everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
@@ -383,148 +403,52 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count120
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
-
- []
-
-[1
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count122
+ [1
 
 {C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
-
- []
-
-(codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
-
- []
-
-<imagenes/arbol_recursion.png, id=11, 371.13657pt x 252.19218pt>
-File: imagenes/arbol_recursion.png Graphic file (type png)
-<use imagenes/arbol_recursion.png>
-Package pdftex.def Info: imagenes/arbol_recursion.png  used on input line 138.
-(pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
-[2] (codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
-
+<imagenes/grafo_ejemplo_lista_ady.png, id=8, 188.20313pt x 188.20313pt>
+File: imagenes/grafo_ejemplo_lista_ady.png Graphic file (type png)
+<use imagenes/grafo_ejemplo_lista_ady.png>
+Package pdftex.def Info: imagenes/grafo_ejemplo_lista_ady.png  used on input li
+ne 132.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+ (codigos/DFS.cpp)
+Overfull \hbox (19.18631pt too wide) in paragraph at lines 130--139
+[]$[]$$[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 150--153
 
  []
 
-[3 <./imagenes/arbol_recursion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--223
-
- []
-
-<imagenes/matriz1.png, id=20, 282.30469pt x 282.30469pt>
-File: imagenes/matriz1.png Graphic file (type png)
-<use imagenes/matriz1.png>
-Package pdftex.def Info: imagenes/matriz1.png  used on input line 227.
-(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<imagenes/matriz2.png, id=21, 282.30469pt x 282.30469pt>
-File: imagenes/matriz2.png Graphic file (type png)
-<use imagenes/matriz2.png>
-Package pdftex.def Info: imagenes/matriz2.png  used on input line 232.
-(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<imagenes/matriz3.png, id=23, 282.30469pt x 282.30469pt>
-File: imagenes/matriz3.png Graphic file (type png)
-<use imagenes/matriz3.png>
-Package pdftex.def Info: imagenes/matriz3.png  used on input line 237.
-(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-[4] (codigos/matriz.cpp) (codigos/matriz.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
-
- []
-
-[5 <./imagenes/matriz1.png> <./imagenes/matriz2.png> <./imagenes/matriz3.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
-
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
-"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 261.
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
-
- []
-
-(codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 293--302
-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 303--307
-
- []
-
-(codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 318--321
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
-
- []
-
-[7] [8] (dp.aux
+[2 <./imagenes/grafo_ejemplo_lista_ady.png>] [3] (grafos.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5655 strings out of 492946
- 79502 string characters out of 3124490
- 440907 words of memory out of 3000000
- 9446 multiletter control sequences out of 15000+200000
- 10676 words of font info for 39 fonts, out of 3000000 for 9000
+ 6638 strings out of 492946
+ 97655 string characters out of 3124490
+ 375893 words of memory out of 3000000
+ 10443 multiletter control sequences out of 15000+200000
+ 10102 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,58p,271b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,58p,275b,1495s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
-s/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb>
-Output written on dp.pdf (8 pages, 210515 bytes).
+/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/wilmer-PC/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
+wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
+.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmtt12.pfb>
+Output written on grafos.pdf (3 pages, 73731 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
