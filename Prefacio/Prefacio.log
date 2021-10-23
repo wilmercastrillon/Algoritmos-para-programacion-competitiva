@@ -1,0 +1,137 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  22 OCT 2021 23:32
+entering extended mode
+**./Prefacio.tex
+(Prefacio.tex
+LaTeX2e <2018-12-01>
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.c
+ls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.cl
+o"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+sty"
+Package: babel 2018/11/13 3.27 The Babel package
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch
+.def"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.
+cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-spanish\
+spanish.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
+def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbab
+el.def")
+\bbl@dirlevel=\count89
+)
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+)) (Prefacio.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
+\openout1 = `Prefacio.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+[1
+
+{C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(Prefacio.aux
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+) ) 
+Here is how much of TeX's memory you used:
+ 1142 strings out of 492946
+ 15134 string characters out of 3124490
+ 86150 words of memory out of 3000000
+ 5100 multiletter control sequences out of 15000+200000
+ 4544 words of font info for 17 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 27i,4n,31p,166b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on Prefacio.pdf (1 page, 25178 bytes).
+PDF statistics:
+ 14 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

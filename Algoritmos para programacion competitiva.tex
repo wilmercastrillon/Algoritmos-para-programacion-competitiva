@@ -1,0 +1,88 @@
+\documentclass[12pt, a4paper, oneside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{titling}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{catchfilebetweentags}
+
+\usepackage{listings}%-para agregar codigo-
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{color}%------------------------
+
+%---------------------importar codigo desde archivos cpp----------------------------
+\lstloadlanguages{C++}
+\lstnewenvironment{code}
+	{%\lstset{	numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
+	 \csname lst@SetFirstLabel\endcsname}
+	{\csname lst@SaveFirstLabel\endcsname}
+\lstset{% general command to set parameter(s)
+	language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+	emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
+	morekeywords={tint,forn,forsn},
+	basewidth={0.47em,0.40em},
+	columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+	flexiblecolumns=false, tabsize=2, breaklines,	breakatwhitespace=false, extendedchars=true,
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+	frame=l, framesep=3pt,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#}
+}
+
+\lstdefinestyle{C++}{
+	language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
+	emph=[1]{tipo,usa,tipo2}, emphstyle={[1]\sffamily\bfseries},
+	morekeywords={tint,forn,forsn},
+	basewidth={0.47em,0.40em},
+	columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
+	flexiblecolumns=false, tabsize=2, breaklines,	breakatwhitespace=false, extendedchars=true,
+	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
+	frame=l, framesep=3pt,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#}
+}
+
+\def\nbtitle#1{\begin{Large}\begin{center}\textbf{#1}\end{center}\end{Large}}
+\def\nbsection#1{\section{#1}}
+\def\nbsubsection#1{\subsection{#1}}
+\def\nbcoment#1{\begin{small}\textbf{#1}\end{small}}
+\newcommand{\comb}[2]{\left( \begin{array}{c} #1 \\ #2 \end{array}\right)}
+\def\complexity#1{\texorpdfstring{$\mathcal{O}(#1)$}{O(#1)}}
+ \newcommand\cppfile[2][]{
+\lstinputlisting[style=C++,linerange={#1}]{#2}
+}
+%%------------------------------------------------------------------------------
+
+\title{Algoritmos para programación competitiva}
+\author{Wilmer Emiro Castrillón Calderón}
+
+\newcommand{\subtitulo}[1]{\begin{center}\textbf{#1}\end{center}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	
+	\chapter*{Prefacio}
+	\addcontentsline{toc}{chapter}{Preface}
+	\ExecuteMetaData[Prefacio/Prefacio.tex]{Capitulo}
+
+	\chapter{Estructuras de datos}
+	\ExecuteMetaData[Estructuras_de_datos/estructuras.tex]{Capitulo}
+	
+	\chapter{Grafos}
+	\ExecuteMetaData[Grafos/grafos.tex]{Capitulo}
+	
+\end{document}
+
+
+

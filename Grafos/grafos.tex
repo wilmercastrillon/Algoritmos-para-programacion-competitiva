@@ -64,11 +64,19 @@
 
 \newcommand{\subtitulo}[1]{\begin{center}\textbf{#1}\end{center}}
 
-\title{\textbf{Grafos}}
-\author{Wilmer Emiro Castrillón Calderón}
+%\title{\textbf{Grafos}}
+%\author{Wilmer Emiro Castrillón Calderón}
+
+\graphicspath{{../}}
+
+\newcommand*\lstinputpath[1]{\lstset{inputpath=#1}}
+\lstinputpath{../}
 
 \begin{document}
-	\maketitle
+	%\maketitle
+	\chapter{Grafos}
+	
+	%<*Capitulo>
 	
 	\section{Teoría de grafos}
 	Los grafos son una estructura de datos donde se pueden relacionar distintos objetos entre si, los grafos se pueden
@@ -129,12 +137,14 @@
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{imagenes/grafo_ejemplo_lista_ady}
+			\includegraphics[scale=1]{Grafos/imagenes/grafo_ejemplo_lista_ady}
 			\caption{}%\label{fig:awesome_image1}
 		\endminipage
 		\minipage{0.55\textwidth}
 			\centering
-			\cppfile[6-14]{codigos/DFS.cpp}
+			
+			%\IfFileExists{codigos/DFS.cpp}{ \cppfile[6-14]{codigos/DFS.cpp} }{ \cppfile[6-14]{Grafos/codigos/DFS.cpp} }
+			\cppfile[6-14]{Grafos/codigos/DFS.cpp}
 		\endminipage
 	\end{figure}	
 	
@@ -153,6 +163,8 @@
 
 
 
+	%</Capitulo>
+	
 \end{document}
 
 
