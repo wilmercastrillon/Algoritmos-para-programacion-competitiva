@@ -16,23 +16,23 @@
 %---------------------importar codigo desde archivos cpp----------------------------
 \lstloadlanguages{C++}
 \lstnewenvironment{code}
-	{%\lstset{	numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
-	 \csname lst@SetFirstLabel\endcsname}
+	{\csname lst@SetFirstLabel\endcsname}
 	{\csname lst@SaveFirstLabel\endcsname}
-\lstset{% general command to set parameter(s)
+% general command to set parameter(s)
+\lstset{
 	language=C++, basicstyle=\small\ttfamily, keywordstyle=\slshape,
 	emph=[1]{tipo,usa}, emphstyle={[1]\sffamily\bfseries},
 	morekeywords={tint,forn,forsn},
 	basewidth={0.47em,0.40em},
 	columns=fixed, fontadjust, resetmargins, xrightmargin=5pt, xleftmargin=15pt,
-	flexiblecolumns=false, tabsize=2, breaklines,	breakatwhitespace=false, extendedchars=true,
+	flexiblecolumns=false, tabsize=2, breaklines, breakatwhitespace=false, extendedchars=true,
 	numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=9pt,
 	frame=l, framesep=3pt,
-    basicstyle=\ttfamily,
-    keywordstyle=\color{blue}\ttfamily,
-    stringstyle=\color{magenta}\ttfamily,
-    commentstyle=\color{RedOrange}\ttfamily,
-    morecomment=[l][\color{OliveGreen}]{\#}
+	basicstyle=\ttfamily,
+	keywordstyle=\color{blue}\ttfamily,
+	stringstyle=\color{magenta}\ttfamily,
+	commentstyle=\color{RedOrange}\ttfamily,
+	morecomment=[l][\color{OliveGreen}]{\#}
 }
 
 \lstdefinestyle{C++}{
@@ -111,8 +111,8 @@
 	
 	Considerando las anteriores propiedades el problema se puede trabajar desde otro enfoque, primero se puede
 	definir $suma(x)$ = $\sum_{k=1}^{x} V_{k}$, ahora tomando como ejemplo una consulta en el rango [3,5] 
-	del vector $V$, se tomara convenientemente: $suma(2) = V_{1}+V_{2}$ y $suma(5) = V_{1}+V_{2}+V_{3}+V_{4}+V_{5}$,
-	pero se necesita encontrar $V_{3}+V_{4}+V_{5}$, usando la propiedad asociativa se obtiene: 
+	del vector $V$, se puede utilizar $suma(2) = V_{1}+V_{2}$ y $suma(5) = V_{1}+V_{2}+V_{3}+V_{4}+V_{5}$ para
+	encontrar $V_{3}+V_{4}+V_{5}$, utilizando la propiedad asociativa se obtiene: 
 	$(V_{1}+V_{2})+(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})$ y usando la propiedad inversa se llega a:
 	$(V_{3}+V_{4}+V_{5})=(V_{1}+V_{2}+V_{3}+V_{4}+V_{5})-(V_{1}+V_{2})$ por lo tanto 
 	$(V_{3}+V_{4}+V_{5})=suma(5)-suma(2)$. De esta manera el problema se puede generalizar como 
@@ -121,8 +121,8 @@
 	Ahora pre-calculando $suma(x)$ se puede dar una solución inmediata a cada consulta, esto se puede resolver 
 	utilizando un enfoque básico de programación dinámica. Para encontrar $suma(x)$ se puede reescribir como: 
 	$suma(x) = V_{x} + suma(x-1)$ con caso base $suma(1)=V_{1}$ y por definición la operación acumulada sobre un 
-	conjunto vacío es igual al elemento neutro, a partir de esto se puede obtener la siguiente solución en 
-	C++ con consultas indexando desde 1.
+	conjunto vacío es igual al elemento neutro (esto significa que el indice cero tendrá el valor del elemento 
+	neutro), a partir de esto se puede obtener la siguiente solución en C++ con consultas indexando desde 1.
 	\cppfile[6-14]{Estructuras_de_datos/codigos/tablas_aditivas.cpp}
 	
 	De manera general las tablas aditivas son aplicables a cualquier operación que posea las tres propiedades 
@@ -213,10 +213,90 @@
 	V_{x,y,z} = suma(i2,j2,k2)-suma(i2,j2,k1-1)-suma(i1-1,j2,k2)+suma(i1-1,j2,k1-1)-suma(i2,j1-1,k2)
 	+suma(i2,j1-1,k1-1)+suma(i1-1,j1-1,k2)-suma(i1-1,j1-1,k1-1)$.
 	
-	Esta estructura de datos puede ser aplicada para otras operaciones que cumplan con las tres propiedades descritas
+	\subtitulo{Conclusiones}
+	Esta estructura de datos facilita encontrar el valor acumulado de una operación sobre un rango de valores 
+	estáticos, puede ser aplicada para operaciones que cumplan con las tres propiedades descritas
 	anteriormente, la complejidad computacional de hacer el pre-calculo es lineal a la cantidad de
 	elementos en la estructura, y las consultas se realizan en complejidad constante al realizar solamente operaciones
-	directas sobre elementos en la tabla del pre-calculo.
+	directas sobre elementos en la tabla del pre-calculo. Si se requiere actualizar los valores de la tabla esto
+	haría necesario actualizar el pre-calculo, esto representa que la operación de actualizar es lineal a la 
+	cantidad de elementos, pero esa complejidad no suele ser favorable, por lo tanto se recomienda utilizar solo 
+	en arreglos estáticos, y recurrir a otras estructuras como las Sparse table en el caso de arreglos dinámicos.
+	
+	\section{Disjoint set}
+	Es una estructura de datos que permite agrupar elementos en conjuntos y consultar si dos elementos
+	pertenecen a un mismo conjunto, contiene una estructura en forma de árbol pero con una implementacion poco
+	compleja. La estructura consta de dos operaciones principales, $union(u, v)$ para unir los conjuntos que incluyen 
+	a los nodos $u$ y $v$, y la operación $find(v)$ para indicar a cual conjunto pertenece un nodo $v$.
+	
+	Cada nodo tendrá la información de su nodo padre, y cada conjunto tiene un nodo raíz. Entonces se tiene un 
+	arreglo lineal $p$ donde $p[v]$ tiene el padre del nodo $v$, para los nodos raíz se tendrá que $p[v]=v$, 
+	como se muestra en la imagen siguiente, inicialmente cada nodo es un conjunto diferente entonces todo el arreglo 
+	debe iniciar con $p[v]=v$.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.7]{Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet}
+		\caption{Disjoint set}
+	\end{figure}
+	
+	\subtitulo{Operación $Find$}
+	
+	La operación consiste en devolver el nodo raíz del conjunto al cual pertenece un nodo $v$, como cada nodo
+	guarda el indice de su nodo padre, entonces solo se debe subir sobre el árbol hasta llegar al nodo raíz
+	el cual se puede detectar con la condición $p[x]=x$.
+	
+	\subtitulo{Operación $Union$}
+	
+	Consiste en unir dos elementos $u$ y $v$ en un mismo conjunto, básicamente consiste en hacer que el nodo raíz 
+	del conjunto de $u$ sea padre del nodo raíz del conjunto de $v$, de esta forma ambos nodos quedan dentro de un 
+	mismo árbol, si $u$ y $v$ ya se encuentran dentro en un mismo conjunto entonces no se hace nada.
+
+	\cppfile[7-27]{Estructuras_de_datos/codigos/disjoint_set_union_find.cpp}
+	
+	\subtitulo{Unión por rangos}
+	
+	Los disjoint set son estructuras flexibles que nos permiten realizar diferentes variantes para distintas tareas,
+	una de ellas es la unión por rangos, la cual consiste en tener guardado en un arreglo la máxima
+	profundidad que contiene cada nodo y nos permite durante la operación $Union$ unir el árbol de menor rango 
+	a otro de mayor de rango. En la siguiente figura se observa un ejemplo de unir dos conjuntos con distinto rango,
+	los conjuntos del nodo 9 y 8, sus raíces son 5 y 4 respectivamente, entonces como el nodo 4 tiene un rango mayor, 
+	se volverá el padre del nodo 5.
+	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.6]{Estructuras_de_datos/imagenes/Disjoint_set/UnionRango}
+		\caption{Unión por rangos}
+	\end{figure}
+	
+	\cppfile[30-48]{Estructuras_de_datos/codigos/disjoint_set_union_find.cpp}
+	
+	\subtitulo{Compresión de caminos}
+	
+	Cuando se utiliza gran cantidad de nodos el disjoint set tradicional es ineficiente, debido a la posibilidad
+	de formar arboles muy profundos, llevando a la operación $find(v)$ a tener complejidad $O(n)$ para cada 
+	búsqueda, existe una optimización la cual permite reducir la profundidad de los arboles, de tal forma que la 
+	máxima longitud de rangos sera 1, de esta forma se evita tener arboles profundos. La implementacion es sencilla
+	y consiste que en cada búsqueda actualizar los nodos visitados como hijos directos del nodo raíz. La siguiente
+	figura muestra como se vería el anterior ejemplo con compresión de caminos.
+	
+	\begin{figure}[!htb]
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=0.6]{Estructuras_de_datos/imagenes/Disjoint_set/Compresion}
+			\caption{}
+		\endminipage
+		\minipage{0.5\textwidth}
+			\cppfile[16-21]{Estructuras_de_datos/codigos/union_find_compresion.cpp}
+		\endminipage
+	\end{figure}
+	
+	\subtitulo{Conclusiones}
+	Esta estructura permite asociar elementos en conjuntos de forma eficiente, tiene múltiples aplicaciones como
+	por ejemplo almacenar componentes conexas de grafos, es utilizada por otros algoritmos como el algoritmo de 
+	kruskal para la búsqueda del árbol de expansión mínima en grafos, también se puede almacenar información
+	adicional sobre los conjuntos como su cantidad de nodos o almacenar para cada nodo la lista de sus descendientes,
+	entre otras aplicaciones.
 	
 	\section{Bibliografia}
 	

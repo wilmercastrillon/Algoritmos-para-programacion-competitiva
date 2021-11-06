@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  13 MAY 2020 22:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  23 OCT 2021 21:38
 entering extended mode
 **./dp.tex
 (dp.tex
@@ -265,20 +265,20 @@ LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `dp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -385,80 +385,91 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count120
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--104
+Underfull \hbox (badness 10000) in paragraph at lines 106--110
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--113
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
 [1
 
 {C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 124--126
+(../Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
 
-(codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+(../Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-<imagenes/arbol_recursion.png, id=11, 371.13657pt x 252.19218pt>
-File: imagenes/arbol_recursion.png Graphic file (type png)
-<use imagenes/arbol_recursion.png>
-Package pdftex.def Info: imagenes/arbol_recursion.png  used on input line 138.
+<../Programacion_dinamica/imagenes/arbol_recursion.png, id=11, 371.13657pt x 25
+2.19218pt>
+File: ../Programacion_dinamica/imagenes/arbol_recursion.png Graphic file (type 
+png)
+<use ../Programacion_dinamica/imagenes/arbol_recursion.png>
+Package pdftex.def Info: ../Programacion_dinamica/imagenes/arbol_recursion.png 
+ used on input line 144.
 (pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
-[2] (codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 156--159
+[2] (../Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 162--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-[3 <./imagenes/arbol_recursion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--187
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 188--199
+[3 <../Programacion_dinamica/imagenes/arbol_recursion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 187--193
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--223
+Underfull \hbox (badness 10000) in paragraph at lines 194--205
 
  []
 
-<imagenes/matriz1.png, id=20, 282.30469pt x 282.30469pt>
-File: imagenes/matriz1.png Graphic file (type png)
-<use imagenes/matriz1.png>
-Package pdftex.def Info: imagenes/matriz1.png  used on input line 227.
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--229
+
+ []
+
+<../Programacion_dinamica/imagenes/matriz1.png, id=20, 282.30469pt x 282.30469p
+t>
+File: ../Programacion_dinamica/imagenes/matriz1.png Graphic file (type png)
+<use ../Programacion_dinamica/imagenes/matriz1.png>
+Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz1.png  used on
+ input line 233.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<imagenes/matriz2.png, id=21, 282.30469pt x 282.30469pt>
-File: imagenes/matriz2.png Graphic file (type png)
-<use imagenes/matriz2.png>
-Package pdftex.def Info: imagenes/matriz2.png  used on input line 232.
+<../Programacion_dinamica/imagenes/matriz2.png, id=21, 282.30469pt x 282.30469p
+t>
+File: ../Programacion_dinamica/imagenes/matriz2.png Graphic file (type png)
+<use ../Programacion_dinamica/imagenes/matriz2.png>
+Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz2.png  used on
+ input line 238.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<imagenes/matriz3.png, id=23, 282.30469pt x 282.30469pt>
-File: imagenes/matriz3.png Graphic file (type png)
-<use imagenes/matriz3.png>
-Package pdftex.def Info: imagenes/matriz3.png  used on input line 237.
+<../Programacion_dinamica/imagenes/matriz3.png, id=23, 282.30469pt x 282.30469p
+t>
+File: ../Programacion_dinamica/imagenes/matriz3.png Graphic file (type png)
+<use ../Programacion_dinamica/imagenes/matriz3.png>
+Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz3.png  used on
+ input line 243.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-[4] (codigos/matriz.cpp) (codigos/matriz.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+[4] (../Programacion_dinamica/codigos/matriz.cpp)
+(../Programacion_dinamica/codigos/matriz.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
-[5 <./imagenes/matriz1.png> <./imagenes/matriz2.png> <./imagenes/matriz3.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
+[5 <../Programacion_dinamica/imagenes/matriz1.png> <../Programacion_dinamica/im
+agenes/matriz2.png> <../Programacion_dinamica/imagenes/matriz3.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 267.
 
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
@@ -466,46 +477,36 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 261.
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 261.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--263
+Underfull \hbox (badness 10000) in paragraph at lines 265--269
 
  []
 
-(codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 293--302
+(../Programacion_dinamica/codigos/SubSetSum.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 299--308
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 303--307
+Underfull \hbox (badness 10000) in paragraph at lines 309--313
 
  []
 
-(codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 318--321
+(../Programacion_dinamica/codigos/SubSetSum.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 325--329
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 322--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--335
-
- []
-
-[7] [8] (dp.aux
+[7] (dp.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5655 strings out of 492946
- 79502 string characters out of 3124490
+ 5657 strings out of 492946
+ 80166 string characters out of 3124490
  440907 words of memory out of 3000000
- 9446 multiletter control sequences out of 15000+200000
+ 9447 multiletter control sequences out of 15000+200000
  10676 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,58p,271b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -522,9 +523,9 @@ ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
 s/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on dp.pdf (8 pages, 210515 bytes).
+Output written on dp.pdf (7 pages, 205971 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

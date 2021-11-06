@@ -66,8 +66,14 @@
 \title{\textbf{Programación Dinámica}}
 \author{Wilmer Emiro Castrillón Calderón}
 
+\graphicspath{{../}}
+\newcommand*\lstinputpath[1]{\lstset{inputpath=#1}}
+\lstinputpath{../}
+
 \begin{document}
 	\maketitle
+	
+	%<*Capitulo>
 	
 	\section{Introducción a la programación dinámica}
 	
@@ -120,7 +126,7 @@
 	recursiva: \textit{v[i] = v[i-1] + v[i-2]}, de tal forma que \textit{v[i-1]} y \textit{v[i-2]} son valores
 	que se han calculado antes y ademas $v[x] = fibo(x)$. A continuación se muestra el ejemplo en C++ calculando
 	los primero 45 números de la sucesión:
-	\cppfile[5-12]{codigos/fibo.cpp}
+	\cppfile[5-12]{Programacion_dinamica/codigos/fibo.cpp}
 	Aunque en este enfoque no utilizamos llamados recursivos, puede resultar mas difícil de implementar,
 	pues por lo general es menos intuitivo.\\
 	
@@ -132,10 +138,10 @@
 	subproblemas antes de poder dar alguna solución. En este enfoque se hace mas notorio la importancia de la tabla 
 	de memorización, veamos la eficiencia del algoritmo si dejamos únicamente la formula recursiva, el código seria 
 	el siguiente:
-	\cppfile[14-20]{codigos/fibo.cpp}
+	\cppfile[14-20]{Programacion_dinamica/codigos/fibo.cpp}
 	Si ejecutamos este código para $fibo(6)$ obtenemos el siguiente arbol de recursión:\\
 	\begin{center}
-		\includegraphics[scale=0.92]{imagenes/arbol_recursion}
+		\includegraphics[scale=0.92]{Programacion_dinamica/imagenes/arbol_recursion}
 	\end{center}
 	
 	Se puede observar que se realizan múltiples llamados repetidos, $fibo(4)$ se repite 2 veces, $fibo(3)$
@@ -147,7 +153,7 @@
 	si la solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado, sino se calcula
 	y se guarda, en este ejemplo la tabla comienza llena con -1, un valor que nunca es usado en la solución, de 
 	tal forma que si una posición es igual a -1 entonces se debe calcular.
-	\cppfile[22-31]{codigos/fibo.cpp}
+	\cppfile[22-31]{Programacion_dinamica/codigos/fibo.cpp}
 	Este ejercicio resulta muy trivial, se puede resolver facilmente sin pensar en dp, ahora se mostraran
 	problemas en los cuales se hace necesario utilizar dp para dar una solución eficiente.
 	
@@ -224,17 +230,17 @@
 	\begin{figure}[!htb]
 		\minipage{0.33\textwidth}
 			\centering
-			\includegraphics[scale=0.4]{imagenes/matriz1}
+			\includegraphics[scale=0.4]{Programacion_dinamica/imagenes/matriz1}
 			\caption{}%\label{fig:awesome_image1}
 		\endminipage
 		\minipage{0.33\textwidth}
 			\centering
-			\includegraphics[scale=0.4]{imagenes/matriz2}
+			\includegraphics[scale=0.4]{Programacion_dinamica/imagenes/matriz2}
 			\caption{}
 		\endminipage
 		\minipage{0.33\textwidth}
 			\centering
-			\includegraphics[scale=0.4]{imagenes/matriz3}
+			\includegraphics[scale=0.4]{Programacion_dinamica/imagenes/matriz3}
 			\caption{}%\label{fig:awesome_image1}
 		\endminipage
 	\end{figure}
@@ -245,18 +251,18 @@
 	ir desde T[1][1] hasta T[i][j], en otras palabra memo[i][j] = $f(i,j)$, ahora se puede solucionar el problema 
 	usando cualquiera de los dos enfoques de dp, para usar Top-Down solamente se agrega la tabla de memorización 
 	a la formula recursiva, resultando en la siguiente función(recordar que en C++ se indexa desde 0):
-	\cppfile[9-20]{codigos/matriz.cpp}
+	\cppfile[9-20]{Programacion_dinamica/codigos/matriz.cpp}
 	
 	para conocer el resultado solo se debe imprimir $f(n-1, m-1)$. para la solución con Buttom-Up se debe recorrer 
 	la matriz y llenarla según la formula recursiva, se debe comenzar con los casos base antes de calcular lo demás, 
 	esto resultaría en la siguiente función:
-	\cppfile[22-35]{codigos/matriz.cpp}
+	\cppfile[22-35]{Programacion_dinamica/codigos/matriz.cpp}
 	De esta forma para conocer la solución se debe imprimir memo[n-1][m-1]. La complejidad algorítmica resultante
 	es O($n*m$), resultando mejor que un algoritmo de complejidad exponencial utilizando fuerza bruta.\\
 	
-	\subtitulo{Suma de subconjuntos:}
+	\section{Sub-SetSum}
 	
-	También conocido como \textit{Sub-SetSum} el problema consiste en que a partir de un conjunto de números enteros
+	También conocido como suma de subconjuntos, el problema consiste en que a partir de un conjunto de números enteros
 	$V$, encontrar si es posible que otro número $n$ sea el resultado de la suma de los elementos de algún
 	subconjunto de $V$, por ejemplo con el conjunto $V$={1, 2, 5} es posible sumar 7 usando el subconjunto \{2, 5\},
 	con este conjunto $V$ seria posible sumar \{1, 2, 3, 5, 6, 7, 8\}.\\
@@ -271,8 +277,8 @@
 	
 	En este problema el resultado deberá ser 'verdadero' o 'falso', mostrando si es posible sumar $n$ con algún 
 	subconjunto, con los sub-problemas establecidos se puede ahora definir los casos base, si en algún momento 
-	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero'(solo con encontrar una solución ya se puede 
-	afirmar que es posible sumar $n$), pero si en algún momento usamos todos los elementos en $V$ y aun $x_{n}>0$, o 
+	se llega a $x_{n}=0$ entonces la solución global sera 'verdadero'(se encontró una solución, entonces es posible 
+	sumar $n$), pero si en algún momento usamos todos los elementos en $V$ y aun $x_{n}>0$, o 
 	en algún momento se llega a $x_{n}<0$ entonces la solución en ese sub-problema sera 'falso', entonces se tiene la
 	siguiente función recursiva(siendo 1 verdadero, y 0 falso):
 	\begin{center}
@@ -285,10 +291,10 @@
 		\end{cases}
 	$\\
 	\end{center}
-	Ahora con la formula recursiva la solución se puede programar agregando la tabla de memorización, para su tamaño 
-	se debe considerar que la cantidad de columnas debe ser por lo menos igual a la longitud del vector, y la cantidad 
+	Con esta formula la solución sera igual a $f(n,0)$, para implementarla se debe hacer una tabla de memorización,
+	la cantidad de columnas de la tabla debe ser por lo menos igual a la longitud del vector, y la cantidad 
 	de filas por lo menos igual al resultado más grande que se puede obtener. Igualmente se llenara inicialmente con -1.
-	\cppfile[24-33]{codigos/SubSetSum.cpp}
+	\cppfile[24-33]{Programacion_dinamica/codigos/SubSetSum.cpp}
 	
 	Este problema también puede ser resuelto usando el enfoque Buttom-Up, donde se buscaría todas las posibles 
 	sumas que se pueden formar con los números en $V$, se tomara $m$ como el tamaño de $V$ y por facilidad se usara 1 
@@ -304,7 +310,7 @@
 	la solución hasta 5 es él mismo y su suma con las soluciones anteriores, el conjunto de soluciones cambia a 
 	\{3, 5, 8\}, y por ultimo incluyendo el 8 el conjunto resultante es: \{3, 5, 8, 11, 13, 16\}. Una posible
 	implementación seria:\\
-	\cppfile[8-21]{codigos/SubSetSum.cpp}
+	\cppfile[8-21]{Programacion_dinamica/codigos/SubSetSum.cpp}
 	
 	En el anterior código se tienen dos ciclos, el primero recorriendo el vector $V$ y el segundo buscando las 
 	soluciones anteriores para sumarles $V[i]$, como el caso base es cuando $i=0$ entonces se debe omitir el segundo
@@ -312,29 +318,17 @@
 	entonces si $memo[n][V.size()-1]$ es verdadero entonce si existe un sub-conjunto que sume $n$, en caso contrario
 	no es posible.
 
+	%\section{Problema de la mochila(Knapsack problem)}
 	
-	\subtitulo{Otros problemas clásicos:}
-	
-	\textbf{Problema de la mochila:} teniendo una mochila de capacidad $n$, un conjunto de objetos con peso $m$ 
-	y una ganancia $c$, se debe encontrar la máxima ganancia que se puede guardar en la mochila sin
-	exceder su capacidad.\\
-	
-	\textbf{Max Range Sum:} Dado un arreglo X de números enteros positivos y negativos, se debe encontrar la
-	máxima suma que se puede lograr sumando posiciones consecutivas del arreglo.\\
-	
-	\textbf{Dominos en un tablero de 2*N:} consiste en encontrar la cantidad total de maneras en las que se puede
-	llenar un tablero de tamaño 2*N con fichas de domino de tamaño 2X1, el tablero se debe llenar completamente sin
-	tener espacios vacíos.
-	
-	\section{Problema de la mochila(Knapsack problem)}
+	\section{Bibliografia}
 	
 	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\
 	http://programacioncompetitivaufps.github.io/\\
 	https://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/\\
 	libro: competitive programming 3.\\
 
-
-
+	%</Capitulo>
+	
 \end{document}
 
 

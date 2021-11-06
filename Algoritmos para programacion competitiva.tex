@@ -8,7 +8,7 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage{catchfilebetweentags}
+%\usepackage{catchfilebetweentags}
 
 \usepackage{listings}%-para agregar codigo-
 \usepackage[usenames,dvipsnames]{color}
@@ -63,6 +63,50 @@
 }
 %%------------------------------------------------------------------------------
 
+% import files
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+\makeatletter
+\newread\pin@file
+\newcounter{pinlineno}
+\newcommand\pin@accu{}
+\newcommand\pin@ext{pintmp}
+% inputs #3, selecting only lines #1 to #2 (inclusive)
+\newcommand*\partialinput [3] {%
+  \IfFileExists{#3}{%
+    \openin\pin@file #3
+    % skip lines 1 to #1 (exclusive)
+    \setcounter{pinlineno}{1}
+    \@whilenum\value{pinlineno}<#1 \do{%
+      \readline\pin@file to\pin@line
+      %\message{Omite: \pin@line XXXXX}
+      \stepcounter{pinlineno}%
+    }
+    % prepare reading lines #1 to #2 inclusive
+    \addtocounter{pinlineno}{-1}
+    \let\pin@accu\empty
+    \begingroup
+    \endlinechar\newlinechar
+    \@whilenum\value{pinlineno}<#2 \do{%
+      % use safe catcodes provided by e-TeX's \readline
+      \readline\pin@file to\pin@line
+      \edef\pin@accu{\pin@accu\pin@line}%
+      %\message{Escribe: \pin@line XXXXX}
+      \stepcounter{pinlineno}%
+    }
+    \closein\pin@file
+    \expandafter\endgroup
+    \scantokens\expandafter{\pin@accu}%
+  }{%
+    \errmessage{File `#3' doesn't exist!}%
+  }%
+}
+\makeatother
+%%------------------------
+
+
+
 \title{Algoritmos para programación competitiva}
 \author{Wilmer Emiro Castrillón Calderón}
 
@@ -74,13 +118,19 @@
 	
 	\chapter*{Prefacio}
 	\addcontentsline{toc}{chapter}{Preface}
-	\ExecuteMetaData[Prefacio/Prefacio.tex]{Capitulo}
+	\partialinput{9}{20}{Prefacio/Prefacio.tex}
+	%\ExecuteMetaData[Prefacio/Prefacio.tex]{Capitulo}
 
 	\chapter{Estructuras de datos}
-	\ExecuteMetaData[Estructuras_de_datos/estructuras.tex]{Capitulo}
+	\partialinput{80}{300}{Estructuras_de_datos/estructuras.tex}
+	%\ExecuteMetaData[Estructuras_de_datos/estructuras.tex]{Capitulo}
 	
 	\chapter{Grafos}
-	\ExecuteMetaData[Grafos/grafos.tex]{Capitulo}
+	\partialinput{78}{199}{Grafos/grafos.tex}
+	%\ExecuteMetaData[Grafos/grafos.tex]{Capitulo}
+	
+	\chapter{Programación dinámica}
+	\partialinput{77}{329}{Programacion_dinamica/dp.tex}
 	
 \end{document}
 

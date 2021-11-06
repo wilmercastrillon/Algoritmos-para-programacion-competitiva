@@ -31,8 +31,8 @@ void precalcular(){
                         M[i - 1][j - 1] - memo[i - 1][j - 1];
 }
 
-int consulta(int f1, int c1, int f2, int c2){
-    return memo[f2][c2] - memo[f1-1][c2] -  memo[f2][c1-1] + memo[f1-1][c1-1];
+int consulta(int i1, int j1, int i2, int j2){
+    return memo[i2][j2] - memo[i1-1][j2] -  memo[i2][j1-1] + memo[i1-1][j1-1];
 }
 
 int main(){

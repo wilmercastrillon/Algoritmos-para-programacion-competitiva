@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  22 OCT 2021 23:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  23 OCT 2021 12:19
 entering extended mode
 **./Prefacio.tex
 (Prefacio.tex
@@ -87,22 +87,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--13
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--13
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
 
  []
 
@@ -129,7 +114,7 @@ Here is how much of TeX's memory you used:
 <C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Prefacio.pdf (1 page, 25178 bytes).
+Output written on Prefacio.pdf (1 page, 25172 bytes).
 PDF statistics:
  14 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  22 OCT 2021 23:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  6 NOV 2021 11:35
 entering extended mode
 **"./Algoritmos para programacion competitiva.tex"
 ("Algoritmos para programacion competitiva.tex"
@@ -223,63 +223,26 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count107
 \c@continuedfloat=\count108
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/catchfilebetwe
-entags\catchfilebetweentags.sty"
-Package: catchfilebetweentags 2011/02/19 v1.1 - Catch file between tags (FC)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etex-pkg\etex.
-sty"
-Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
-\et@xins=\count109
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/etoolbox\etool
-box.sty"
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count110
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltx
-cmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\cat
-chfile.sty"
-Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\inf
-warerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ete
-xcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifl
-uatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)))
-\CatchFBT@tok=\toks256
-)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
 ngs.sty"
-\lst@mode=\count111
+\lst@mode=\count109
 \lst@gtempboxa=\box29
 \lst@token=\toks25
-\lst@length=\count112
+\lst@length=\count110
 \lst@currlwidth=\dimen130
-\lst@column=\count113
-\lst@pos=\count114
+\lst@column=\count111
+\lst@pos=\count112
 \lst@lostspace=\dimen131
 \lst@width=\dimen132
-\lst@newlines=\count115
-\lst@lineno=\count116
+\lst@newlines=\count113
+\lst@lineno=\count114
 \lst@maxwidth=\dimen133
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count117
-\lst@skipnumbers=\count118
+\c@lstnumber=\count115
+\lst@skipnumbers=\count116
 \lst@framebox=\box30
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
@@ -313,26 +276,79 @@ File: lstlang1.sty 2019/02/27 1.8b listings language file
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-) ("Algoritmos para programacion competitiva.aux"
+)
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.s
+ty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def
+"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty
+"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+\pin@file=\read1
+\c@pinlineno=\count117
+ ("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Algoritmos para programacion competitiva.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 115.
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \. on input line 115.
+LaTeX Info: Redefining \% on input line 115.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -372,22 +388,26 @@ LaTeX Info: Redefining \% on input line 71.
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
+\scratchcounter=\count118
 \scratchdimen=\dimen134
 \scratchbox=\box31
-\nofMPsegments=\count120
-\nofMParguments=\count121
+\nofMPsegments=\count119
+\nofMParguments=\count120
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count122
+\MPscratchCnt=\count121
 \MPscratchDim=\dimen135
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
+\MPnumerator=\count122
+\makeMPintoPDFobject=\count123
 \everyMPtoPDFconversion=\toks27
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
 pdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\inf
+warerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfex
 t.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
@@ -395,7 +415,11 @@ Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvd
 efinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltx
+cmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvopt
 ions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
@@ -403,7 +427,16 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvs
 etkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-))
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ete
+xcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifl
+uatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdf
 texcmds.sty"
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
@@ -423,14 +456,48 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count125
+\c@lstlisting=\count124
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 116.
+
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 116.
+
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 116
+.
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 116
+.
+ ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd
+"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 116.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 116.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 116.
  [1
 
 
-{C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] ("Algor
-itmos para programacion competitiva.toc"
+{C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+("Algoritmos para programacion competitiva.toc"
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
 )
 \tf@toc=\write3
 \openout3 = `"Algoritmos para programacion competitiva.toc"'.
@@ -438,23 +505,17 @@ LaTeX Info: Redefining \% on input line 1.
  [1
 
 ]
-(Prefacio/Prefacio.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 77--78
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
@@ -462,114 +523,288 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--78
 
 ]
 Cap\'{\i }tulo 1.
-(Estructuras_de_datos/estructuras.tex)
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 80.
+[3
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
-"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
- [3
+]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 47.
 
-] (Estructuras_de_datos/codigos/tablas_aditivas.cpp)
-<Estructuras_de_datos/imagenes/img1.png, id=23, 240.9pt x 240.9pt>
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (Estructuras_de_datos/codigos/tablas_aditivas.cpp)
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [4]
+<Estructuras_de_datos/imagenes/img1.png, id=30, 240.9pt x 240.9pt>
 File: Estructuras_de_datos/imagenes/img1.png Graphic file (type png)
 <use Estructuras_de_datos/imagenes/img1.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/img1.png  used on input 
-line 80.
+line 100.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img2.png, id=24, 240.9pt x 240.9pt>
+<Estructuras_de_datos/imagenes/img2.png, id=31, 240.9pt x 240.9pt>
 File: Estructuras_de_datos/imagenes/img2.png Graphic file (type png)
 <use Estructuras_de_datos/imagenes/img2.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/img2.png  used on input 
-line 80.
+line 105.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img3.png, id=25, 240.9pt x 240.9pt>
+<Estructuras_de_datos/imagenes/img3.png, id=32, 240.9pt x 240.9pt>
 File: Estructuras_de_datos/imagenes/img3.png Graphic file (type png)
 <use Estructuras_de_datos/imagenes/img3.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/img3.png  used on input 
-line 80.
+line 110.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img4.png, id=26, 240.9pt x 240.9pt>
+<Estructuras_de_datos/imagenes/img4.png, id=33, 240.9pt x 240.9pt>
 File: Estructuras_de_datos/imagenes/img4.png Graphic file (type png)
 <use Estructuras_de_datos/imagenes/img4.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/img4.png  used on input 
-line 80.
+line 115.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
- [4]
-(Estructuras_de_datos/codigos/tablas_aditivas.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
+(Estructuras_de_datos/codigos/tablas_aditivas.cpp)
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
+ [5 <./Estructuras_de_datos/imagenes/img1.png> <./Estructuras_de_datos/imagenes
+/img2.png> <./Estructuras_de_datos/imagenes/img3.png> <./Estructuras_de_datos/i
+magenes/img4.png>]
+<Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png, id=38, 355.3275pt 
+x 195.73125pt>
+File: Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png Graphic file (
+type png)
+<use Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet
+.png  used on input line 160.
+(pdftex.def)             Requested size: 248.72754pt x 137.01093pt.
+
+(Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+ [6 <./Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png>])
+<Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png, id=43, 810.77907pt 
+x 190.46156pt>
+File: Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png Graphic file (t
+ype png)
+<use Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.
+png  used on input line 189.
+(pdftex.def)             Requested size: 486.4712pt x 114.2778pt.
+
+Overfull \hbox (2.77434pt too wide) in paragraph at lines 189--190
+ [][] 
  []
 
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
-[5 <./Estructuras_de_datos/imagenes/img1.png> <./Estructuras_de_datos/imagenes/
-img2.png> <./Estructuras_de_datos/imagenes/img3.png> <./Estructuras_de_datos/im
-agenes/img4.png>]
+(Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+ [7 <./Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png>])
+<Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png, id=49, 361.35pt x 1
+53.57375pt>
+File: Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png Graphic file (t
+ype png)
+<use Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/Compresion.
+png  used on input line 207.
+(pdftex.def)             Requested size: 216.81168pt x 92.14494pt.
+
+(Estructuras_de_datos/codigos/union_find_compresion.cpp)
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
+ [8 <./Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png>]
 Cap\'{\i }tulo 2.
-(Grafos/grafos.tex) [6
+[9
 
 ]
-<Grafos/imagenes/grafo_ejemplo_lista_ady.png, id=41, 188.20313pt x 188.20313pt>
-
-File: Grafos/imagenes/grafo_ejemplo_lista_ady.png Graphic file (type png)
-<use Grafos/imagenes/grafo_ejemplo_lista_ady.png>
-Package pdftex.def Info: Grafos/imagenes/grafo_ejemplo_lista_ady.png  used on i
-nput line 83.
+<Grafos/imagenes/grafo_ejemplo.png, id=57, 188.20313pt x 188.20313pt>
+File: Grafos/imagenes/grafo_ejemplo.png Graphic file (type png)
+<use Grafos/imagenes/grafo_ejemplo.png>
+Package pdftex.def Info: Grafos/imagenes/grafo_ejemplo.png  used on input line 
+55.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
- (Grafos/codigos/DFS.cpp)
-Overfull \hbox (19.18631pt too wide) in paragraph at lines 83--83
+ (Grafos/codigos/Grafos.cpp)
+Overfull \hbox (24.18631pt too wide) in paragraph at lines 53--63
 []$[]$$[]$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
+(Grafos/codigos/Grafos.cpp) (Grafos/codigos/Grafos.cpp)
+Overfull \hbox (24.18631pt too wide) in paragraph at lines 66--76
+[]$[]$$[]$ 
  []
 
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
-[7 <./Grafos/imagenes/grafo_ejemplo_lista_ady.png>]
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
- [8]
-("Algoritmos para programacion competitiva.aux"
+[10 <./Grafos/imagenes/grafo_ejemplo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 87--92
+
+ []
+
+<Grafos/imagenes/DFS1.png, id=61, 188.20313pt x 188.20313pt>
+File: Grafos/imagenes/DFS1.png Graphic file (type png)
+<use Grafos/imagenes/DFS1.png>
+Package pdftex.def Info: Grafos/imagenes/DFS1.png  used on input line 102.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+<Grafos/imagenes/DFS2.png, id=62, 188.20313pt x 188.20313pt>
+File: Grafos/imagenes/DFS2.png Graphic file (type png)
+<use Grafos/imagenes/DFS2.png>
+Package pdftex.def Info: Grafos/imagenes/DFS2.png  used on input line 107.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+(Grafos/codigos/DFS.cpp)
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
+ [11 <./Grafos/imagenes/DFS1.png> <./Grafos/imagenes/DFS2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 119--122
+
+ []
+
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+[12]
+Cap\'{\i }tulo 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--34
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+[13
+
+] (Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
+
+ []
+
+(Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+<Programacion_dinamica/imagenes/arbol_recursion.png, id=75, 371.13657pt x 252.1
+9218pt>
+File: Programacion_dinamica/imagenes/arbol_recursion.png Graphic file (type png
+)
+<use Programacion_dinamica/imagenes/arbol_recursion.png>
+Package pdftex.def Info: Programacion_dinamica/imagenes/arbol_recursion.png  us
+ed on input line 68.
+(pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+[14] (Programacion_dinamica/codigos/fibo.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 86--89
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+[15 <./Programacion_dinamica/imagenes/arbol_recursion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--153
+
+ []
+
+<Programacion_dinamica/imagenes/matriz1.png, id=82, 282.30469pt x 282.30469pt>
+File: Programacion_dinamica/imagenes/matriz1.png Graphic file (type png)
+<use Programacion_dinamica/imagenes/matriz1.png>
+Package pdftex.def Info: Programacion_dinamica/imagenes/matriz1.png  used on in
+put line 157.
+(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
+<Programacion_dinamica/imagenes/matriz2.png, id=83, 282.30469pt x 282.30469pt>
+File: Programacion_dinamica/imagenes/matriz2.png Graphic file (type png)
+<use Programacion_dinamica/imagenes/matriz2.png>
+Package pdftex.def Info: Programacion_dinamica/imagenes/matriz2.png  used on in
+put line 162.
+(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
+<Programacion_dinamica/imagenes/matriz3.png, id=84, 282.30469pt x 282.30469pt>
+File: Programacion_dinamica/imagenes/matriz3.png Graphic file (type png)
+<use Programacion_dinamica/imagenes/matriz3.png>
+Package pdftex.def Info: Programacion_dinamica/imagenes/matriz3.png  used on in
+put line 167.
+(pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+[16] (Programacion_dinamica/codigos/matriz.cpp)
+(Programacion_dinamica/codigos/matriz.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+[17 <./Programacion_dinamica/imagenes/matriz1.png> <./Programacion_dinamica/ima
+genes/matriz2.png> <./Programacion_dinamica/imagenes/matriz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 189--193
+
+ []
+
+(Programacion_dinamica/codigos/SubSetSum.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 223--232
+
+ []
+
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
+
+ []
+
+(Programacion_dinamica/codigos/SubSetSum.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
+
+ []
+
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
+[19] ("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7184 strings out of 492946
- 106564 string characters out of 3124490
- 427988 words of memory out of 3000000
- 10938 multiletter control sequences out of 15000+200000
- 11100 words of font info for 40 fonts, out of 3000000 for 9000
+ 7299 strings out of 492946
+ 110359 string characters out of 3124490
+ 461356 words of memory out of 3000000
+ 10994 multiletter control sequences out of 15000+200000
+ 67749 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,58p,836b,1389s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/wilmer-PC/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users
-/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/wilmer-PC/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Algoritmos para programacion competitiva.pdf" (9 pages, 1742
-45 bytes).
+ 41i,13n,58p,311b,1981s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+mathsy.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
+s/lm/lm-ec.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
+dvips/lm/lm-mathit.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/enc/dvips/lm/lm-mathex.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTe
+X 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/wilmer-PC/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/wilmer-PC/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/wilmer-PC/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/wil
+mer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Us
+ers/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb
+><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
+r6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/lm/lmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/lm/lmri12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/lm/lmro12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer-PC/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "Algoritmos para programacion competitiva.pdf" (20 pages, 431
+187 bytes).
 PDF statistics:
- 89 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -64,17 +64,15 @@
 
 \newcommand{\subtitulo}[1]{\begin{center}\textbf{#1}\end{center}}
 
-%\title{\textbf{Grafos}}
-%\author{Wilmer Emiro Castrillón Calderón}
+\title{\textbf{Grafos}}
+\author{Wilmer Emiro Castrillón Calderón}
 
 \graphicspath{{../}}
-
 \newcommand*\lstinputpath[1]{\lstset{inputpath=#1}}
 \lstinputpath{../}
 
 \begin{document}
-	%\maketitle
-	\chapter{Grafos}
+	\maketitle
 	
 	%<*Capitulo>
 	
@@ -84,7 +82,7 @@
 	matemática y las ciencias de la computación, esta rama se conoce como teoría de grafos, ademas tienen muchas 
 	aplicaciones, por ejemplo permiten modelar redes informáticas, sistemas de carreteras, redes sociales, etc.
 	
-	\subtitulo{Clasificaciones generales}
+	\subtitulo{Terminología general}
 	Los grafos se pueden clasificar de distintas formas, las mas utilizadas son:
 	\begin{enumerate}[1.]
 		\item \textbf{Grafos ponderados y no ponderados} Si las aristas de un grafo tienen un peso, es decir si para
@@ -122,39 +120,77 @@
 		 	para representar grafos, pues el espacio de memoria que ocupa es menor que el utilizado por una matriz de
 		 	adyacencia y ademas facilita recorrer el grafo de manera sencilla.
 		\item \textbf{Lista de aristas:} Consiste en una lista en la cual se guardara todas las aristas de un grafo, 
-			para cada una se guarda el nodo de inicio, node de destino y el costo en caso de tener. Esta es la menos
-			 utilizada de las tres, pero esta facilita ordenar las aristas según su costo.
+			para cada una se guarda el nodo de inicio, nodo de destino y el costo en caso de tener. Esta es la menos
+			 utilizada de las tres, aunque facilita ordenar las aristas según su costo.
 	\end{enumerate}
 	
-	\section{DFS y BFS}
-	
-	Los grafos son estructuras no lineales, estos no tienen un nodo inicio o un orden especifico para recorrerlos,
-	existen principalmente dos algoritmos que permiten recorrer un grafo, estos no son algoritmos muy estrictos, o 
-	sea se pueden modificar de múltiples maneras para realizar diferentes tareas, mas sin embargo la idea básica de
-	cada se debe mantener, para la implementacion de ambos se utiliza una lista de adyacencia, esta se representa como 
-	un vector de vectores, por ejemplo:
+	A continuación se muestra un pequeño ejemplo para cada una de las tres formas:
 	
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/grafo_ejemplo_lista_ady}
+			\includegraphics[scale=1]{Grafos/imagenes/grafo_ejemplo}
 			\caption{}%\label{fig:awesome_image1}
 		\endminipage
 		\minipage{0.55\textwidth}
 			\centering
-			
-			%\IfFileExists{codigos/DFS.cpp}{ \cppfile[6-14]{codigos/DFS.cpp} }{ \cppfile[6-14]{Grafos/codigos/DFS.cpp} }
-			\cppfile[6-14]{Grafos/codigos/DFS.cpp}
+			\cppfile[7-16]{Grafos/codigos/Grafos.cpp}
+			Matriz de adyacencia
 		\endminipage
 	\end{figure}	
 	
+	\begin{figure}[!htb]
+		\minipage{0.5\textwidth}
+			\centering
+			\cppfile[19-27]{Grafos/codigos/Grafos.cpp}
+			Lista de adyacencia
+		\endminipage
+		\minipage{0.55\textwidth}
+			\centering
+			\cppfile[30-39]{Grafos/codigos/Grafos.cpp}
+			Lista de aristas
+		\endminipage
+	\end{figure}	
+	
+	\section{DFS y BFS}
+	
+	Los grafos son estructuras no lineales, estos no tienen un nodo inicio o un orden especifico para recorrerlos,
+	existen principalmente dos algoritmos que permiten recorrer un grafo DFS y BFS, estos no son algoritmos muy
+	estrictos, es decir, se pueden modificar de múltiples maneras para realizar diferentes tareas, sin embargo la 
+	idea básica sigue siendo la misma, para la implementación de ambos se utiliza una lista de adyacencia.
+	
 	\subtitulo{DFS.}
 	
-	El DFS (deep first search) o Búsqueda en profundidad, es un algoritmo que permite recorrer un grafo, de manera
-	general consiste en tomar un nodo, marcarlo como visitado y para cada arista hacer un llamado recursivo al nodo
-	destino y repetir el proceso hasta que no queden mas nodos por visitar. Este es un algoritmo de backtraking con
-	el cual se busca hacer una búsqueda completa por todos los nodos, 
-	%\cppfile[26-36]{codigos/tablas_aditivas.cpp}
+	El DFS (deep first search) o Búsqueda en profundidad, es un algoritmo que permite recorrer un grafo de forma
+	recursiva, de manera general consiste en tomar un nodo, marcarlo como visitado y para cada arista hacer un 
+	llamado recursivo al nodo destino, solo si ese nodo no esta visitado, y repetir el proceso hasta que no queden mas
+	nodos por visitar. De esta forma se van marcando los nodos mientras se visitan y en caso de llegar a un nodo sin
+	aristas o un nodo cuyos vecinos se encuentran visitados entonces se devuelve al nodo anterior.\\
+	
+	En la siguientes figuras se observa el orden en el cual los nodos son visitados empezando por el nodo 1, 
+	entonces comienza con el 1, después avanza al 5 y luego al 4, como no hay mas destinos se devuelve al 5,
+	pero su único vecino ya esta visitado, se devuelve al 1, desde ahi pasa al 3, este no tiene vecinos y se
+	devuelve otra vez al 1, y finalmente al 2, como su vecino ya esta visitado regresa al 1, y como este no tiene
+	mas vecinos finaliza el algoritmo.
+	
+	\begin{figure}[!htb]
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/DFS1}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/DFS2}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+	\end{figure}	
+	
+	
+	La implementacion del DFS es corta y consiste básicamente en un algoritmo de backtraking, tiene una complejidad
+	algorítmica O($V+E$) con $V$ como el numero de nodos y $E$ como el numero de aristas.
+	
+	\cppfile[6-16]{Grafos/codigos/DFS.cpp}
 	
 	\section{Bibliografia}
 	https://es.wikipedia.org/wiki/Grafo\\
