@@ -161,7 +161,7 @@
 	
 	\subtitulo{DFS.}
 	
-	El DFS (deep first search) o Búsqueda en profundidad, es un algoritmo que permite recorrer un grafo de forma
+	El DFS (deep first search) o búsqueda en profundidad, es un algoritmo que permite recorrer un grafo de forma
 	recursiva, de manera general consiste en tomar un nodo, marcarlo como visitado y para cada arista hacer un 
 	llamado recursivo al nodo destino, solo si ese nodo no esta visitado, y repetir el proceso hasta que no queden mas
 	nodos por visitar. De esta forma se van marcando los nodos mientras se visitan y en caso de llegar a un nodo sin
@@ -186,11 +186,50 @@
 		\endminipage
 	\end{figure}	
 	
-	
 	La implementacion del DFS es corta y consiste básicamente en un algoritmo de backtraking, tiene una complejidad
 	algorítmica O($V+E$) con $V$ como el numero de nodos y $E$ como el numero de aristas.
-	
 	\cppfile[6-16]{Grafos/codigos/DFS.cpp}
+	
+	\subtitulo{BFS.}
+	
+	El BFS(Breadth First Search) o búsqueda en anchura es un algoritmo que permite recorrer un grafo de forma
+	iterativa, la idea consiste en tomar un nodo inicial y recorrer todos los nodos que están a un "salto" de 
+	distancia(es decir, sus vecinos), después los nodos que están a dos "saltos" de distancia y así sucesivamente hasta
+	recorrer todos los nodos.\\
+	
+	La implementación consiste de utilizar una cola(queue) inicialmente con un nodo, este nodo se debe marcar como
+	visitado, después se empieza a iterar los elementos en la cola, en cada iteración se desencola el siguiente nodo,
+	después se agrega todos sus nodos vecinos no visitados a la cola y se marcan como visitados, el algoritmo termina
+	cuando la cola queda vacía. En la siguiente figura se observa el orden en el cual se visitan los nodos en el grafo
+	de ejemplo anterior.
+	
+	\begin{figure}[!htb]
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/BFS1}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/BFS2}
+			\caption{}%\label{fig:awesome_image1}
+		\endminipage
+	\end{figure}	
+	
+	La implementacion del BFS es sencilla, tiene una complejidad algorítmica O($V+E$) al igual que el DFS, ademas al 
+	ser iterativo evita los problemas de stack overflow que puede presentar el DFS al trabajar con grafos muy extensos.	
+	\cppfile[8-25]{Grafos/codigos/BFS.cpp}
+	
+	\subtitulo{Observaciones.}
+	
+	Ambos algoritmos son igual de buenos para recorrer grafos de forma general, dependiendo del problema a resolver
+	uno de los dos algoritmos puede resultar mejor que el otro, esto se debe a las distintas formas de recorrer
+	los grafos, el DFS al ser un algoritmo recursivo permite recorrer los nodos de una forma ordenada, siguiendo un
+	camino en el cual cada nodo es vecino del anterior, en cambio el BFS permite recorrer los grafos por niveles, 
+	comenzando con los nodos mas cercanos al nodo inicial, de esta forma se puede encontrar mas fácil distancias entre
+	los distintos nodos. Al utilizar DFS se debe tener cuidado con la pila de memoria(call stack) la cual se puede
+	llenar rápidamente con grafo extensos, produciendo errores de ejecución.
+	
 	
 	\section{Bibliografia}
 	https://es.wikipedia.org/wiki/Grafo\\
@@ -200,6 +239,8 @@
 
 
 	%</Capitulo>
+	
+	
 	
 \end{document}
 
