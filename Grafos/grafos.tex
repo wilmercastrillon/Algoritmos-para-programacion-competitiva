@@ -230,6 +230,32 @@
 	los distintos nodos. Al utilizar DFS se debe tener cuidado con la pila de memoria(call stack) la cual se puede
 	llenar rápidamente con grafo extensos, produciendo errores de ejecución.
 	
+	\section{Grafos bipartitos}
+	
+	Un grafo bipartito es un grafo el cual se puede dividir sus vértices en dos conjuntos ${X, Y}$ en los cuales
+	todos los nodos de un mismo conjunto no están conectados entre si, es decir no existe ninguna arista la cual
+	conecte dos nodos de un mismo conjunto, los conjuntos ${X, Y}$ pueden estar vacíos.
+	
+	\begin{figure}[!htb]
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/BipartitoSi}
+			\caption{Grafo bipartito}%\label{fig:awesome_image1}
+		\endminipage
+		\minipage{0.5\textwidth}
+			\centering
+			\includegraphics[scale=1]{Grafos/imagenes/BipartitoNo}
+			\caption{Grafo no bipartito}%\label{fig:awesome_image1}
+		\endminipage
+	\end{figure}	
+	
+	Para verificar si un grafo es bipartito se puede utilizar un algoritmo sencillo de DFS o BFS, la implementación
+	consiste en tomar un nodo inicial y marcarlo como nodo perteneciente al conjunto $X$ después se visitan y marcan 
+	sus vecinos como nodos pertenecientes al conjunto $Y$, este proceso se repite para cada nodo visitando y marcando 
+	sus vecinos como nodos del conjunto opuesto, en caso de encontrar en algún momento a dos nodos vecinos del mismo
+	conjunto entonces significa que el grafo no es bipartito, pero si no se encuentran contradicciones significa que 
+	si es bipartito.
+	\cppfile[14-42]{Grafos/codigos/BipartiteCheck.cpp}	
 	
 	\section{Bibliografia}
 	https://es.wikipedia.org/wiki/Grafo\\

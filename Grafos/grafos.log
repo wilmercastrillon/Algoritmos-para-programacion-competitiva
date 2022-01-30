@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  13 JAN 2022 22:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  29 JAN 2022 20:50
 entering extended mode
 **./grafos.tex
 (grafos.tex
@@ -459,22 +459,36 @@ Package pdftex.def Info: ../Grafos/imagenes/BFS2.png  used on input line 214.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
 (../Grafos/codigos/BFS.cpp) [4 <../Grafos/imagenes/BFS1.png> <../Grafos/imagene
 s/BFS2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 235--238
+<../Grafos/imagenes/BipartitoSi.png, id=30, 188.20313pt x 188.20313pt>
+File: ../Grafos/imagenes/BipartitoSi.png Graphic file (type png)
+<use ../Grafos/imagenes/BipartitoSi.png>
+Package pdftex.def Info: ../Grafos/imagenes/BipartitoSi.png  used on input line
+ 242.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+<../Grafos/imagenes/BipartitoNo.png, id=31, 188.20313pt x 188.20313pt>
+File: ../Grafos/imagenes/BipartitoNo.png Graphic file (type png)
+<use ../Grafos/imagenes/BipartitoNo.png>
+Package pdftex.def Info: ../Grafos/imagenes/BipartitoNo.png  used on input line
+ 247.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+ (../Grafos/codigos/BipartiteCheck.cpp [5 <../Grafos/imagenes/BipartitoSi.png> 
+<../Grafos/imagenes/BipartitoNo.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
-[5] (grafos.aux
+[6] (grafos.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 6735 strings out of 492946
- 99314 string characters out of 3124490
- 419893 words of memory out of 3000000
- 10525 multiletter control sequences out of 15000+200000
+ 6776 strings out of 492946
+ 100113 string characters out of 3124490
+ 422893 words of memory out of 3000000
+ 10561 multiletter control sequences out of 15000+200000
  10102 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,9n,58p,275b,1495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,9n,58p,275b,1772s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
@@ -483,9 +497,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/
 wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6
 .pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt12.pfb>
-Output written on grafos.pdf (5 pages, 93701 bytes).
+Output written on grafos.pdf (6 pages, 103621 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
