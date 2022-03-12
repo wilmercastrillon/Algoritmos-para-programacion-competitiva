@@ -126,7 +126,7 @@
 	recursiva: \textit{v[i] = v[i-1] + v[i-2]}, de tal forma que \textit{v[i-1]} y \textit{v[i-2]} son valores
 	que se han calculado antes y ademas $v[x] = fibo(x)$. A continuación se muestra el ejemplo en C++ calculando
 	los primero 45 números de la sucesión:
-	\cppfile[5-12]{Programacion_dinamica/codigos/fibo.cpp}
+	\cppfile[7-12]{Programacion_dinamica/codigos/fibo.cpp}
 	Aunque en este enfoque no utilizamos llamados recursivos, puede resultar mas difícil de implementar,
 	pues por lo general es menos intuitivo.\\
 	
@@ -138,7 +138,7 @@
 	subproblemas antes de poder dar alguna solución. En este enfoque se hace mas notorio la importancia de la tabla 
 	de memorización, veamos la eficiencia del algoritmo si dejamos únicamente la formula recursiva, el código seria 
 	el siguiente:
-	\cppfile[14-20]{Programacion_dinamica/codigos/fibo.cpp}
+	\cppfile[14-19]{Programacion_dinamica/codigos/fibo.cpp}
 	Si ejecutamos este código para $fibo(6)$ obtenemos el siguiente arbol de recursión:\\
 	\begin{center}
 		\includegraphics[scale=0.92]{Programacion_dinamica/imagenes/arbol_recursion}
@@ -153,7 +153,7 @@
 	si la solución de ese sub-problema ya fue encontrada, en tal caso se devuelve el valor guardado, sino se calcula
 	y se guarda, en este ejemplo la tabla comienza llena con -1, un valor que nunca es usado en la solución, de 
 	tal forma que si una posición es igual a -1 entonces se debe calcular.
-	\cppfile[22-31]{Programacion_dinamica/codigos/fibo.cpp}
+	\cppfile[24-31]{Programacion_dinamica/codigos/fibo.cpp}
 	Este ejercicio resulta muy trivial, se puede resolver facilmente sin pensar en dp, ahora se mostraran
 	problemas en los cuales se hace necesario utilizar dp para dar una solución eficiente.
 	
@@ -251,12 +251,12 @@
 	ir desde T[1][1] hasta T[i][j], en otras palabra memo[i][j] = $f(i,j)$, ahora se puede solucionar el problema 
 	usando cualquiera de los dos enfoques de dp, para usar Top-Down solamente se agrega la tabla de memorización 
 	a la formula recursiva, resultando en la siguiente función(recordar que en C++ se indexa desde 0):
-	\cppfile[9-20]{Programacion_dinamica/codigos/matriz.cpp}
+	\cppfile[9-17]{Programacion_dinamica/codigos/matriz.cpp}
 	
 	para conocer el resultado solo se debe imprimir $f(n-1, m-1)$. para la solución con Buttom-Up se debe recorrer 
 	la matriz y llenarla según la formula recursiva, se debe comenzar con los casos base antes de calcular lo demás, 
 	esto resultaría en la siguiente función:
-	\cppfile[22-35]{Programacion_dinamica/codigos/matriz.cpp}
+	\cppfile[19-31]{Programacion_dinamica/codigos/matriz.cpp}
 	De esta forma para conocer la solución se debe imprimir memo[n-1][m-1]. La complejidad algorítmica resultante
 	es O($n*m$), resultando mejor que un algoritmo de complejidad exponencial utilizando fuerza bruta.\\
 	
@@ -273,7 +273,7 @@
 	puede reescribir $x_{1}$ como $x_{1}=v[k_{2}]+x_{2}$ y así sucesivamente hasta encontrar $x_{n}=v[k_{n}]+0$, de 
 	esta manera si se toma cada elemento de $V$ que fue utilizado, se podría encontrar el subconjunto:
 	${v[k_{1}],v[k_{2}],...,v[k_{n}]}$ el cual sumando todos sus elementos obtenemos $n$, en general se deberá probar
-	para cada elemento en $V$ si puede pertenecer a algún subconjunto que sume $n$.
+	para cada elemento en $V$ si puede pertenecer a algún subconjunto que sume $n$.\\
 	
 	En este problema el resultado deberá ser 'verdadero' o 'falso', mostrando si es posible sumar $n$ con algún 
 	subconjunto, con los sub-problemas establecidos se puede ahora definir los casos base, si en algún momento 
@@ -289,7 +289,7 @@
 			1 & \text{if f(n-V[k],k+1)=1}\\
 			0 & \text{if $otro$}
 		\end{cases}
-	$\\
+		$\\
 	\end{center}
 	Con esta formula la solución sera igual a $f(n,0)$, para implementarla se debe hacer una tabla de memorización,
 	la cantidad de columnas de la tabla debe ser por lo menos igual a la longitud del vector, y la cantidad 
@@ -318,7 +318,50 @@
 	entonces si $memo[n][V.size()-1]$ es verdadero entonce si existe un sub-conjunto que sume $n$, en caso contrario
 	no es posible.
 
-	%\section{Problema de la mochila(Knapsack problem)}
+	\section{Problema de la mochila(Knapsack problem)}
+	
+	Este es un problema clásico de programación dinámica, consiste en lo siguiente, hay una mochila que tiene una
+	capacidad limitada de peso que puede contener, y hay un grupo de objetos, cada uno tiene un valor y peso, el
+	objetivo consiste en llenar la mochila con los objetos de tal forma que no se exceda su capacidad de peso y 
+	que el valor de los objetos que hay dentro de la mochila sea lo más alto posible. Por ejemplo:
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|l|l|l|}
+			\hline
+			$i$  	&0 &1 &2 &3 &4 &5 \\ \hline
+			$W_{i}$ &1 &2 &4 &5 &4 &2 \\ \hline
+			$V_{i}$ &2 &7 &5 &9 &5 &3 \\ \hline
+		\end{tabular}
+	\end{center}
+	Sea $N=6$ la cantidad de objetos, $C=10$ la capacidad de la mochila, $W_{i}$ el peso del i-ésimo objeto y 
+	$V_{i}$ el valor del i-ésimo objeto, entonces las respuesta es 21, usando los objetos 0, 1, 3, 5 obtenemos un peso 
+	10 con valor 21.\\
+	
+	Para cada objeto existen dos opciones, tomarlo o dejarlo, entonces para n objetos existen $2^{n}$ posibles 
+	opciones, de todas ellas la solución será una configuración que no exceda el peso de la mochila y la suma de los
+	objetos seleccionados sea el más alto, una solución probando todos los posibles casos tendrá complejidad 
+	O($2^{n}$), la cual es bastante alta, mientras que una solución greddy no siempre va a funcionar.\\
+
+	Sin embargo es posible reducir bastante la complejidad trabajando con programación dinámica, sea $x_{i}$ la 
+	capacidad usada al estar en el i-ésimo objeto, iniciando con $i=0$ y $x_{i}=0$, se repite el siguiente proceso: 
+	para cada objeto existe la decisión de no tomarlo y pasar al objeto $i+1$ con $x_{i+1}=x_{i}$ o tomarlo y pasar 
+	al objeto $i+1$ con $x_{i+1}=x_{i}+W_{i}$ siempre y cuando $x_{i}+W_{i} \leq C$, es decir que no se exceda la 
+	capacidad, entonces se puede escribir la siguiente función recursiva:
+	\begin{center}
+		$f(i, x) = 	
+		\begin{cases}
+			0 & \text{if } i = N\\
+			max(f(i+1,x), f(i+1,x+W_{i}) + V_{i}) & \text{if } x+W_{i} \leq C \\
+			f(i+1,x) & \text{if $otro$}
+		\end{cases}
+		$\\
+	\end{center}
+	
+	Al programar esta función recursiva se obtendrá una complejidad de $O(2^{n})$, pero al agregar la tabla de 
+	memorización la complejidad se reduce al tamaño de la tabla, quedado en $O(N*C)$, y finalmente se puede obtener 
+	la siguiente implementación.
+	\cppfile[9-17]{Programacion_dinamica/codigos/ProblemaMochila.cpp}
+	
+	
 	
 	\section{Bibliografia}
 	

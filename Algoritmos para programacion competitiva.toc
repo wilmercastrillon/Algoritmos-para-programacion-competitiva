@@ -6,7 +6,8 @@
 \contentsline {chapter}{\numberline {2}Grafos}{9}% 
 \contentsline {section}{\numberline {2.1}Teor\IeC {\'\i }a de grafos}{9}% 
 \contentsline {section}{\numberline {2.2}DFS y BFS}{11}% 
-\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{14}% 
-\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n a la programaci\IeC {\'o}n din\IeC {\'a}mica}{14}% 
-\contentsline {section}{\numberline {3.2}Sub-SetSum}{19}% 
-\contentsline {section}{\numberline {3.3}Bibliografia}{20}% 
+\contentsline {section}{\numberline {2.3}Grafos bipartitos}{13}% 
+\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{15}% 
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n a la programaci\IeC {\'o}n din\IeC {\'a}mica}{15}% 
+\contentsline {section}{\numberline {3.2}Sub-SetSum}{20}% 
+\contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{21}% 

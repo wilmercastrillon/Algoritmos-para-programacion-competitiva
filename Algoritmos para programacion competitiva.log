@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  13 JAN 2022 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  12 MAR 2022 17:04
 entering extended mode
 **"./Algoritmos para programacion competitiva.tex"
 ("Algoritmos para programacion competitiva.tex"
@@ -667,9 +667,25 @@ Package pdftex.def Info: Grafos/imagenes/BFS2.png  used on input line 137.
 LaTeX Info: Redefining \. on input line 144.
 LaTeX Info: Redefining \% on input line 144.
  [12 <./Grafos/imagenes/BFS1.png> <./Grafos/imagenes/BFS2.png>]
+<Grafos/imagenes/BipartitoSi.png, id=76, 188.20313pt x 188.20313pt>
+File: Grafos/imagenes/BipartitoSi.png Graphic file (type png)
+<use Grafos/imagenes/BipartitoSi.png>
+Package pdftex.def Info: Grafos/imagenes/BipartitoSi.png  used on input line 16
+5.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+<Grafos/imagenes/BipartitoNo.png, id=77, 188.20313pt x 188.20313pt>
+File: Grafos/imagenes/BipartitoNo.png Graphic file (type png)
+<use Grafos/imagenes/BipartitoNo.png>
+Package pdftex.def Info: Grafos/imagenes/BipartitoNo.png  used on input line 17
+0.
+(pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
+ (Grafos/codigos/BipartiteCheck.cpp
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
+ [13 <./Grafos/imagenes/BipartitoSi.png> <./Grafos/imagenes/BipartitoNo.png>])
 LaTeX Info: Redefining \. on input line 132.
 LaTeX Info: Redefining \% on input line 132.
- [13]
+ [14]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--34
@@ -681,7 +697,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[14
+[15
 
 ] (Programacion_dinamica/codigos/fibo.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
@@ -693,7 +709,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<Programacion_dinamica/imagenes/arbol_recursion.png, id=82, 371.13657pt x 252.1
+<Programacion_dinamica/imagenes/arbol_recursion.png, id=89, 371.13657pt x 252.1
 9218pt>
 File: Programacion_dinamica/imagenes/arbol_recursion.png Graphic file (type png
 )
@@ -703,7 +719,7 @@ ed on input line 68.
 (pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
 LaTeX Info: Redefining \. on input line 69.
 LaTeX Info: Redefining \% on input line 69.
-[15] (Programacion_dinamica/codigos/fibo.cpp)
+[16] (Programacion_dinamica/codigos/fibo.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
@@ -713,9 +729,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
  []
 
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
-[16 <./Programacion_dinamica/imagenes/arbol_recursion.png>]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+[17 <./Programacion_dinamica/imagenes/arbol_recursion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
@@ -730,19 +746,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--153
 
  []
 
-<Programacion_dinamica/imagenes/matriz1.png, id=89, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz1.png, id=96, 282.30469pt x 282.30469pt>
 File: Programacion_dinamica/imagenes/matriz1.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz1.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz1.png  used on in
 put line 157.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/matriz2.png, id=90, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz2.png, id=97, 282.30469pt x 282.30469pt>
 File: Programacion_dinamica/imagenes/matriz2.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz2.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz2.png  used on in
 put line 162.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/matriz3.png, id=91, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz3.png, id=98, 282.30469pt x 282.30469pt>
 File: Programacion_dinamica/imagenes/matriz3.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz3.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz3.png  used on in
@@ -750,17 +766,22 @@ put line 167.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
 LaTeX Info: Redefining \. on input line 170.
 LaTeX Info: Redefining \% on input line 170.
-[17] (Programacion_dinamica/codigos/matriz.cpp)
+[18] (Programacion_dinamica/codigos/matriz.cpp)
 (Programacion_dinamica/codigos/matriz.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
  []
 
-LaTeX Info: Redefining \. on input line 186.
-LaTeX Info: Redefining \% on input line 186.
-[18 <./Programacion_dinamica/imagenes/matriz1.png> <./Programacion_dinamica/ima
-genes/matriz2.png> <./Programacion_dinamica/imagenes/matriz3.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 189--193
+
+ []
+
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
+[19 <./Programacion_dinamica/imagenes/matriz1.png> <./Programacion_dinamica/ima
+genes/matriz2.png> <./Programacion_dinamica/imagenes/matriz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 194--201
 
  []
 
@@ -771,27 +792,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
 LaTeX Info: Redefining \. on input line 232.
 LaTeX Info: Redefining \% on input line 232.
-[19]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 (Programacion_dinamica/codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
+Underfull \hbox (badness 10000) in paragraph at lines 259--262
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--267
+
+ []
+
+LaTeX Info: Redefining \. on input line 268.
+LaTeX Info: Redefining \% on input line 268.
+[21] (Programacion_dinamica/codigos/ProblemaMochila.cpp)
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
-[20] ("Algoritmos para programacion competitiva.aux"
+ [22]
+("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7339 strings out of 492946
- 110985 string characters out of 3124490
+ 7387 strings out of 492946
+ 111942 string characters out of 3124490
  461356 words of memory out of 3000000
- 11029 multiletter control sequences out of 15000+200000
+ 11069 multiletter control sequences out of 15000+200000
  67749 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,58p,311b,1981s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -815,10 +845,10 @@ s/type1/public/lm/lmro12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX
 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer-PC/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Algoritmos para programacion competitiva.pdf" (21 pages, 439
-688 bytes).
+Output written on "Algoritmos para programacion competitiva.pdf" (23 pages, 454
+040 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
+ 164 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

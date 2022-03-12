@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  23 OCT 2021 21:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  12 MAR 2022 17:03
 entering extended mode
 **./dp.tex
 (dp.tex
@@ -467,10 +467,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 260--262
 
  []
 
-[5 <../Programacion_dinamica/imagenes/matriz1.png> <../Programacion_dinamica/im
-agenes/matriz2.png> <../Programacion_dinamica/imagenes/matriz3.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 267.
-
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
 "
@@ -480,6 +477,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
 
 Underfull \hbox (badness 10000) in paragraph at lines 265--269
+
+ []
+
+[5 <../Programacion_dinamica/imagenes/matriz1.png> <../Programacion_dinamica/im
+agenes/matriz2.png> <../Programacion_dinamica/imagenes/matriz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--277
 
  []
 
@@ -494,19 +497,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 309--313
  []
 
 (../Programacion_dinamica/codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 325--329
+Underfull \hbox (badness 10000) in paragraph at lines 335--338
 
  []
 
-[7] (dp.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--343
+
+ []
+
+[7]
+Overfull \hbox (1.18143pt too wide) in paragraph at lines 344--349
+[]\OT1/cmr/m/n/12 Sin em-bar-go es po-si-ble re-du-cir bas-tan-te la com-ple-ji
+-dad tra-ba-jan-do con pro-gra-ma-cion dinami-
+ []
+
+(../Programacion_dinamica/codigos/ProblemaMochila.cpp)
+Underfull \hbox (badness 10000) in paragraph at lines 368--372
+
+ []
+
+[8] (dp.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 5657 strings out of 492946
- 80166 string characters out of 3124490
- 440907 words of memory out of 3000000
- 9447 multiletter control sequences out of 15000+200000
+ 5669 strings out of 492946
+ 80394 string characters out of 3124490
+ 439907 words of memory out of 3000000
+ 9456 multiletter control sequences out of 15000+200000
  10676 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,58p,271b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -523,9 +542,9 @@ ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
 ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
 s/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 tt12.pfb>
-Output written on dp.pdf (7 pages, 205971 bytes).
+Output written on dp.pdf (8 pages, 212917 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
