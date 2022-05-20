@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  12 MAR 2022 17:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  20 MAY 2022 16:12
 entering extended mode
 **"./Algoritmos para programacion competitiva.tex"
 ("Algoritmos para programacion competitiva.tex"
@@ -223,27 +223,86 @@ Package caption Info: Standard document class detected.
 \c@caption@flags=\count107
 \c@continuedfloat=\count108
 )
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol
+.sty"
+Package: multicol 2018/11/09 v1.8u multicolumn formatting (FMi)
+\c@tracingmulticols=\count109
+\mult@box=\box29
+\multicol@leftmargin=\dimen130
+\c@unbalance=\count110
+\c@collectmore=\count111
+\doublecol@number=\count112
+\multicoltolerance=\count113
+\multicolpretolerance=\count114
+\full@width=\dimen131
+\page@free=\dimen132
+\premulticols=\dimen133
+\postmulticols=\dimen134
+\multicolsep=\skip49
+\multicolbaselineskip=\skip50
+\partial@page=\box30
+\last@line=\box31
+\maxbalancingoverflow=\dimen135
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count115
+\c@finalcolumnbadness=\count116
+\last@try=\dimen136
+\multicolovershoot=\dimen137
+\multicolundershoot=\dimen138
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\mc@col@check@num=\count117
+)
+("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.st
+y"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count118
+\float@exts=\toks25
+\float@box=\box55
+\@float@everytoks=\toks26
+\@floatcapt=\box56
+)
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
 ngs.sty"
-\lst@mode=\count109
-\lst@gtempboxa=\box29
-\lst@token=\toks25
-\lst@length=\count110
-\lst@currlwidth=\dimen130
-\lst@column=\count111
-\lst@pos=\count112
-\lst@lostspace=\dimen131
-\lst@width=\dimen132
-\lst@newlines=\count113
-\lst@lineno=\count114
-\lst@maxwidth=\dimen133
+\lst@mode=\count119
+\lst@gtempboxa=\box57
+\lst@token=\toks27
+\lst@length=\count120
+\lst@currlwidth=\dimen139
+\lst@column=\count121
+\lst@pos=\count122
+\lst@lostspace=\dimen140
+\lst@width=\dimen141
+\lst@newlines=\count123
+\lst@lineno=\count124
+\lst@maxwidth=\dimen142
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
 sc.sty"
 File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count115
-\lst@skipnumbers=\count116
-\lst@framebox=\box30
+\c@lstnumber=\count125
+\lst@skipnumbers=\count126
+\lst@framebox=\box58
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
 ngs.cfg"
@@ -323,32 +382,32 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
 \pin@file=\read1
-\c@pinlineno=\count117
+\c@pinlineno=\count127
  ("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `"Algoritmos para programacion competitiva.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 116.
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
+LaTeX Info: Redefining \. on input line 116.
+LaTeX Info: Redefining \% on input line 116.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -388,17 +447,17 @@ LaTeX Info: Redefining \% on input line 115.
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
 f.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
-\scratchdimen=\dimen134
-\scratchbox=\box31
-\nofMPsegments=\count119
-\nofMParguments=\count120
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count121
-\MPscratchDim=\dimen135
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count128
+\scratchdimen=\dimen143
+\scratchbox=\box59
+\nofMPsegments=\count129
+\nofMParguments=\count130
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count131
+\MPscratchDim=\dimen144
+\MPnumerator=\count132
+\makeMPintoPDFobject=\count133
+\everyMPtoPDFconversion=\toks29
 )
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
 pdf-base.sty"
@@ -454,37 +513,38 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count124
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 116.
+\c@lstlisting=\count134
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 117.
 
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 116.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 117.
 
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 116
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 117
 .
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 116
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 117
 .
  ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd
 "
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 116.
+(Font)              <14.4> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 116.
+(Font)              <10> on input line 117.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 116.
+(Font)              <7> on input line 117.
  [1
 
 
@@ -523,6 +583,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
 ]
 Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--41
+
+ []
+
 [3
 
 ]
@@ -531,88 +611,147 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 47.
 ("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (Estructuras_de_datos/codigos/tablas_aditivas.cpp)
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
- [4]
-<Estructuras_de_datos/imagenes/img1.png, id=30, 240.9pt x 240.9pt>
-File: Estructuras_de_datos/imagenes/img1.png Graphic file (type png)
-<use Estructuras_de_datos/imagenes/img1.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/img1.png  used on input 
-line 100.
-(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img2.png, id=31, 240.9pt x 240.9pt>
-File: Estructuras_de_datos/imagenes/img2.png Graphic file (type png)
-<use Estructuras_de_datos/imagenes/img2.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/img2.png  used on input 
-line 105.
-(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img3.png, id=32, 240.9pt x 240.9pt>
-File: Estructuras_de_datos/imagenes/img3.png Graphic file (type png)
-<use Estructuras_de_datos/imagenes/img3.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/img3.png  used on input 
-line 110.
-(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
-<Estructuras_de_datos/imagenes/img4.png, id=33, 240.9pt x 240.9pt>
-File: Estructuras_de_datos/imagenes/img4.png Graphic file (type png)
-<use Estructuras_de_datos/imagenes/img4.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/img4.png  used on input 
-line 115.
-(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+Underfull \hbox (badness 10000) in paragraph at lines 55--59
 
-(Estructuras_de_datos/codigos/tablas_aditivas.cpp)
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
- [5 <./Estructuras_de_datos/imagenes/img1.png> <./Estructuras_de_datos/imagenes
-/img2.png> <./Estructuras_de_datos/imagenes/img3.png> <./Estructuras_de_datos/i
-magenes/img4.png>]
-<Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png, id=38, 355.3275pt 
-x 195.73125pt>
-File: Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png Graphic file (
-type png)
-<use Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet
-.png  used on input line 160.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--87
+
+ []
+
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+[4]
+<Estructuras_de_datos/imagenes/tablas_aditivas/img1.png, id=30, 240.9pt x 240.9
+pt>
+File: Estructuras_de_datos/imagenes/tablas_aditivas/img1.png Graphic file (type
+ png)
+<use Estructuras_de_datos/imagenes/tablas_aditivas/img1.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img1.png
+  used on input line 102.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<Estructuras_de_datos/imagenes/tablas_aditivas/img2.png, id=31, 240.9pt x 240.9
+pt>
+File: Estructuras_de_datos/imagenes/tablas_aditivas/img2.png Graphic file (type
+ png)
+<use Estructuras_de_datos/imagenes/tablas_aditivas/img2.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img2.png
+  used on input line 109.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<Estructuras_de_datos/imagenes/tablas_aditivas/img3.png, id=32, 240.9pt x 240.9
+pt>
+File: Estructuras_de_datos/imagenes/tablas_aditivas/img3.png Graphic file (type
+ png)
+<use Estructuras_de_datos/imagenes/tablas_aditivas/img3.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img3.png
+  used on input line 116.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+<Estructuras_de_datos/imagenes/tablas_aditivas/img4.png, id=33, 240.9pt x 240.9
+pt>
+File: Estructuras_de_datos/imagenes/tablas_aditivas/img4.png Graphic file (type
+ png)
+<use Estructuras_de_datos/imagenes/tablas_aditivas/img4.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img4.png
+  used on input line 123.
+(pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
+ (Estructuras_de_datos/codigos/tablas_aditivas.cpp)
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
+ [5 <./Estructuras_de_datos/imagenes/tablas_aditivas/img1.png> <./Estructuras_d
+e_datos/imagenes/tablas_aditivas/img2.png> <./Estructuras_de_datos/imagenes/tab
+las_aditivas/img3.png> <./Estructuras_de_datos/imagenes/tablas_aditivas/img4.pn
+g>]
+Underfull \hbox (badness 10000) in paragraph at lines 158--162
+
+ []
+
+<Estructuras_de_datos/imagenes/disjoint_set/construccion.png, id=38, 355.3275pt
+ x 195.73125pt>
+File: Estructuras_de_datos/imagenes/disjoint_set/construccion.png Graphic file 
+(type png)
+<use Estructuras_de_datos/imagenes/disjoint_set/construccion.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/construccio
+n.png  used on input line 170.
 (pdftex.def)             Requested size: 248.72754pt x 137.01093pt.
-
 (Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
- [6 <./Estructuras_de_datos/imagenes/Disjoint_set/DisjointSet.png>])
-<Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png, id=43, 810.77907pt 
-x 190.46156pt>
-File: Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png Graphic file (t
-ype png)
-<use Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.
-png  used on input line 189.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+ [6 <./Estructuras_de_datos/imagenes/disjoint_set/construccion.png>])
+<Estructuras_de_datos/imagenes/disjoint_set/union_rango.png, id=43, 810.77907pt
+ x 190.46156pt>
+File: Estructuras_de_datos/imagenes/disjoint_set/union_rango.png Graphic file (
+type png)
+<use Estructuras_de_datos/imagenes/disjoint_set/union_rango.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/union_rango
+.png  used on input line 200.
 (pdftex.def)             Requested size: 486.4712pt x 114.2778pt.
 
-Overfull \hbox (2.77434pt too wide) in paragraph at lines 189--190
+Overfull \hbox (2.77434pt too wide) in paragraph at lines 200--201
  [][] 
  []
 
 (Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
-LaTeX Info: Redefining \. on input line 45.
-LaTeX Info: Redefining \% on input line 45.
- [7 <./Estructuras_de_datos/imagenes/Disjoint_set/UnionRango.png>])
-<Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png, id=49, 361.35pt x 1
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [7 <./Estructuras_de_datos/imagenes/disjoint_set/union_rango.png>])
+<Estructuras_de_datos/imagenes/disjoint_set/compresion.png, id=49, 361.35pt x 1
 53.57375pt>
-File: Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png Graphic file (t
+File: Estructuras_de_datos/imagenes/disjoint_set/compresion.png Graphic file (t
 ype png)
-<use Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png>
-Package pdftex.def Info: Estructuras_de_datos/imagenes/Disjoint_set/Compresion.
-png  used on input line 207.
+<use Estructuras_de_datos/imagenes/disjoint_set/compresion.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/compresion.
+png  used on input line 219.
 (pdftex.def)             Requested size: 216.81168pt x 92.14494pt.
 
 (Estructuras_de_datos/codigos/union_find_compresion.cpp)
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [8 <./Estructuras_de_datos/imagenes/Disjoint_set/Compresion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 237--242
+
+ []
+
+LaTeX Info: Redefining \. on input line 243.
+LaTeX Info: Redefining \% on input line 243.
+[8 <./Estructuras_de_datos/imagenes/disjoint_set/compresion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 243--250
+
+ []
+
+<Estructuras_de_datos/imagenes/sparse_table/construccion.png, id=54, 346.29375p
+t x 263.48438pt>
+File: Estructuras_de_datos/imagenes/sparse_table/construccion.png Graphic file 
+(type png)
+<use Estructuras_de_datos/imagenes/sparse_table/construccion.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/sparse_table/construccio
+n.png  used on input line 260.
+(pdftex.def)             Requested size: 225.08826pt x 171.2628pt.
+(Estructuras_de_datos/codigos/sparse_table.cpp)
+<Estructuras_de_datos/imagenes/sparse_table/consulta.png, id=55, 308.65312pt x 
+203.25937pt>
+File: Estructuras_de_datos/imagenes/sparse_table/consulta.png Graphic file (typ
+e png)
+<use Estructuras_de_datos/imagenes/sparse_table/consulta.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/sparse_table/consulta.pn
+g  used on input line 283.
+(pdftex.def)             Requested size: 200.62215pt x 132.11702pt.
+
+(Estructuras_de_datos/codigos/sparse_table.cpp)
+LaTeX Info: Redefining \. on input line 301.
+LaTeX Info: Redefining \% on input line 301.
+ [9 <./Estructuras_de_datos/imagenes/sparse_table/construccion.png>]
+(Estructuras_de_datos/codigos/sparse_table.cpp)
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [10 <./Estructuras_de_datos/imagenes/sparse_table/consulta.png>]
 Cap\'{\i }tulo 2.
-[9
+[11
 
 ]
-<Grafos/imagenes/grafo_ejemplo.png, id=57, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/grafo_ejemplo.png, id=70, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/grafo_ejemplo.png Graphic file (type png)
 <use Grafos/imagenes/grafo_ejemplo.png>
 Package pdftex.def Info: Grafos/imagenes/grafo_ejemplo.png  used on input line 
@@ -630,17 +769,17 @@ Overfull \hbox (24.18631pt too wide) in paragraph at lines 66--76
 
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
-[10 <./Grafos/imagenes/grafo_ejemplo.png>]
+[12 <./Grafos/imagenes/grafo_ejemplo.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 87--92
 
  []
 
-<Grafos/imagenes/DFS1.png, id=61, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/DFS1.png, id=75, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS1.png Graphic file (type png)
 <use Grafos/imagenes/DFS1.png>
 Package pdftex.def Info: Grafos/imagenes/DFS1.png  used on input line 102.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/DFS2.png, id=62, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/DFS2.png, id=76, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS2.png Graphic file (type png)
 <use Grafos/imagenes/DFS2.png>
 Package pdftex.def Info: Grafos/imagenes/DFS2.png  used on input line 107.
@@ -648,17 +787,17 @@ Package pdftex.def Info: Grafos/imagenes/DFS2.png  used on input line 107.
 (Grafos/codigos/DFS.cpp)
 LaTeX Info: Redefining \. on input line 114.
 LaTeX Info: Redefining \% on input line 114.
- [11 <./Grafos/imagenes/DFS1.png> <./Grafos/imagenes/DFS2.png>]
+ [13 <./Grafos/imagenes/DFS1.png> <./Grafos/imagenes/DFS2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 118--122
 
  []
 
-<Grafos/imagenes/BFS1.png, id=68, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/BFS1.png, id=82, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/BFS1.png Graphic file (type png)
 <use Grafos/imagenes/BFS1.png>
 Package pdftex.def Info: Grafos/imagenes/BFS1.png  used on input line 132.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/BFS2.png, id=69, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/BFS2.png, id=83, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/BFS2.png Graphic file (type png)
 <use Grafos/imagenes/BFS2.png>
 Package pdftex.def Info: Grafos/imagenes/BFS2.png  used on input line 137.
@@ -666,14 +805,14 @@ Package pdftex.def Info: Grafos/imagenes/BFS2.png  used on input line 137.
 (Grafos/codigos/BFS.cpp)
 LaTeX Info: Redefining \. on input line 144.
 LaTeX Info: Redefining \% on input line 144.
- [12 <./Grafos/imagenes/BFS1.png> <./Grafos/imagenes/BFS2.png>]
-<Grafos/imagenes/BipartitoSi.png, id=76, 188.20313pt x 188.20313pt>
+ [14 <./Grafos/imagenes/BFS1.png> <./Grafos/imagenes/BFS2.png>]
+<Grafos/imagenes/BipartitoSi.png, id=89, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/BipartitoSi.png Graphic file (type png)
 <use Grafos/imagenes/BipartitoSi.png>
 Package pdftex.def Info: Grafos/imagenes/BipartitoSi.png  used on input line 16
 5.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/BipartitoNo.png, id=77, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/BipartitoNo.png, id=90, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/BipartitoNo.png Graphic file (type png)
 <use Grafos/imagenes/BipartitoNo.png>
 Package pdftex.def Info: Grafos/imagenes/BipartitoNo.png  used on input line 17
@@ -682,10 +821,10 @@ Package pdftex.def Info: Grafos/imagenes/BipartitoNo.png  used on input line 17
  (Grafos/codigos/BipartiteCheck.cpp
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
- [13 <./Grafos/imagenes/BipartitoSi.png> <./Grafos/imagenes/BipartitoNo.png>])
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [14]
+ [15 <./Grafos/imagenes/BipartitoSi.png> <./Grafos/imagenes/BipartitoNo.png>])
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+ [16]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 30--34
@@ -697,7 +836,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
-[15
+[17
 
 ] (Programacion_dinamica/codigos/fibo.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
@@ -709,8 +848,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-<Programacion_dinamica/imagenes/arbol_recursion.png, id=89, 371.13657pt x 252.1
-9218pt>
+<Programacion_dinamica/imagenes/arbol_recursion.png, id=102, 371.13657pt x 252.
+19218pt>
 File: Programacion_dinamica/imagenes/arbol_recursion.png Graphic file (type png
 )
 <use Programacion_dinamica/imagenes/arbol_recursion.png>
@@ -719,7 +858,7 @@ ed on input line 68.
 (pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
 LaTeX Info: Redefining \. on input line 69.
 LaTeX Info: Redefining \% on input line 69.
-[16] (Programacion_dinamica/codigos/fibo.cpp)
+[18] (Programacion_dinamica/codigos/fibo.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 86--89
 
  []
@@ -731,7 +870,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--99
 
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
-[17 <./Programacion_dinamica/imagenes/arbol_recursion.png>]
+[19 <./Programacion_dinamica/imagenes/arbol_recursion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 111--117
 
  []
@@ -746,19 +885,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 147--153
 
  []
 
-<Programacion_dinamica/imagenes/matriz1.png, id=96, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz1.png, id=110, 282.30469pt x 282.30469pt>
+
 File: Programacion_dinamica/imagenes/matriz1.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz1.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz1.png  used on in
 put line 157.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/matriz2.png, id=97, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz2.png, id=111, 282.30469pt x 282.30469pt>
+
 File: Programacion_dinamica/imagenes/matriz2.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz2.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz2.png  used on in
 put line 162.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/matriz3.png, id=98, 282.30469pt x 282.30469pt>
+<Programacion_dinamica/imagenes/matriz3.png, id=112, 282.30469pt x 282.30469pt>
+
 File: Programacion_dinamica/imagenes/matriz3.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/matriz3.png>
 Package pdftex.def Info: Programacion_dinamica/imagenes/matriz3.png  used on in
@@ -766,7 +908,7 @@ put line 167.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
 LaTeX Info: Redefining \. on input line 170.
 LaTeX Info: Redefining \% on input line 170.
-[18] (Programacion_dinamica/codigos/matriz.cpp)
+[20] (Programacion_dinamica/codigos/matriz.cpp)
 (Programacion_dinamica/codigos/matriz.cpp)
 Underfull \hbox (badness 10000) in paragraph at lines 184--186
 
@@ -779,7 +921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--193
 
 LaTeX Info: Redefining \. on input line 193.
 LaTeX Info: Redefining \% on input line 193.
-[19 <./Programacion_dinamica/imagenes/matriz1.png> <./Programacion_dinamica/ima
+[21 <./Programacion_dinamica/imagenes/matriz1.png> <./Programacion_dinamica/ima
 genes/matriz2.png> <./Programacion_dinamica/imagenes/matriz3.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 194--201
 
@@ -792,7 +934,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--232
 
 LaTeX Info: Redefining \. on input line 232.
 LaTeX Info: Redefining \% on input line 232.
-[20]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
@@ -809,46 +951,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--267
 
 LaTeX Info: Redefining \. on input line 268.
 LaTeX Info: Redefining \% on input line 268.
-[21] (Programacion_dinamica/codigos/ProblemaMochila.cpp)
-LaTeX Info: Redefining \. on input line 135.
-LaTeX Info: Redefining \% on input line 135.
- [22]
+[23] (Programacion_dinamica/codigos/ProblemaMochila.cpp)
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+ [24]
 ("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7387 strings out of 492946
- 111942 string characters out of 3124490
- 461356 words of memory out of 3000000
- 11069 multiletter control sequences out of 15000+200000
+ 7601 strings out of 492946
+ 116334 string characters out of 3124490
+ 467458 words of memory out of 3000000
+ 11267 multiletter control sequences out of 15000+200000
  67749 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,58p,311b,1981s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,58p,311b,1979s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
-mathsy.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
-s/lm/lm-ec.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
+rm.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-mathsy.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/
 dvips/lm/lm-mathit.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/enc/dvips/lm/lm-mathex.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTe
-X 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Users/wilmer-PC/AppData/Local/Programs/M
+nts/enc/dvips/lm/lm-ec.enc}{C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.
+9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/wilmer-PC/AppData/Local/Programs/M
 iKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/wilmer-PC/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/wilmer-PC/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/wil
-mer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Us
-ers/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr17.pfb
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/wil
+mer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Us
+ers/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb
 ><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lm
-r6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/lm/lmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/lm/lmri12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/lm/lmro12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer-PC/AppData/Local/P
-rograms/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Algoritmos para programacion competitiva.pdf" (23 pages, 454
-040 bytes).
+r17.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmr6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/lm/lmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/lm/lmri12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmro12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer-PC/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/wilmer-PC/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer-PC/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "Algoritmos para programacion competitiva.pdf" (25 pages, 489
+412 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 185 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
