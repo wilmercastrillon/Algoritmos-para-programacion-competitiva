@@ -77,6 +77,8 @@
 	%<*Capitulo>
 	
 	\section{Teoría de grafos}
+	%\label{grafos:teoria_de_grafos}
+	
 	Los grafos son una estructura de datos donde se pueden relacionar distintos objetos entre si, los grafos se pueden
 	definir como un conjunto de nodos(objetos) unidos por aristas(relaciones), estos son estudiados por la
 	matemática y las ciencias de la computación, esta rama se conoce como teoría de grafos, ademas tienen muchas 
@@ -129,8 +131,9 @@
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/grafo_ejemplo}
-			\caption{}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/introduccion/ejemplo}
+			\caption{}
+			\label{grafos:introduccion:ejemplo}
 		\endminipage
 		\minipage{0.55\textwidth}
 			\centering
@@ -153,6 +156,7 @@
 	\end{figure}	
 	
 	\section{DFS y BFS}
+	%\label{grafos:dfs_y_bfs}
 	
 	Los grafos son estructuras no lineales, estos no tienen un nodo inicio o un orden especifico para recorrerlos,
 	existen principalmente dos algoritmos que permiten recorrer un grafo DFS y BFS, estos no son algoritmos muy
@@ -176,13 +180,15 @@
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/DFS1}
-			\caption{}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/DFS_y_BFS/DFS1}
+			\caption{}
+			\label{grafos:DFS_y_BFS:DFS1}
 		\endminipage
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/DFS2}
-			\caption{}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/DFS_y_BFS/DFS2}
+			\caption{}
+			\label{grafos:DFS_y_BFS:DFS2}
 		\endminipage
 	\end{figure}	
 	
@@ -206,13 +212,15 @@
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/BFS1}
-			\caption{}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/DFS_y_BFS/BFS1}
+			\caption{}
+			\label{grafos:DFS_y_BFS:BFS1}
 		\endminipage
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/BFS2}
-			\caption{}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/DFS_y_BFS/BFS2}
+			\caption{}
+			\label{grafos:DFS_y_BFS:BFS2}
 		\endminipage
 	\end{figure}	
 	
@@ -231,6 +239,7 @@
 	llenar rápidamente con grafo extensos, produciendo errores de ejecución.
 	
 	\section{Grafos bipartitos}
+	%\label{grafos:grafos_bipartitos}
 	
 	Un grafo bipartito es un grafo el cual se puede dividir sus vértices en dos conjuntos ${X, Y}$ en los cuales
 	todos los nodos de un mismo conjunto no están conectados entre si, es decir no existe ninguna arista la cual
@@ -239,13 +248,15 @@
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/BipartitoSi}
-			\caption{Grafo bipartito}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/bipartitos/BipartitoSi}
+			\caption{Grafo bipartito}
+			\label{grafos:bipartitos:BipartitoSi}
 		\endminipage
 		\minipage{0.5\textwidth}
 			\centering
-			\includegraphics[scale=1]{Grafos/imagenes/BipartitoNo}
-			\caption{Grafo no bipartito}%\label{fig:awesome_image1}
+			\includegraphics[scale=1]{Grafos/imagenes/bipartitos/BipartitoNo}
+			\caption{Grafo no bipartito}
+			\label{grafos:bipartitos:BipartitoNo}
 		\endminipage
 	\end{figure}	
 	
@@ -255,20 +266,49 @@
 	sus vecinos como nodos del conjunto opuesto, en caso de encontrar en algún momento a dos nodos vecinos del mismo
 	conjunto entonces significa que el grafo no es bipartito, pero si no se encuentran contradicciones significa que 
 	si es bipartito.
-	\cppfile[14-42]{Grafos/codigos/BipartiteCheck.cpp}	
+	\cppfile[14-42]{Grafos/codigos/BipartiteCheck.cpp}
 	
-	\section{Bibliografia}
-	https://es.wikipedia.org/wiki/Grafo\\
-	http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\ 
-	libro: competitive programming 3.\\ 
-
-
+	\section{Minimum spanning tree}
+	%\label{grafos:MST}
+	
+	También conocido como árbol recubridor mínimo o abreviado en inglés MST, es un problema clásico en la teoría de 
+	grafos, consiste en lo siguiente, Sea $G = (V, E)$ un grafo conexo, ponderado y no dirigido, se denomina árbol 
+	recubridor a cualquier subgrafo $T$ tal que $T$ sea un árbol e incluya todos los vértices de $G$, entonces el 
+	árbol recubridor mínimo es un subgrafo $T*$ tal que la suma de los pesos de las aristas de $T*$ es menor o igual 
+	al de todos los demás árboles recubridores $T$, esto significa que pueden haber varios posibles árboles 
+	recubridores mínimos. Existen varios algoritmos que pueden resolver este problema, dos de ellos son el algoritmo 
+	de Kruskal y el algoritmo de Prim.
+	
+	\subsection{Algoritmo de Kruskal}
+	%\label{grafos:MST:kruskal}
+	
+	Es un algoritmo inventado por el matemático Joseph Kruskal, permite hallar el MST utilizando un enfoque greddy y 
+	funciona en complejidad $O(E*log(V))$ con $E$ como el número de aristas y $V$ el número de nodos, consiste en 
+	representar el grafo como una lista de aristas, ordenar la lista según el peso de las aristas e ir seleccionando 
+	aristas para formar un árbol, entonces para cada arista se verifica que no forme un ciclo con las demás aristas 
+	seleccionadas, de esta forma se priorizan las aristas de menor peso y el árbol formado al final es un MST.\\
+	
+	la implementación consiste en representar el grafo como una lista de aristas, posteriormente ordenarlas de forma 
+	ascendente según el peso de la arista, después se empieza a construir un árbol, se van recorriendo las aristas y 
+	para cada una se verifica si al agregarla al árbol se forma un ciclo, de ser así la arista se descarta, en caso 
+	contrario la arista se agrega al árbol, para realizar esa verificación se utiliza un disjoint set, el cual resulta 
+	mucho mejor computacionalmente que realizar un DFS, cada vez que se agrega una arista al árbol se actualiza el 
+	disjoint set uniendo los dos nodos de la arista en un mismo conjunto, entonces si en algún momento los dos nodos de
+	una arista se encuentran en un mismo conjunto se puede concluir que esos dos nodos ya están dentro de una misma 
+	componente conexa y por lo tanto, al agregar esa arista se estaría formando un ciclo, de esta forma se valida cada 
+	arista rápidamente. El algoritmo termina cuando se han agregado $n-1$ aristas al árbol(la cantidad necesaria para 
+	que el árbol conecte todos los N nodos) o cuando se acaben las aristas, lo que significa que el árbol no es conexo.
+	\cppfile[24-43]{Grafos/codigos/kruskal.cpp}
+	
+	
+	
+	%\section{Bibliografia}
+	%https://es.wikipedia.org/wiki/Grafo\\
+	%http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\ 
+	%libro: competitive programming 3.\\ 
 
 	%</Capitulo>
 	
-	
-	
 \end{document}
-
 
 

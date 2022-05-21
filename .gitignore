@@ -2,3 +2,10 @@
 *.exe
 *.o
 *.xlsx
+.vs/
+*.obj
+*.aux
+*.bbl
+*.blg
+*.log
+*.toc
