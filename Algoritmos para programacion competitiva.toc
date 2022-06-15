@@ -12,5 +12,6 @@
 \contentsline {subsection}{\numberline {2.4.1}Algoritmo de Kruskal}{16}{}%
 \contentsline {chapter}{\numberline {3}Programación dinámica}{18}{}%
 \contentsline {section}{\numberline {3.1}Introducción a la programación dinámica}{18}{}%
-\contentsline {section}{\numberline {3.2}Sub-SetSum}{23}{}%
+\contentsline {section}{\numberline {3.2}Sub-SetSum}{22}{}%
 \contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{24}{}%
+\contentsline {section}{\numberline {3.4}Traveling salesman problem}{25}{}%

@@ -1,284 +1,311 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  12 MAR 2022 17:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.19)  14 JUN 2022 21:57
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **./dp.tex
 (dp.tex
-LaTeX2e <2018-12-01>
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24>
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/base\articl
+e.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.c
-ls"
-Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/base\size12
+.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/base\inpute
+nc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/babel\bab
+el.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language79
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.cl
-o"
-File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
-)
-\c@part=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
-\abovecaptionskip=\skip41
-\belowcaptionskip=\skip42
-\bibindent=\dimen102
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.
-sty"
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
-sty"
-Package: babel 2018/11/13 3.27 The Babel package
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/babel\txt
+babel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch
-.def"
-File: switch.def 2018/11/13 3.27 Babel switching mechanism
-)
 *************************************
 * Local config file bblopts.cfg used
 *
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.
-cfg"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblop
+ts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-spanish\
-spanish.ldf"
-Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.
-def"
-File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count88
-\U@D=\dimen103
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbab
-el.def")
-\bbl@dirlevel=\count89
-)
-\es@quottoks=\toks16
-\es@quotdepth=\count90
-Package babel Info: Making " an active character on input line 561.
-Package babel Info: Making . an active character on input line 662.
-Package babel Info: Making < an active character on input line 707.
-Package babel Info: Making > an active character on input line 707.
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/babel-spani
+sh\spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks18
+\es@quotdepth=\count195
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
 ))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titling\titlin
-g.sty"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/titling\tit
+ling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
-\thanksmarkwidth=\skip43
-\thanksmargin=\skip44
-\droptitle=\skip45
+\thanksmarkwidth=\skip49
+\thanksmargin=\skip50
+\droptitle=\skip51
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geome
-try.sty"
-Package: geometry 2018/04/16 v5.8 Page Geometry
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/geometry\ge
+ometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyva
-l.sty"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\ke
+yval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
+\KV@toks@=\toks19
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifp
-df.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifv
-tex.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxe
-tex.sty"
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
-\Gm@bindingoffset=\dimen104
-\Gm@wd@mp=\dimen105
-\Gm@odd@mp=\dimen106
-\Gm@even@mp=\dimen107
-\Gm@layoutwidth=\dimen108
-\Gm@layoutheight=\dimen109
-\Gm@layouthoffset=\dimen110
-\Gm@layoutvoffset=\dimen111
-\Gm@dimlist=\toks18
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifv
+tex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geome
-try.cfg"))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enumerat
-e.sty"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ift
+ex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count196
+\Gm@cntv=\count197
+\c@Gm@tempcnt=\count198
+\Gm@bindingoffset=\dimen140
+\Gm@wd@mp=\dimen141
+\Gm@odd@mp=\dimen142
+\Gm@even@mp=\dimen143
+\Gm@layoutwidth=\dimen144
+\Gm@layoutheight=\dimen145
+\Gm@layouthoffset=\dimen146
+\Gm@layoutvoffset=\dimen147
+\Gm@dimlist=\toks20
+
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/geometry\ge
+ometry.cfg))
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/tools\enume
+rate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks19
+\@enLab=\toks21
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmat
-h.sty"
-Package: amsmath 2018/12/01 v2.17b AMS math features
-\@mathmargin=\skip46
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\ams
+math.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstex
-t.sty"
-Package: amstext 2000/06/29 v2.01 AMS text
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\ams
+text.sty
+Package: amstext 2021/08/26 v2.01 AMS text
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen
-.sty"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\ams
+gen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks20
-\ex@=\dimen112
+\@emptytoks=\toks22
+\ex@=\dimen148
 ))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy
-.sty"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\ams
+bsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen113
+\pmbraise@=\dimen149
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn
-.sty"
-Package: amsopn 2016/03/08 v2.02 operator names
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\ams
+opn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count94
-LaTeX Info: Redefining \frac on input line 223.
-\uproot@=\count95
-\leftroot@=\count96
-LaTeX Info: Redefining \overline on input line 385.
-\classnum@=\count97
-\DOTSCASE@=\count98
-LaTeX Info: Redefining \ldots on input line 482.
-LaTeX Info: Redefining \dots on input line 485.
-LaTeX Info: Redefining \cdots on input line 606.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen114
-LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
-\dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks21
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks22
-\eqnshift@=\dimen115
-\alignsep@=\dimen116
-\tagshift@=\dimen117
-\tagwidth@=\dimen118
-\totwidth@=\dimen119
-\lineht@=\dimen120
-\@envbody=\toks23
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2844.
-LaTeX Info: Redefining \] on input line 2845.
+\inf@bad=\count199
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box50
+\strutbox@=\box51
+\big@size=\dimen150
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count270
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip16
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks23
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks24
+\eqnshift@=\dimen151
+\alignsep@=\dimen152
+\tagshift@=\dimen153
+\tagwidth@=\dimen154
+\totwidth@=\dimen155
+\lineht@=\dimen156
+\@envbody=\toks25
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks26
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
-icx.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\gr
+aphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graph
-ics.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\gr
+aphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.
-sty"
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\tr
+ig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\g
-raphics.cfg"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cf
+g\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\p
-dftex.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-de
+f\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
-ngs.sty"
-\lst@mode=\count106
-\lst@gtempboxa=\box29
-\lst@token=\toks25
-\lst@length=\count107
-\lst@currlwidth=\dimen123
-\lst@column=\count108
-\lst@pos=\count109
-\lst@lostspace=\dimen124
-\lst@width=\dimen125
-\lst@newlines=\count110
-\lst@lineno=\count111
-\lst@maxwidth=\dimen126
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/caption\cap
+tion.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
-sc.sty"
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
-\c@lstnumber=\count112
-\lst@skipnumbers=\count113
-\lst@framebox=\box30
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/caption\cap
+tion3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen159
+\captionmargin=\dimen160
+\caption@leftmargin=\dimen161
+\caption@rightmargin=\dimen162
+\caption@width=\dimen163
+\caption@indent=\dimen164
+\caption@parindent=\dimen165
+\caption@hangindent=\dimen166
+Package caption Info: Standard document class detected.
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listi
-ngs.cfg"
-File: listings.cfg 2019/02/27 1.8b listings configuration
+\c@caption@flags=\count277
+\c@continuedfloat=\count278
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/float\float
+.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count279
+\float@exts=\toks27
+\float@box=\box52
+\@float@everytoks=\toks28
+\@floatcapt=\box53
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\li
+stings.sty
+\lst@mode=\count280
+\lst@gtempboxa=\box54
+\lst@token=\toks29
+\lst@length=\count281
+\lst@currlwidth=\dimen167
+\lst@column=\count282
+\lst@pos=\count283
+\lst@lostspace=\dimen168
+\lst@width=\dimen169
+\lst@newlines=\count284
+\lst@lineno=\count285
+\lst@maxwidth=\dimen170
+
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\ls
+tmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
+\lst@framebox=\box55
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\li
+stings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
-Package: listings 2019/02/27 1.8b (Carsten Heinz)
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\color
-.sty"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\co
+lor.sty
+Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\c
-olor.cfg"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cf
+g\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 149.
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\dvips
-nam.def"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dv
+ipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstla
-ng1.sty"
-File: lstlang1.sty 2019/02/27 1.8b listings language file
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\ls
+tlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstla
-ng1.sty"
-File: lstlang1.sty 2019/02/27 1.8b listings language file
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\ls
+tlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmi
-sc.sty"
-File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/listings\ls
+tmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l
+3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box56
 ) (dp.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `dp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -315,236 +342,271 @@ LaTeX Info: Redefining \% on input line 73.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pd
-f.mkii"
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/context/base/mkii
+\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen127
-\scratchbox=\box31
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen128
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks27
+\scratchcounter=\count289
+\scratchdimen=\dimen171
+\scratchbox=\box57
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen172
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks31
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epsto
-pdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pk
+g\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\inf
-warerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr
+\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfex
-t.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfe
+xt.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvd
-efinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinek
+eys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\k
+voptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltx
-cmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvopt
-ions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvs
-etkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ete
-xcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifl
-uatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdf
-texcmds.sty"
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\l
+txcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-Package pdftexcmds Info: LuaTeX not detected.
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys
+\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmd
+s\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+85.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@lstlisting=\count120
+(grfext)             \AppendGraphicsExtensions on input line 504.
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\ep
+stopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count295
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
 
  []
 
 [1
 
-{C:/Users/wilmer-PC/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(../Programacion_dinamica/codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 130--132
-
+{C:/Users/wilmer.castrillon/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] 
+(../Programacion_dinamica/codigos/fibo.cpp
+consecutive:
+) (../Programacion_dinamica/codigos/fibo.cpp
+consecutive:
+)
+<..//Programacion_dinamica/imagenes/introduccion/arbol_recursion.png, id=9, 371
+.13657pt x 252.19218pt>
+File: ..//Programacion_dinamica/imagenes/introduccion/arbol_recursion.png Graph
+ic file (type png)
+<use ..//Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>
+Package pdftex.def Info: ..//Programacion_dinamica/imagenes/introduccion/arbol_
+recursion.png  used on input line 147.
+(pdftex.def)             Requested size: 334.0198pt x 226.97086pt.
+ (../Programacion_dinamica/codigos/fibo.cpp
+consecutive:
+)
+Overfull \hbox (12.62482pt too wide) in paragraph at lines 162--165
+[]$[]$ 
  []
 
-(../Programacion_dinamica/codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-<../Programacion_dinamica/imagenes/arbol_recursion.png, id=11, 371.13657pt x 25
-2.19218pt>
-File: ../Programacion_dinamica/imagenes/arbol_recursion.png Graphic file (type 
-png)
-<use ../Programacion_dinamica/imagenes/arbol_recursion.png>
-Package pdftex.def Info: ../Programacion_dinamica/imagenes/arbol_recursion.png 
- used on input line 144.
-(pdftex.def)             Requested size: 341.4441pt x 232.01576pt.
-[2] (../Programacion_dinamica/codigos/fibo.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 162--165
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
- []
-
-[3 <../Programacion_dinamica/imagenes/arbol_recursion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+[2] [3 <..//Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 203--209
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 194--205
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--229
+Underfull \hbox (badness 10000) in paragraph at lines 235--242
 
  []
 
-<../Programacion_dinamica/imagenes/matriz1.png, id=20, 282.30469pt x 282.30469p
-t>
-File: ../Programacion_dinamica/imagenes/matriz1.png Graphic file (type png)
-<use ../Programacion_dinamica/imagenes/matriz1.png>
-Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz1.png  used on
- input line 233.
+<..//Programacion_dinamica/imagenes/introduccion/matriz1.png, id=20, 282.30469p
+t x 282.30469pt>
+File: ..//Programacion_dinamica/imagenes/introduccion/matriz1.png Graphic file 
+(type png)
+<use ..//Programacion_dinamica/imagenes/introduccion/matriz1.png>
+Package pdftex.def Info: ..//Programacion_dinamica/imagenes/introduccion/matriz
+1.png  used on input line 246.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<../Programacion_dinamica/imagenes/matriz2.png, id=21, 282.30469pt x 282.30469p
-t>
-File: ../Programacion_dinamica/imagenes/matriz2.png Graphic file (type png)
-<use ../Programacion_dinamica/imagenes/matriz2.png>
-Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz2.png  used on
- input line 238.
+<..//Programacion_dinamica/imagenes/introduccion/matriz2.png, id=21, 282.30469p
+t x 282.30469pt>
+File: ..//Programacion_dinamica/imagenes/introduccion/matriz2.png Graphic file 
+(type png)
+<use ..//Programacion_dinamica/imagenes/introduccion/matriz2.png>
+Package pdftex.def Info: ..//Programacion_dinamica/imagenes/introduccion/matriz
+2.png  used on input line 252.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<../Programacion_dinamica/imagenes/matriz3.png, id=23, 282.30469pt x 282.30469p
-t>
-File: ../Programacion_dinamica/imagenes/matriz3.png Graphic file (type png)
-<use ../Programacion_dinamica/imagenes/matriz3.png>
-Package pdftex.def Info: ../Programacion_dinamica/imagenes/matriz3.png  used on
- input line 243.
+<..//Programacion_dinamica/imagenes/introduccion/matriz3.png, id=23, 282.30469p
+t x 282.30469pt>
+File: ..//Programacion_dinamica/imagenes/introduccion/matriz3.png Graphic file 
+(type png)
+<use ..//Programacion_dinamica/imagenes/introduccion/matriz3.png>
+Package pdftex.def Info: ..//Programacion_dinamica/imagenes/introduccion/matriz
+3.png  used on input line 258.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-[4] (../Programacion_dinamica/codigos/matriz.cpp)
-(../Programacion_dinamica/codigos/matriz.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--270
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 267.
+[4] (../Programacion_dinamica/codigos/matriz.cpp
+consecutive:
+) (../Programacion_dinamica/codigos/matriz.cpp
+consecutive:
+)
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+86.
 
-("C:\Users\wilmer-PC\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd
-"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr
+.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 267.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 286.
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--269
-
- []
-
-[5 <../Programacion_dinamica/imagenes/matriz1.png> <../Programacion_dinamica/im
-agenes/matriz2.png> <../Programacion_dinamica/imagenes/matriz3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 284--288
 
  []
 
-(../Programacion_dinamica/codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 299--308
+[5 <..//Programacion_dinamica/imagenes/introduccion/matriz1.png> <..//Programac
+ion_dinamica/imagenes/introduccion/matriz2.png> <..//Programacion_dinamica/imag
+enes/introduccion/matriz3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 289--295
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--301
+
+ []
+
+(../Programacion_dinamica/codigos/SubSetSum.cpp
+consecutive:
+)
+Underfull \hbox (badness 10000) in paragraph at lines 323--331
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 309--313
+Underfull \hbox (badness 10000) in paragraph at lines 332--335
 
  []
 
-(../Programacion_dinamica/codigos/SubSetSum.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 335--338
+(../Programacion_dinamica/codigos/SubSetSum.cpp
+consecutive:
+)
+Underfull \hbox (badness 10000) in paragraph at lines 358--361
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--343
+Underfull \hbox (badness 10000) in paragraph at lines 362--366
 
  []
 
-[7]
-Overfull \hbox (1.18143pt too wide) in paragraph at lines 344--349
+
+Overfull \hbox (1.18143pt too wide) in paragraph at lines 367--372
 []\OT1/cmr/m/n/12 Sin em-bar-go es po-si-ble re-du-cir bas-tan-te la com-ple-ji
--dad tra-ba-jan-do con pro-gra-ma-cion dinami-
+-dad tra-ba-jan-do con pro-gra-ma-ci^^Son din^^Sami-
  []
 
-(../Programacion_dinamica/codigos/ProblemaMochila.cpp)
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
+[7] (../Programacion_dinamica/codigos/ProblemaMochila.cpp
+consecutive:
+)
+Underfull \hbox (badness 10000) in paragraph at lines 390--397
 
  []
 
-[8] (dp.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+<..//Programacion_dinamica/imagenes/TSP/ejemplo.png, id=41, 225.84375pt x 225.8
+4375pt>
+File: ..//Programacion_dinamica/imagenes/TSP/ejemplo.png Graphic file (type png
+)
+<use ..//Programacion_dinamica/imagenes/TSP/ejemplo.png>
+Package pdftex.def Info: ..//Programacion_dinamica/imagenes/TSP/ejemplo.png  us
+ed on input line 400.
+(pdftex.def)             Requested size: 203.25748pt x 203.25748pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--426
+
+ []
+
+[8] (../Programacion_dinamica/codigos/TSP.cpp
+consecutive:
+) [9 <..//Programacion_dinamica/imagenes/TSP/ejemplo.png>] (dp.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
 ) ) 
 Here is how much of TeX's memory you used:
- 5669 strings out of 492946
- 80394 string characters out of 3124490
- 439907 words of memory out of 3000000
- 9456 multiletter control sequences out of 15000+200000
- 10676 words of font info for 39 fonts, out of 3000000 for 9000
+ 8192 strings out of 478582
+ 139390 string characters out of 2838680
+ 804748 words of memory out of 3000000
+ 26251 multiletter control sequences out of 15000+600000
+ 476295 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,58p,271b,1327s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users
-/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr6.pfb><C:/Users/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilmer-PC/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/wilmer-PC/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/User
-s/wilmer-PC/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-tt12.pfb>
-Output written on dp.pdf (8 pages, 212917 bytes).
+ 60i,13n,67p,235b,1362s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/wilmer.castrillon/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/wil
+mer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/wilmer.castrillon/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/wilm
+er.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on dp.pdf (9 pages, 239610 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
