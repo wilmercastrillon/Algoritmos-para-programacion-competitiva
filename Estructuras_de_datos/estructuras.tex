@@ -81,6 +81,8 @@
 	%<*Capitulo>
 	
 	\section{Tablas aditivas}
+	\label{estructuras:tablas_aditivas}
+	
 	Son estructuras de datos utilizadas para realizar operaciones acumuladas sobre un conjunto de datos estáticos 
 	en un rango específico, es decir, ejecutar una misma operación(como por ejemplo la suma) sobre un intervalo 
 	de datos, se asume que los datos en la estructura no van a cambiar. Estas estructuras también son conocidas como 
@@ -236,6 +238,8 @@
 	en arreglos estáticos, y recurrir a otras estructuras como las Sparse table en el caso de arreglos dinámicos.
 	
 	\section{Disjoint set}
+	\label{estructuras:disjoint_set}
+	
 	Es una estructura de datos que permite agrupar elementos en conjuntos y consultar si dos elementos
 	pertenecen a un mismo conjunto, contiene una estructura en forma de árbol pero con una implementacion poco
 	compleja. La estructura consta de dos operaciones principales, $union(u, v)$ para unir los conjuntos que incluyen 
@@ -314,8 +318,9 @@
 	entre otras aplicaciones.
 	
 	\section{Sparse table}
+	\label{estructuras:sparse_table}
 	
-	Es una estructura de datos para realizar operaciones sobre rangos en un conjunto datos lineales, esta 
+	Es una estructura de datos para realizar operaciones sobre rangos en un conjunto datos, esta 
 	estructura utiliza un precálculo sobre los valores iniciales para poder realizar consultas en complejidad 
 	logarítmica, permite realizar operaciones que cumplen con la propiedad asociativa como la suma o la función 
 	mínimo(el valor mínimo entre dos valores), una de sus ventajas es su implementación corta, sin embargo esta 
@@ -381,16 +386,54 @@
 	serán $[L,L+2^j]$ y $[R-2^j+1,R]$ con $j = floor(log_{2}(R-L+1))$ de esta forma la complejidad es $O(1)$.
 	\cppfile[29-32]{Estructuras_de_datos/codigos/sparse_table.cpp}
 
+	\section{Fewnwick tree}
+	\label{estructuras:fenwick_tree}
+	
+	También conocido como árbol binario indexado, es una estructura de datos no lineal la cual permite calcular 
+	operaciones acumuladas sobre rangos permitiendo actualizar el conjunto de datos, se basa en dos operaciones básicas, 
+	calcular la operación acumulada sobre los primeros $i$ elementos, y actualizar un elemento del conjunto de datos,
+	ambas se realizan en $O(log_{2}(n))$, el árbol requiere $O(n)$ de espacio, según la implementación utilizada se 
+	puede empezar a indexar desde 0 o 1, sin embargo ambas son equivalentes en cuanto a complejidad algorítmica.\\
+	
+	La estructura consiste en almacenar en un arreglo lineal $ft$ la operación acumulada sobre un intervalo del 
+	arreglo de datos $A$, de tal forma que al operar uno o múltiples elementos en $ft$ se pueda obtener la operación  
+	acumulada del intervalo $[1,i]$, indexando desde 1, los intervalos del precalculo se toman basados en la  
+	representación binaria del indice, en la figura \ref{estructuras:fenwick_tree:ejemplo} se muestra un ejemplo  
+	utilizando la operación suma, para entender mejor se recomienda escribir los indices $i$ en binario y comparar con 
+	los rangos sumados en $ft_{i}$.\\
+	
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[scale=0.675]{Estructuras_de_datos/imagenes/fenwick_tree/ejemplo}
+		\caption{Fenwick tree}
+		\label{estructuras:fenwick_tree:ejemplo}
+	\end{figure}
+	
+	La construcción del árbol consiste en empezar con $ft$ vacío, es decir $\forall i \in [0,n] ft_{i} = 0$, 
+	posteriormente realizar $n$ actualizaciones, una por cada elemento en $A$, entonces la construcción inicial tiene
+	complejidad $O(n * log_{2}(n))$, la actualización consiste en agregar la diferencia entre el valor nuevo y el 
+	anterior, cada actualización consiste en tomar el indice $i$ (indexando desde cero) e ir recorriendo sus bits
+	comenzando desde el lsb (lowest significat bit), si el $k$-ésimo bit es cero significa que $ft_{i+2^{k}}$ también  
+	debe ser actualizado (puede ser algo confuso al comienzo, se recomienda hacer el proceso a mano para que se pueda  
+	entender mejor), una forma mas rápida de recorrer los bits que necesitamos es utilizando operaciones de bits, si en  
+	lugar de usar $i$ utilizamos a $\sim i$, los bits que requerimos serán los que están en 1, comenzando desde el lsb, 
+	entonces se puede tomar el ultimo dígito en $1$ usando la operación $i \& -i$ y posteriormente apagarlo para 
+	tomar el siguiente encendido, de esta forma se puede ir directamente a los bits que se necesitan, y por ultimo en 
+	lugar de actualizar $ft_{i}$ se puede actualizar $ft_{i+1}$ para que los indices empiecen en 1.\\
+	
+	La operación de consulta, consiste en obtener la sumatoria hasta un indice $i$, esta operación tiene una idea 
+	similar a la de actualización, se empieza con el valor $ft_{i}$, posteriormente se actualiza $i$ apagando su ultimo  
+	bit encendido y al resultado se le suma el nuevo $ft_{i}$, este proceso se repite mientras $i$ sea mayor a $0$.
+	\cppfile[8-46]{Estructuras_de_datos/codigos/fenwick_tree.cpp}
 	
 	%\section{Bibliografia}
 	
 	%https://en.wikipedia.org/wiki/Summed-area_table.\\ 
 	%http://trainingcamp.org.ar/anteriores/2017/clases.shtml.\\ 
 	%libro: competitive programming 3.\\ 
-
+	
 	%</Capitulo>
 	
 \end{document}
-
 
 
