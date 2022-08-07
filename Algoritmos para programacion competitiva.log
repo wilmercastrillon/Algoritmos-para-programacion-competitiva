@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.19)  14 JUN 2022 21:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.19)  7 AUG 2022 14:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,15 +434,15 @@ LaTeX Info: Redefining \% on input line 116.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* h-part:(L,W,R)=(72.2698pt, 452.96826pt, 72.2698pt)
+* v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
-* \topmargin=-47.23828pt
+* \textwidth=452.96826pt
+* \textheight=700.50723pt
+* \oddsidemargin=-0.00018pt
+* \evensidemargin=-0.00018pt
+* \topmargin=-31.87398pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
@@ -564,22 +564,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
 ]
 Cap\'{\i }tulo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--8
+Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--22
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 33--41
+Underfull \hbox (badness 10000) in paragraph at lines 35--43
 
  []
 
@@ -587,7 +587,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--41
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
-7.
+9.
 
 (C:\Users\wilmer.castrillon\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.f
 d
@@ -595,22 +595,22 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (Estructuras_de_datos/codigos/tablas_aditivas.cpp
 consecutive:
 )
-Underfull \hbox (badness 10000) in paragraph at lines 55--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--87
+Underfull \hbox (badness 10000) in paragraph at lines 77--89
 
  []
 
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
 [4]
 <Estructuras_de_datos/imagenes/tablas_aditivas/img1.png, id=30, 240.9pt x 240.9
 pt>
@@ -618,7 +618,7 @@ File: Estructuras_de_datos/imagenes/tablas_aditivas/img1.png Graphic file (type
  png)
 <use Estructuras_de_datos/imagenes/tablas_aditivas/img1.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img1.png
-  used on input line 102.
+  used on input line 104.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
 <Estructuras_de_datos/imagenes/tablas_aditivas/img2.png, id=31, 240.9pt x 240.9
 pt>
@@ -626,7 +626,7 @@ File: Estructuras_de_datos/imagenes/tablas_aditivas/img2.png Graphic file (type
  png)
 <use Estructuras_de_datos/imagenes/tablas_aditivas/img2.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img2.png
-  used on input line 109.
+  used on input line 111.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
 <Estructuras_de_datos/imagenes/tablas_aditivas/img3.png, id=32, 240.9pt x 240.9
 pt>
@@ -634,7 +634,7 @@ File: Estructuras_de_datos/imagenes/tablas_aditivas/img3.png Graphic file (type
  png)
 <use Estructuras_de_datos/imagenes/tablas_aditivas/img3.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img3.png
-  used on input line 116.
+  used on input line 118.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
 <Estructuras_de_datos/imagenes/tablas_aditivas/img4.png, id=33, 240.9pt x 240.9
 pt>
@@ -642,18 +642,17 @@ File: Estructuras_de_datos/imagenes/tablas_aditivas/img4.png Graphic file (type
  png)
 <use Estructuras_de_datos/imagenes/tablas_aditivas/img4.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/tablas_aditivas/img4.png
-  used on input line 123.
+  used on input line 125.
 (pdftex.def)             Requested size: 96.35828pt x 96.35828pt.
  (Estructuras_de_datos/codigos/tablas_aditivas.cpp
 consecutive:
-)
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [5 <./Estructuras_de_datos/imagenes/tablas_aditivas/img1.png> <./Estructuras_d
-e_datos/imagenes/tablas_aditivas/img2.png> <./Estructuras_de_datos/imagenes/tab
-las_aditivas/img3.png> <./Estructuras_de_datos/imagenes/tablas_aditivas/img4.pn
-g>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--162
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+[5 <./Estructuras_de_datos/imagenes/tablas_aditivas/img1.png> <./Estructuras_de
+_datos/imagenes/tablas_aditivas/img2.png> <./Estructuras_de_datos/imagenes/tabl
+as_aditivas/img3.png> <./Estructuras_de_datos/imagenes/tablas_aditivas/img4.png
+>])
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
 
  []
 
@@ -663,90 +662,131 @@ File: Estructuras_de_datos/imagenes/disjoint_set/construccion.png Graphic file
 (type png)
 <use Estructuras_de_datos/imagenes/disjoint_set/construccion.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/construccio
-n.png  used on input line 170.
+n.png  used on input line 174.
 (pdftex.def)             Requested size: 248.72754pt x 137.01093pt.
-(Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
+[6] (Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
 consecutive:
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-[6 <./Estructuras_de_datos/imagenes/disjoint_set/construccion.png>])
+)
 <Estructuras_de_datos/imagenes/disjoint_set/union_rango.png, id=43, 810.77907pt
  x 190.46156pt>
 File: Estructuras_de_datos/imagenes/disjoint_set/union_rango.png Graphic file (
 type png)
 <use Estructuras_de_datos/imagenes/disjoint_set/union_rango.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/union_rango
-.png  used on input line 200.
+.png  used on input line 204.
 (pdftex.def)             Requested size: 486.4712pt x 114.2778pt.
 
-Overfull \hbox (2.77434pt too wide) in paragraph at lines 200--201
+Overfull \hbox (33.50294pt too wide) in paragraph at lines 204--205
  [][] 
  []
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 (Estructuras_de_datos/codigos/disjoint_set_union_find.cpp
 consecutive:
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
-[7 <./Estructuras_de_datos/imagenes/disjoint_set/union_rango.png>])
-<Estructuras_de_datos/imagenes/disjoint_set/compresion.png, id=49, 361.35pt x 1
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+[7 <./Estructuras_de_datos/imagenes/disjoint_set/construccion.png>])
+<Estructuras_de_datos/imagenes/disjoint_set/compresion.png, id=48, 361.35pt x 1
 53.57375pt>
 File: Estructuras_de_datos/imagenes/disjoint_set/compresion.png Graphic file (t
 ype png)
 <use Estructuras_de_datos/imagenes/disjoint_set/compresion.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/disjoint_set/compresion.
-png  used on input line 219.
+png  used on input line 223.
 (pdftex.def)             Requested size: 216.81168pt x 92.14494pt.
 
 (Estructuras_de_datos/codigos/union_find_compresion.cpp
 consecutive:
 )
-Underfull \hbox (badness 10000) in paragraph at lines 237--242
+Underfull \hbox (badness 10000) in paragraph at lines 242--247
 
  []
 
-LaTeX Info: Redefining \. on input line 243.
-LaTeX Info: Redefining \% on input line 243.
-[8 <./Estructuras_de_datos/imagenes/disjoint_set/compresion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 243--250
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
+[8 <./Estructuras_de_datos/imagenes/disjoint_set/union_rango.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--255
 
  []
 
-<Estructuras_de_datos/imagenes/sparse_table/construccion.png, id=54, 346.29375p
+<Estructuras_de_datos/imagenes/sparse_table/construccion.png, id=53, 346.29375p
 t x 263.48438pt>
 File: Estructuras_de_datos/imagenes/sparse_table/construccion.png Graphic file 
 (type png)
 <use Estructuras_de_datos/imagenes/sparse_table/construccion.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/sparse_table/construccio
-n.png  used on input line 260.
+n.png  used on input line 265.
 (pdftex.def)             Requested size: 225.08826pt x 171.2628pt.
 (Estructuras_de_datos/codigos/sparse_table.cpp
 consecutive:
 )
-<Estructuras_de_datos/imagenes/sparse_table/consulta.png, id=55, 308.65312pt x 
+<Estructuras_de_datos/imagenes/sparse_table/consulta.png, id=54, 308.65312pt x 
 203.25937pt>
 File: Estructuras_de_datos/imagenes/sparse_table/consulta.png Graphic file (typ
 e png)
 <use Estructuras_de_datos/imagenes/sparse_table/consulta.png>
 Package pdftex.def Info: Estructuras_de_datos/imagenes/sparse_table/consulta.pn
-g  used on input line 283.
+g  used on input line 288.
 (pdftex.def)             Requested size: 200.62215pt x 132.11702pt.
  (Estructuras_de_datos/codigos/sparse_table.cpp
 consecutive:
 )
-LaTeX Info: Redefining \. on input line 301.
-LaTeX Info: Redefining \% on input line 301.
- [9 <./Estructuras_de_datos/imagenes/sparse_table/construccion.png>]
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+ [9 <./Estructuras_de_datos/imagenes/disjoint_set/compresion.png>]
 (Estructuras_de_datos/codigos/sparse_table.cpp
 consecutive:
 )
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
- [10 <./Estructuras_de_datos/imagenes/sparse_table/consulta.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 311--316
+
+ []
+
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
+[10 <./Estructuras_de_datos/imagenes/sparse_table/construccion.png> <./Estructu
+ras_de_datos/imagenes/sparse_table/consulta.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 317--323
+
+ []
+
+<Estructuras_de_datos/imagenes/fenwick_tree/ejemplo.png, id=67, 733.99219pt x 2
+03.25937pt>
+File: Estructuras_de_datos/imagenes/fenwick_tree/ejemplo.png Graphic file (type
+ png)
+<use Estructuras_de_datos/imagenes/fenwick_tree/ejemplo.png>
+Package pdftex.def Info: Estructuras_de_datos/imagenes/fenwick_tree/ejemplo.png
+  used on input line 326.
+(pdftex.def)             Requested size: 495.44574pt x 137.20035pt.
+
+Overfull \hbox (42.47748pt too wide) in paragraph at lines 326--327
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--342
+
+ []
+
+(Estructuras_de_datos/codigos/fenwick_tree.cpp
+consecutive:
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+[11 <./Estructuras_de_datos/imagenes/fenwick_tree/ejemplo.png>])
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [12]
 Cap\'{\i }tulo 2.
-[11
+[13
 
 ]
-<Grafos/imagenes/introduccion/ejemplo.png, id=70, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/introduccion/ejemplo.png, id=78, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/introduccion/ejemplo.png Graphic file (type png)
 <use Grafos/imagenes/introduccion/ejemplo.png>
 Package pdftex.def Info: Grafos/imagenes/introduccion/ejemplo.png  used on inpu
@@ -755,7 +795,7 @@ t line 57.
  (Grafos/codigos/Grafos.cpp
 consecutive:
 )
-Overfull \hbox (24.18631pt too wide) in paragraph at lines 55--66
+Overfull \hbox (22.64978pt too wide) in paragraph at lines 55--66
 []$[]$$[]$ 
  []
 
@@ -764,47 +804,47 @@ consecutive:
 ) (Grafos/codigos/Grafos.cpp
 consecutive:
 )
-Overfull \hbox (24.18631pt too wide) in paragraph at lines 69--79
+Overfull \hbox (22.64978pt too wide) in paragraph at lines 69--79
 []$[]$$[]$ 
  []
 
-LaTeX Info: Redefining \. on input line 88.
-LaTeX Info: Redefining \% on input line 88.
-[12 <./Grafos/imagenes/introduccion/ejemplo.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 91--96
 
  []
 
-<Grafos/imagenes/DFS_y_BFS/DFS1.png, id=75, 188.20313pt x 188.20313pt>
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+[14 <./Grafos/imagenes/introduccion/ejemplo.png>]
+<Grafos/imagenes/DFS_y_BFS/DFS1.png, id=82, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS_y_BFS/DFS1.png Graphic file (type png)
 <use Grafos/imagenes/DFS_y_BFS/DFS1.png>
 Package pdftex.def Info: Grafos/imagenes/DFS_y_BFS/DFS1.png  used on input line
  106.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/DFS_y_BFS/DFS2.png, id=76, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/DFS_y_BFS/DFS2.png, id=83, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS_y_BFS/DFS2.png Graphic file (type png)
 <use Grafos/imagenes/DFS_y_BFS/DFS2.png>
 Package pdftex.def Info: Grafos/imagenes/DFS_y_BFS/DFS2.png  used on input line
  112.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-(Grafos/codigos/DFS.cpp
+ (Grafos/codigos/DFS.cpp
 consecutive:
-)
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
- [13 <./Grafos/imagenes/DFS_y_BFS/DFS1.png> <./Grafos/imagenes/DFS_y_BFS/DFS2.p
-ng>]
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+[15 <./Grafos/imagenes/DFS_y_BFS/DFS1.png> <./Grafos/imagenes/DFS_y_BFS/DFS2.pn
+g>])
 Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
-<Grafos/imagenes/DFS_y_BFS/BFS1.png, id=82, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/DFS_y_BFS/BFS1.png, id=89, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS_y_BFS/BFS1.png Graphic file (type png)
 <use Grafos/imagenes/DFS_y_BFS/BFS1.png>
 Package pdftex.def Info: Grafos/imagenes/DFS_y_BFS/BFS1.png  used on input line
  138.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/DFS_y_BFS/BFS2.png, id=83, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/DFS_y_BFS/BFS2.png, id=90, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/DFS_y_BFS/BFS2.png Graphic file (type png)
 <use Grafos/imagenes/DFS_y_BFS/BFS2.png>
 Package pdftex.def Info: Grafos/imagenes/DFS_y_BFS/BFS2.png  used on input line
@@ -812,18 +852,17 @@ Package pdftex.def Info: Grafos/imagenes/DFS_y_BFS/BFS2.png  used on input line
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
 (Grafos/codigos/BFS.cpp
 consecutive:
-)
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
- [14 <./Grafos/imagenes/DFS_y_BFS/BFS1.png> <./Grafos/imagenes/DFS_y_BFS/BFS2.p
-ng>]
-<Grafos/imagenes/bipartitos/BipartitoSi.png, id=89, 188.20313pt x 188.20313pt>
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
+[16 <./Grafos/imagenes/DFS_y_BFS/BFS1.png> <./Grafos/imagenes/DFS_y_BFS/BFS2.pn
+g>])
+<Grafos/imagenes/bipartitos/BipartitoSi.png, id=96, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/bipartitos/BipartitoSi.png Graphic file (type png)
 <use Grafos/imagenes/bipartitos/BipartitoSi.png>
 Package pdftex.def Info: Grafos/imagenes/bipartitos/BipartitoSi.png  used on in
 put line 174.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
-<Grafos/imagenes/bipartitos/BipartitoNo.png, id=90, 188.20313pt x 188.20313pt>
+<Grafos/imagenes/bipartitos/BipartitoNo.png, id=97, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/bipartitos/BipartitoNo.png Graphic file (type png)
 <use Grafos/imagenes/bipartitos/BipartitoNo.png>
 Package pdftex.def Info: Grafos/imagenes/bipartitos/BipartitoNo.png  used on in
@@ -831,22 +870,23 @@ put line 180.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
  (Grafos/codigos/BipartiteCheck.cpp
 consecutive:
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
-[15 <./Grafos/imagenes/bipartitos/BipartitoSi.png> <./Grafos/imagenes/bipartito
-s/BipartitoNo.png>])
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+[17])
+LaTeX Info: Redefining \. on input line 205.
+LaTeX Info: Redefining \% on input line 205.
+ [18 <./Grafos/imagenes/bipartitos/BipartitoSi.png> <./Grafos/imagenes/bipartit
+os/BipartitoNo.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 208--213
 
  []
 
-LaTeX Info: Redefining \. on input line 224.
-LaTeX Info: Redefining \% on input line 224.
-[16] (Grafos/codigos/kruskal.cpp
+(Grafos/codigos/kruskal.cpp
 consecutive:
 )
-LaTeX Info: Redefining \. on input line 133.
-LaTeX Info: Redefining \% on input line 133.
- [17]
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [19]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--12
@@ -858,14 +898,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--36
 
  []
 
+[20
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-[18
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
@@ -875,7 +915,7 @@ consecutive:
 ) (Programacion_dinamica/codigos/fibo.cpp
 consecutive:
 )
-<Programacion_dinamica/imagenes/introduccion/arbol_recursion.png, id=106, 371.1
+<Programacion_dinamica/imagenes/introduccion/arbol_recursion.png, id=113, 371.1
 3657pt x 252.19218pt>
 File: Programacion_dinamica/imagenes/introduccion/arbol_recursion.png Graphic f
 ile (type png)
@@ -892,10 +932,10 @@ Overfull \hbox (12.62482pt too wide) in paragraph at lines 84--87
 
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
-[19]
+[21]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [20 <./Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>]
+ [22 <./Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 125--131
 
  []
@@ -910,7 +950,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
-<Programacion_dinamica/imagenes/introduccion/matriz1.png, id=113, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz1.png, id=120, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz1.png Graphic file (typ
 e png)
@@ -918,7 +958,7 @@ e png)
 Package pdftex.def Info: Programacion_dinamica/imagenes/introduccion/matriz1.pn
 g  used on input line 168.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/introduccion/matriz2.png, id=114, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz2.png, id=121, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz2.png Graphic file (typ
 e png)
@@ -926,7 +966,7 @@ e png)
 Package pdftex.def Info: Programacion_dinamica/imagenes/introduccion/matriz2.pn
 g  used on input line 174.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/introduccion/matriz3.png, id=115, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz3.png, id=122, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz3.png Graphic file (typ
 e png)
@@ -941,20 +981,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--192
 
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
-[21] (Programacion_dinamica/codigos/matriz.cpp
+[23] (Programacion_dinamica/codigos/matriz.cpp
 consecutive:
 ) (Programacion_dinamica/codigos/matriz.cpp
 consecutive:
-)
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+[24 <./Programacion_dinamica/imagenes/introduccion/matriz1.png> <./Programacion
+_dinamica/imagenes/introduccion/matriz2.png> <./Programacion_dinamica/imagenes/
+introduccion/matriz3.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 206--210
 
  []
 
-LaTeX Info: Redefining \. on input line 210.
-LaTeX Info: Redefining \% on input line 210.
-[22 <./Programacion_dinamica/imagenes/introduccion/matriz1.png> <./Programacion
-_dinamica/imagenes/introduccion/matriz2.png> <./Programacion_dinamica/imagenes/
-introduccion/matriz3.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 211--217
 
  []
@@ -966,14 +1006,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--223
 
 (Programacion_dinamica/codigos/SubSetSum.cpp
 consecutive:
-)
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+[25])
 Underfull \hbox (badness 10000) in paragraph at lines 245--253
 
  []
 
-LaTeX Info: Redefining \. on input line 254.
-LaTeX Info: Redefining \% on input line 254.
-[23]
+
 Underfull \hbox (badness 10000) in paragraph at lines 254--257
 
  []
@@ -981,6 +1021,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--257
 (Programacion_dinamica/codigos/SubSetSum.cpp
 consecutive:
 )
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
+ [26]
 Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
@@ -990,16 +1033,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--288
 
  []
 
-LaTeX Info: Redefining \. on input line 294.
-LaTeX Info: Redefining \% on input line 294.
-[24] (Programacion_dinamica/codigos/ProblemaMochila.cpp
+(Programacion_dinamica/codigos/ProblemaMochila.cpp
 consecutive:
 )
 Underfull \hbox (badness 10000) in paragraph at lines 312--319
 
  []
 
-<Programacion_dinamica/imagenes/TSP/ejemplo.png, id=131, 225.84375pt x 225.8437
+LaTeX Info: Redefining \. on input line 319.
+LaTeX Info: Redefining \% on input line 319.
+[27]
+<Programacion_dinamica/imagenes/TSP/ejemplo.png, id=141, 225.84375pt x 225.8437
 5pt>
 File: Programacion_dinamica/imagenes/TSP/ejemplo.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/TSP/ejemplo.png>
@@ -1011,53 +1055,699 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--348
 
  []
 
-LaTeX Info: Redefining \. on input line 355.
-LaTeX Info: Redefining \% on input line 355.
-[25] (Programacion_dinamica/codigos/TSP.cpp
+(Programacion_dinamica/codigos/TSP.cpp
+consecutive:
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+[28 <./Programacion_dinamica/imagenes/TSP/ejemplo.png>])
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+ [29]
+Cap\'{\i }tulo 4.
+
+! LaTeX Error: Invalid UTF-8 byte sequence (áxi).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (áxi).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (áxi).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (áxi).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (áxi).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--12
+
+ []
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ónen).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (énd).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+LaTeX Warning: Reference `matematicas:eq:division1' on page 30 undefined on inp
+ut line 30.
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (énd).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+LaTeX Warning: Reference `matematicas:eq:division2' on page 30 undefined on inp
+ut line 31.
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ísu).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--47
+
+ []
+
+[30
+
+]
+
+! LaTeX Error: Invalid UTF-8 byte sequence (íni).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (íni).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ñoel).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (íni).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--53
+
+ []
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (éns).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ónen).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
+
+ []
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ónde).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ónde).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte sequence (ónpa).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+! LaTeX Error: Invalid UTF-8 byte "FA.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134 ...put{82}{163}{Matematicas/matematicas.tex}
+                                                  
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+(Matematicas/codigos/MCD_y_MCM.cpp
+consecutive:
+) (Matematicas/codigos/MCD_y_MCM.cpp
 consecutive:
 )
 LaTeX Info: Redefining \. on input line 136.
 LaTeX Info: Redefining \% on input line 136.
- [26 <./Programacion_dinamica/imagenes/TSP/ejemplo.png>]
-(Algoritmos para programacion competitiva.aux
+ [31] (Algoritmos para programacion competitiva.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-) ) 
+)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8686 strings out of 478582
- 151959 string characters out of 2838680
- 813339 words of memory out of 3000000
- 26663 multiletter control sequences out of 15000+600000
+ 8768 strings out of 478582
+ 154062 string characters out of 2838680
+ 802363 words of memory out of 3000000
+ 26732 multiletter control sequences out of 15000+600000
  536366 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,63p,286b,2018s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm
-/lm-rm.enc}{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/enc/
-dvips/lm/lm-mathsy.enc}{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTe
-X/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/wilmer.castrillon/AppData/Local/Pr
-ograms/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/wilmer.castrillon/AppData/
-Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/wilmer.castril
-lon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/wi
-lmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb>
-<C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
-/lmmi12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/lm/lmmi6.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/lm/lmmi8.pfb><C:/Users/wilmer.castrillon/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/wilmer.castrillon/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/wilmer.castri
-llon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/wil
-mer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:
-/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
-ri12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/lm/lmro12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer.castrillon/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/wilmer.castrillon/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer.castril
-lon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Algoritmos para programacion competitiva.pdf" (27 pages, 529
-304 bytes).
+ 55i,13n,63p,286b,2024s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/
+lm-rm.enc}{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/enc/d
+vips/lm/lm-mathsy.enc}{C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX
+/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/wilmer.castrillon/AppData/Local/Pro
+grams/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/wilmer.castrillon/AppData/L
+ocal/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Users/wilmer.castrill
+on/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/wil
+mer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><
+C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
+lmmi12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/lm/lmmi6.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/lm/lmmi8.pfb><C:/Users/wilmer.castrillon/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/wilmer.castrillon/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/wilmer.castril
+lon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/wilm
+er.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/
+Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
+i12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/lm/lmro12.pfb><C:/Users/wilmer.castrillon/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer.castrillon/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/wilmer.castrillon/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer.castrill
+on/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "Algoritmos para programacion competitiva.pdf" (32 pages, 555
+959 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 227 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
