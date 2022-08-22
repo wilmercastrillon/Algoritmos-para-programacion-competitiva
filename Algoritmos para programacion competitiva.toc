@@ -1,20 +1,22 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {chapter}{Preface}{2}{}%
-\contentsline {chapter}{\numberline {1}Estructuras de datos}{3}{}%
-\contentsline {section}{\numberline {1.1}Tablas aditivas}{3}{}%
-\contentsline {section}{\numberline {1.2}Disjoint set}{6}{}%
-\contentsline {section}{\numberline {1.3}Sparse table}{9}{}%
-\contentsline {section}{\numberline {1.4}Fewnwick tree}{10}{}%
-\contentsline {chapter}{\numberline {2}Grafos}{13}{}%
-\contentsline {section}{\numberline {2.1}Teoría de grafos}{13}{}%
-\contentsline {section}{\numberline {2.2}DFS y BFS}{14}{}%
-\contentsline {section}{\numberline {2.3}Grafos bipartitos}{17}{}%
-\contentsline {section}{\numberline {2.4}Minimum spanning tree}{18}{}%
-\contentsline {subsection}{\numberline {2.4.1}Algoritmo de Kruskal}{19}{}%
-\contentsline {chapter}{\numberline {3}Programación dinámica}{20}{}%
-\contentsline {section}{\numberline {3.1}Introducción a la programación dinámica}{20}{}%
-\contentsline {section}{\numberline {3.2}Sub-SetSum}{25}{}%
-\contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{26}{}%
-\contentsline {section}{\numberline {3.4}Traveling salesman problem}{27}{}%
-\contentsline {chapter}{\numberline {4}Matematicas}{30}{}%
-\contentsline {section}{\numberline {4.1}MCD y MCM}{30}{}%
+\babel@toc {spanish}{}
+\contentsline {chapter}{Preface}{2}% 
+\contentsline {chapter}{\numberline {1}Estructuras de datos}{3}% 
+\contentsline {section}{\numberline {1.1}Tablas aditivas}{3}% 
+\contentsline {section}{\numberline {1.2}Disjoint set}{6}% 
+\contentsline {section}{\numberline {1.3}Sparse table}{9}% 
+\contentsline {section}{\numberline {1.4}Fewnwick tree}{10}% 
+\contentsline {chapter}{\numberline {2}Grafos}{13}% 
+\contentsline {section}{\numberline {2.1}Teor\IeC {\'\i }a de grafos}{13}% 
+\contentsline {section}{\numberline {2.2}DFS y BFS}{14}% 
+\contentsline {section}{\numberline {2.3}Grafos bipartitos}{17}% 
+\contentsline {section}{\numberline {2.4}Topological sort}{18}% 
+\contentsline {subsection}{\numberline {2.4.1}Topological sort con DFS}{19}% 
+\contentsline {section}{\numberline {2.5}Minimum spanning tree}{19}% 
+\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{20}% 
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n a la programaci\IeC {\'o}n din\IeC {\'a}mica}{20}% 
+\contentsline {section}{\numberline {3.2}Sub-SetSum}{25}% 
+\contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{26}% 
+\contentsline {section}{\numberline {3.4}Traveling salesman problem}{27}% 
+\contentsline {chapter}{\numberline {4}Matematicas}{30}% 
+\contentsline {section}{\numberline {4.1}MCD y MCM}{30}% 
+\contentsline {section}{\numberline {4.2}Criba de Erat\IeC {\'o}stenes}{31}% 
