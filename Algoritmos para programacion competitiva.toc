@@ -11,12 +11,13 @@
 \contentsline {section}{\numberline {2.3}Grafos bipartitos}{17}% 
 \contentsline {section}{\numberline {2.4}Topological sort}{18}% 
 \contentsline {subsection}{\numberline {2.4.1}Topological sort con DFS}{19}% 
-\contentsline {section}{\numberline {2.5}Minimum spanning tree}{19}% 
-\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{20}% 
-\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n a la programaci\IeC {\'o}n din\IeC {\'a}mica}{20}% 
-\contentsline {section}{\numberline {3.2}Sub-SetSum}{25}% 
-\contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{26}% 
-\contentsline {section}{\numberline {3.4}Traveling salesman problem}{27}% 
-\contentsline {chapter}{\numberline {4}Matematicas}{30}% 
-\contentsline {section}{\numberline {4.1}MCD y MCM}{30}% 
-\contentsline {section}{\numberline {4.2}Criba de Erat\IeC {\'o}stenes}{31}% 
+\contentsline {section}{\numberline {2.5}Minimum spanning tree}{20}% 
+\contentsline {subsection}{\numberline {2.5.1}Algoritmo de Kruskal}{20}% 
+\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n din\IeC {\'a}mica}{22}% 
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n a la programaci\IeC {\'o}n din\IeC {\'a}mica}{22}% 
+\contentsline {section}{\numberline {3.2}Sub-SetSum}{27}% 
+\contentsline {section}{\numberline {3.3}Problema de la mochila(Knapsack problem)}{28}% 
+\contentsline {section}{\numberline {3.4}Traveling salesman problem}{29}% 
+\contentsline {chapter}{\numberline {4}Matematicas}{32}% 
+\contentsline {section}{\numberline {4.1}MCD y MCM}{32}% 
+\contentsline {section}{\numberline {4.2}Criba de Erat\IeC {\'o}stenes}{33}% 

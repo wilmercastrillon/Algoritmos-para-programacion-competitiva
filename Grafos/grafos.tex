@@ -77,7 +77,7 @@
 	%<*Capitulo>
 	
 	\section{Teoría de grafos}
-	%\label{grafos:teoria_de_grafos}
+	\label{grafos:teoria_de_grafos}
 	
 	Los grafos son una estructura de datos donde se pueden relacionar distintos objetos entre si, los grafos se pueden
 	definir como un conjunto de nodos(objetos) unidos por aristas(relaciones), estos son estudiados por la
@@ -156,7 +156,7 @@
 	\end{figure}	
 	
 	\section{DFS y BFS}
-	%\label{grafos:dfs_y_bfs}
+	\label{grafos:dfs_y_bfs}
 	
 	Los grafos son estructuras no lineales, estos no tienen un nodo inicio o un orden especifico para recorrerlos,
 	existen principalmente dos algoritmos que permiten recorrer un grafo DFS y BFS, estos no son algoritmos muy
@@ -173,7 +173,7 @@
 	
 	En la siguientes figuras se observa el orden en el cual los nodos son visitados empezando por el nodo 1, 
 	entonces comienza con el 1, después avanza al 5 y luego al 4, como no hay mas destinos se devuelve al 5,
-	pero su único vecino ya esta visitado, se devuelve al 1, desde ahi pasa al 3, este no tiene vecinos y se
+	pero su único vecino ya esta visitado, se devuelve al 1, desde ahí pasa al 3, este no tiene vecinos y se
 	devuelve otra vez al 1, y finalmente al 2, como su vecino ya esta visitado regresa al 1, y como este no tiene
 	mas vecinos finaliza el algoritmo.
 	
@@ -192,7 +192,7 @@
 		\endminipage
 	\end{figure}	
 	
-	La implementacion del DFS es corta y consiste básicamente en un algoritmo de backtraking, tiene una complejidad
+	La implementación del DFS es corta y consiste básicamente en un algoritmo de backtraking, tiene una complejidad
 	algorítmica O($V+E$) con $V$ como el numero de nodos y $E$ como el numero de aristas.
 	\cppfile[6-16]{Grafos/codigos/DFS.cpp}
 	
@@ -224,7 +224,7 @@
 		\endminipage
 	\end{figure}	
 	
-	La implementacion del BFS es sencilla, tiene una complejidad algorítmica O($V+E$) al igual que el DFS, ademas al 
+	La implementación del BFS es sencilla, tiene una complejidad algorítmica O($V+E$) al igual que el DFS, ademas al 
 	ser iterativo evita los problemas de stack overflow que puede presentar el DFS al trabajar con grafos muy extensos.	
 	\cppfile[8-25]{Grafos/codigos/BFS.cpp}
 	
@@ -239,11 +239,11 @@
 	llenar rápidamente con grafo extensos, produciendo errores de ejecución.
 	
 	\section{Grafos bipartitos}
-	%\label{grafos:grafos_bipartitos}
+	\label{grafos:grafos_bipartitos}
 	
 	Un grafo bipartito es un grafo el cual se puede dividir sus vértices en dos conjuntos ${X, Y}$ en los cuales
 	todos los nodos de un mismo conjunto no están conectados entre si, es decir no existe ninguna arista la cual
-	conecte dos nodos de un mismo conjunto, los conjuntos ${X, Y}$ pueden estar vacíos.
+	conecte dos nodos de un mismo conjunto, los conjuntos ${X, Y}$ pueden estar vacíos.\\
 	
 	\begin{figure}[!htb]
 		\minipage{0.5\textwidth}
@@ -268,8 +268,41 @@
 	si es bipartito.
 	\cppfile[14-42]{Grafos/codigos/BipartiteCheck.cpp}
 	
+	\section{Topological sort}
+	\label{grafos:topological_sort}
+	
+	El ordenamiento topológico o toposort de un grafo $G$ acíclico y dirigido es un ordenamiento lineal de los 
+	vértices, de tal forma que para cada arista de $u$ a $v$ se cumple que el nodo $u$ aparece antes que el nodo $v$,
+	este ordenamiento suele ser utilizado para representar tareas que dependen de otras, es decir si una tarea $x$
+	depende de otra tarea $y$, es decir existe una arista $y \rightarrow x$, entonces $x$ no puede iniciar hasta que 
+	$y$ este terminada, entonces en el ordenamiento topológico primero debe aparecer $y$ y después $x$, este 
+	ordenamiento puede dar un posible orden para realizar tareas. En la figura 
+	\ref{grafos:toposort:ejemplo} se puede observar un sencillo ejemplo.
+	
+	\begin{figure}[!htb]
+		\centering
+		\includegraphics[scale=0.9]{Grafos/imagenes/toposort/ejemplo}
+		\caption{}
+		\label{grafos:toposort:ejemplo}
+	\end{figure}
+	
+	\subsection{Topological sort con DFS}
+	\label{grafos:toposort:DFS}
+	
+	Una manera sencilla de encontrar el toposort es utilizando DFS, la solución se construye agregando los nodos 
+	en una lista de enteros, sin embargo el objetivo sera agregar primero los nodos 
+	destino antes que los nodos de origen, es decir, construir un toposort invertido de tal forma que final solo 
+	se debe invertir la lista para obtener el resultado.\\
+	
+	Para realizar esto se necesita agregar el nodo $v$ a la 
+	lista justo antes de terminar el llamado del DFS, debido a que en ese punto ya se recorrieron y agregaron todos 
+	los nodos que van después de $v$, se recomienda hacer el proceso manualmente para que se pueda entender mejor.
+	La complejidad final seguirá siendo la misma de un DFS normal.
+	
+	\cppfile[8-29]{Grafos/codigos/Toposort_dfs.cpp}
+	
 	\section{Minimum spanning tree}
-	%\label{grafos:MST}
+	\label{grafos:MST}
 	
 	También conocido como árbol recubridor mínimo o abreviado en inglés MST, es un problema clásico en la teoría de 
 	grafos, consiste en lo siguiente, Sea $G = (V, E)$ un grafo conexo, ponderado y no dirigido, se denomina árbol 
@@ -280,7 +313,7 @@
 	de Kruskal y el algoritmo de Prim.
 	
 	\subsection{Algoritmo de Kruskal}
-	%\label{grafos:MST:kruskal}
+	\label{grafos:MST:kruskal}
 	
 	Es un algoritmo inventado por el matemático Joseph Kruskal, permite hallar el MST utilizando un enfoque greddy y 
 	funciona en complejidad $O(E*log(V))$ con $E$ como el número de aristas y $V$ el número de nodos, consiste en 
@@ -299,8 +332,6 @@
 	arista rápidamente. El algoritmo termina cuando se han agregado $n-1$ aristas al árbol(la cantidad necesaria para 
 	que el árbol conecte todos los N nodos) o cuando se acaben las aristas, lo que significa que el árbol no es conexo.
 	\cppfile[24-43]{Grafos/codigos/kruskal.cpp}
-	
-	
 	
 	%\section{Bibliografia}
 	%https://es.wikipedia.org/wiki/Grafo\\

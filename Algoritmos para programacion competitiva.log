@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  22 AUG 2022 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.15)  16 SEP 2022 22:09
 entering extended mode
 **"./Algoritmos para programacion competitiva.tex"
 ("Algoritmos para programacion competitiva.tex"
@@ -853,6 +853,10 @@ LaTeX Info: Redefining \. on input line 16.
 LaTeX Info: Redefining \% on input line 16.
  [16 <./Grafos/imagenes/DFS_y_BFS/BFS1.png> <./Grafos/imagenes/DFS_y_BFS/BFS2.p
 ng>])
+Underfull \hbox (badness 10000) in paragraph at lines 167--170
+
+ []
+
 <Grafos/imagenes/bipartitos/BipartitoSi.png, id=96, 188.20313pt x 188.20313pt>
 File: Grafos/imagenes/bipartitos/BipartitoSi.png Graphic file (type png)
 <use Grafos/imagenes/bipartitos/BipartitoSi.png>
@@ -865,23 +869,40 @@ File: Grafos/imagenes/bipartitos/BipartitoNo.png Graphic file (type png)
 Package pdftex.def Info: Grafos/imagenes/bipartitos/BipartitoNo.png  used on in
 put line 180.
 (pdftex.def)             Requested size: 188.20265pt x 188.20265pt.
- (Grafos/codigos/BipartiteCheck.cpp
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+(Grafos/codigos/BipartiteCheck.cpp
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
  [17])
-<Grafos/imagenes/toposort/ejemplo.png, id=101, 467.49657pt x 158.09062pt>
+LaTeX Info: Redefining \. on input line 204.
+LaTeX Info: Redefining \% on input line 204.
+ [18 <./Grafos/imagenes/bipartitos/BipartitoSi.png> <./Grafos/imagenes/bipartit
+os/BipartitoNo.png>]
+<Grafos/imagenes/toposort/ejemplo.png, id=107, 467.49657pt x 158.09062pt>
 File: Grafos/imagenes/toposort/ejemplo.png Graphic file (type png)
 <use Grafos/imagenes/toposort/ejemplo.png>
 Package pdftex.def Info: Grafos/imagenes/toposort/ejemplo.png  used on input li
-ne 206.
+ne 207.
 (pdftex.def)             Requested size: 420.74303pt x 142.28023pt.
-LaTeX Info: Redefining \. on input line 216.
-LaTeX Info: Redefining \% on input line 216.
- [18 <./Grafos/imagenes/bipartitos/BipartitoSi.png> <./Grafos/imagenes/bipartit
-os/BipartitoNo.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--219
+
+ []
+
+(Grafos/codigos/Toposort_dfs.cpp)
+LaTeX Info: Redefining \. on input line 225.
+LaTeX Info: Redefining \% on input line 225.
+ [19 <./Grafos/imagenes/toposort/ejemplo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 241--246
+
+ []
+
+(Grafos/codigos/kruskal.cpp
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
+ [20])
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
- [19 <./Grafos/imagenes/toposort/ejemplo.png>]
+ [21]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--12
@@ -893,7 +914,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--36
 
  []
 
-[20
+[22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
@@ -907,7 +928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
 (Programacion_dinamica/codigos/fibo.cpp)
 (Programacion_dinamica/codigos/fibo.cpp)
-<Programacion_dinamica/imagenes/introduccion/arbol_recursion.png, id=115, 371.1
+<Programacion_dinamica/imagenes/introduccion/arbol_recursion.png, id=121, 371.1
 3657pt x 252.19218pt>
 File: Programacion_dinamica/imagenes/introduccion/arbol_recursion.png Graphic f
 ile (type png)
@@ -923,10 +944,10 @@ Overfull \hbox (12.62482pt too wide) in paragraph at lines 84--87
 
 LaTeX Info: Redefining \. on input line 88.
 LaTeX Info: Redefining \% on input line 88.
-[21]
+[23]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [22 <./Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>]
+ [24 <./Programacion_dinamica/imagenes/introduccion/arbol_recursion.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 125--131
 
  []
@@ -941,7 +962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--164
 
  []
 
-<Programacion_dinamica/imagenes/introduccion/matriz1.png, id=122, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz1.png, id=129, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz1.png Graphic file (typ
 e png)
@@ -949,7 +970,7 @@ e png)
 Package pdftex.def Info: Programacion_dinamica/imagenes/introduccion/matriz1.pn
 g  used on input line 168.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/introduccion/matriz2.png, id=123, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz2.png, id=130, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz2.png Graphic file (typ
 e png)
@@ -957,7 +978,7 @@ e png)
 Package pdftex.def Info: Programacion_dinamica/imagenes/introduccion/matriz2.pn
 g  used on input line 174.
 (pdftex.def)             Requested size: 112.91986pt x 112.91986pt.
-<Programacion_dinamica/imagenes/introduccion/matriz3.png, id=124, 282.30469pt x
+<Programacion_dinamica/imagenes/introduccion/matriz3.png, id=131, 282.30469pt x
  282.30469pt>
 File: Programacion_dinamica/imagenes/introduccion/matriz3.png Graphic file (typ
 e png)
@@ -972,11 +993,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--192
 
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
-[23] (Programacion_dinamica/codigos/matriz.cpp)
+[25] (Programacion_dinamica/codigos/matriz.cpp)
 (Programacion_dinamica/codigos/matriz.cpp
 LaTeX Info: Redefining \. on input line 31.
 LaTeX Info: Redefining \% on input line 31.
- [24 <./Programacion_dinamica/imagenes/introduccion/matriz1.png> <./Programacio
+ [26 <./Programacion_dinamica/imagenes/introduccion/matriz1.png> <./Programacio
 n_dinamica/imagenes/introduccion/matriz2.png> <./Programacion_dinamica/imagenes
 /introduccion/matriz3.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 206--210
@@ -996,7 +1017,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--223
 (Programacion_dinamica/codigos/SubSetSum.cpp
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [25])
+ [27])
 Underfull \hbox (badness 10000) in paragraph at lines 245--253
 
  []
@@ -1009,7 +1030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--257
 (Programacion_dinamica/codigos/SubSetSum.cpp)
 LaTeX Info: Redefining \. on input line 272.
 LaTeX Info: Redefining \% on input line 272.
- [26]
+ [28]
 Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
@@ -1026,8 +1047,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--319
 
 LaTeX Info: Redefining \. on input line 319.
 LaTeX Info: Redefining \% on input line 319.
-[27]
-<Programacion_dinamica/imagenes/TSP/ejemplo.png, id=143, 225.84375pt x 225.8437
+[29]
+<Programacion_dinamica/imagenes/TSP/ejemplo.png, id=149, 225.84375pt x 225.8437
 5pt>
 File: Programacion_dinamica/imagenes/TSP/ejemplo.png Graphic file (type png)
 <use Programacion_dinamica/imagenes/TSP/ejemplo.png>
@@ -1042,10 +1063,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--348
 (Programacion_dinamica/codigos/TSP.cpp
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [28 <./Programacion_dinamica/imagenes/TSP/ejemplo.png>])
+ [30 <./Programacion_dinamica/imagenes/TSP/ejemplo.png>])
 LaTeX Info: Redefining \. on input line 133.
 LaTeX Info: Redefining \% on input line 133.
- [29]
+ [31]
 Cap\'{\i }tulo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--11
@@ -1057,7 +1078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
-[30
+[32
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 49--52
@@ -1081,8 +1102,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--103
 
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
-[31]
-<Matematicas/imagenes/criba_de_eratostenes/ejemplo.png, id=158, 504.38437pt x 2
+[33]
+<Matematicas/imagenes/criba_de_eratostenes/ejemplo.png, id=164, 504.38437pt x 2
 25.84375pt>
 File: Matematicas/imagenes/criba_de_eratostenes/ejemplo.png Graphic file (type 
 png)
@@ -1098,18 +1119,18 @@ Overfull \hbox (0.97346pt too wide) in paragraph at lines 106--107
 (Matematicas/codigos/criba.cpp
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
- [32 <./Matematicas/imagenes/criba_de_eratostenes/ejemplo.png>])
+ [34 <./Matematicas/imagenes/criba_de_eratostenes/ejemplo.png>])
 LaTeX Info: Redefining \. on input line 136.
 LaTeX Info: Redefining \% on input line 136.
- [33] ("Algoritmos para programacion competitiva.aux"
+ [35] ("Algoritmos para programacion competitiva.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 ) ) 
 Here is how much of TeX's memory you used:
- 7737 strings out of 492946
- 120154 string characters out of 3124490
+ 7783 strings out of 492946
+ 120846 string characters out of 3124490
  467470 words of memory out of 3000000
- 11379 multiletter control sequences out of 15000+200000
+ 11419 multiletter control sequences out of 15000+200000
  70747 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,58p,311b,1985s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1135,10 +1156,10 @@ MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/wilmer-PC/AppData/Local/P
 rograms/MiKTeX 2.9/fonts/type1/public/lm/lmsy6.pfb><C:/Users/wilmer-PC/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/wilmer-PC/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "Algoritmos para programacion competitiva.pdf" (34 pages, 567
-779 bytes).
+Output written on "Algoritmos para programacion competitiva.pdf" (36 pages, 574
+207 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 225 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
